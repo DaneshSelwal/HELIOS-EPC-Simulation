@@ -11,7 +11,7 @@
 
 | Delay ID | Event Ref | Date Occurred | Event Description | Responsible Party | Affected Path / WBS | Critical Path? | Unmitigated Delay | Net Project Delay | Notice 20.1 Deadline | Notice 20.1 Status | Log Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock Layer encountered at 0.80m in PV Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Float: +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | Instructed to COUNSEL (Day 2) | **ACTIVE / MITIGATION IMPLEMENTED** |
+| **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock Layer encountered at 0.80m in PV Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Float: +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | Issued: HELIOS-NTC-001 (2026-10-06) | **ACTIVE / MITIGATION IMPLEMENTED** |
 
 ---
 
@@ -26,7 +26,7 @@
 - **Statutory Notice Clock (Sub-Clause 20.1):** 
   - Date Aware: 2026-10-06 (Day 2)
   - 28-Day Statutory Notice Cut-off: **2026-11-03 (Day 30)**
-  - Notice Directive: Formal instruction issued to COUNSEL on Day 2 to serve Sub-Clause 4.12 / 20.1 Reservation Notice.
+  - Notice Directive: Formal Notice HELIOS-NTC-001 issued by COUNSEL on 2026-10-06 (Day 2, 26 days ahead of time-bar). Claim Ref CLM-001.
 - **CPM Schedule & Float Impact:**
   - Master Critical Path: Runs through 220kV GSS and MPT manufacturing chain (0 days total float). Block 6 is off the master critical path.
   - PV Field Total Float: **+45 calendar days** to Mechanical Completion (Month 15).
