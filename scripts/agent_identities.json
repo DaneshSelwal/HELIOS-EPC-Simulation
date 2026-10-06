@@ -1,0 +1,222 @@
+{
+  "ATLAS": {
+    "name": "ATLAS-ProjectManager",
+    "email": "atlas.helios.epc@gmail.com"
+  },
+  "KRONOS": {
+    "name": "KRONOS-PlanningManager",
+    "email": "kronos.helios.epc@gmail.com"
+  },
+  "SIGMA": {
+    "name": "SIGMA-MISEngineer",
+    "email": "sigma.helios.epc@gmail.com"
+  },
+  "CONVOY": {
+    "name": "CONVOY-SCMManager",
+    "email": "convoy.helios.epc@gmail.com"
+  },
+  "ARCHON": {
+    "name": "ARCHON-DesignManager",
+    "email": "archon.helios.epc@gmail.com"
+  },
+  "TERRA": {
+    "name": "TERRA-CivilLead",
+    "email": "terra.helios.epc@gmail.com"
+  },
+  "RAMPART": {
+    "name": "RAMPART-ConstructionMgr",
+    "email": "rampart.helios.epc@gmail.com"
+  },
+  "SENTINEL": {
+    "name": "SENTINEL-QAQCManager",
+    "email": "sentinel.helios.epc@gmail.com"
+  },
+  "AEGIS": {
+    "name": "AEGIS-EHSManager",
+    "email": "aegis.helios.epc@gmail.com"
+  },
+  "COUNSEL": {
+    "name": "COUNSEL-ContractsMgr",
+    "email": "counsel.helios.epc@gmail.com"
+  },
+  "IGNITE": {
+    "name": "IGNITE-TCManager",
+    "email": "ignite.helios.epc@gmail.com"
+  },
+  "VECTOR": {
+    "name": "VECTOR-CivilPlanning",
+    "email": "vector.helios.epc@gmail.com"
+  },
+  "WATT": {
+    "name": "WATT-ElecPlanning",
+    "email": "watt.helios.epc@gmail.com"
+  },
+  "LEDGER": {
+    "name": "LEDGER-CostControl",
+    "email": "ledger.helios.epc@gmail.com"
+  },
+  "FORGE": {
+    "name": "FORGE-EquipmentProcurement",
+    "email": "forge.helios.epc@gmail.com"
+  },
+  "BASTION": {
+    "name": "BASTION-CivilSupervision",
+    "email": "bastion.helios.epc@gmail.com"
+  },
+  "SWITCHMAN": {
+    "name": "SWITCHMAN-SubstationEM",
+    "email": "switchman.helios.epc@gmail.com"
+  },
+  "GROUNDWORK": {
+    "name": "GROUNDWORK-CivilSub",
+    "email": "groundwork.helios.epc@gmail.com"
+  },
+  "EREKTOR": {
+    "name": "EREKTOR-MMSSub",
+    "email": "erektor.helios.epc@gmail.com"
+  },
+  "ELECTRA": {
+    "name": "ELECTRA-ElecSub",
+    "email": "electra.helios.epc@gmail.com"
+  },
+  "PATRON": {
+    "name": "PATRON-ClientRep",
+    "email": "patron.helios.epc@gmail.com"
+  },
+  "VENDOR": {
+    "name": "VENDOR-SubcontractBuyer",
+    "email": "vendor.helios.epc@gmail.com"
+  },
+  "TRACER": {
+    "name": "TRACER-Expediter",
+    "email": "tracer.helios.epc@gmail.com"
+  },
+  "ROUTE": {
+    "name": "ROUTE-LogisticsCustoms",
+    "email": "route.helios.epc@gmail.com"
+  },
+  "VAULT": {
+    "name": "VAULT-SiteStores",
+    "email": "vault.helios.epc@gmail.com"
+  },
+  "DEPOT": {
+    "name": "DEPOT-BOPBuyer",
+    "email": "depot.helios.epc@gmail.com"
+  },
+  "INVOICE": {
+    "name": "INVOICE-BillingQS",
+    "email": "invoice.helios.epc@gmail.com"
+  },
+  "CLAIMS": {
+    "name": "CLAIMS-ClaimsVariationEngineer",
+    "email": "claims.helios.epc@gmail.com"
+  },
+  "LEDGE": {
+    "name": "LEDGE-CommercialCoordinator",
+    "email": "ledge.helios.epc@gmail.com"
+  },
+  "CHECKER": {
+    "name": "CHECKER-SubBillingVerifier",
+    "email": "checker.helios.epc@gmail.com"
+  },
+  "GRIDCON": {
+    "name": "GRIDCON-SubstationCivilSub",
+    "email": "gridcon.helios.epc@gmail.com"
+  },
+  "NEXGEN": {
+    "name": "NEXGEN-DesignCoordinator",
+    "email": "nexgen.helios.epc@gmail.com"
+  },
+  "CIPHER": {
+    "name": "CIPHER-ProtectionSCADA",
+    "email": "cipher.helios.epc@gmail.com"
+  },
+  "MERIDIAN": {
+    "name": "MERIDIAN-SurveyGeotech",
+    "email": "meridian.helios.epc@gmail.com"
+  },
+  "AMPERE": {
+    "name": "AMPERE-DCElectrical",
+    "email": "ampere.helios.epc@gmail.com"
+  },
+  "VOLTA": {
+    "name": "VOLTA-ACSubstation",
+    "email": "volta.helios.epc@gmail.com"
+  },
+  "SOLARIS": {
+    "name": "SOLARIS-MMSTracker",
+    "email": "solaris.helios.epc@gmail.com"
+  },
+  "RELAY": {
+    "name": "RELAY-ProtectionEngineer",
+    "email": "relay.helios.epc@gmail.com"
+  },
+  "GRIDLOCK": {
+    "name": "GRIDLOCK-GridSCADA",
+    "email": "gridlock.helios.epc@gmail.com"
+  },
+  "SPARK": {
+    "name": "SPARK-LVMVEngineer",
+    "email": "spark.helios.epc@gmail.com"
+  },
+  "GUARDIAN": {
+    "name": "GUARDIAN-SafetyCivil",
+    "email": "guardian.helios.epc@gmail.com"
+  },
+  "WARDEN": {
+    "name": "WARDEN-SafetyElec",
+    "email": "warden.helios.epc@gmail.com"
+  },
+  "VERDANT": {
+    "name": "VERDANT-EnvSocial",
+    "email": "verdant.helios.epc@gmail.com"
+  },
+  "TORQUE": {
+    "name": "TORQUE-MechStructuralQC",
+    "email": "torque.helios.epc@gmail.com"
+  },
+  "OHMMETER": {
+    "name": "OHMMETER-ElectricalQC",
+    "email": "ohmmeter.helios.epc@gmail.com"
+  },
+  "DOSSIER": {
+    "name": "DOSSIER-QADocCoordinator",
+    "email": "dossier.helios.epc@gmail.com"
+  },
+  "PLUMBLINE": {
+    "name": "PLUMBLINE-CivilQC",
+    "email": "plumbline.helios.epc@gmail.com"
+  },
+  "ARCLINE": {
+    "name": "ARCLINE-MVCable",
+    "email": "arcline.helios.epc@gmail.com"
+  },
+  "FORTRESS": {
+    "name": "FORTRESS-SubstationCivil",
+    "email": "fortress.helios.epc@gmail.com"
+  },
+  "CONDUIT": {
+    "name": "CONDUIT-DCElectrical",
+    "email": "conduit.helios.epc@gmail.com"
+  },
+  "STRATUM": {
+    "name": "STRATUM-MMSTracker",
+    "email": "stratum.helios.epc@gmail.com"
+  },
+  "PRISM": {
+    "name": "PRISM-SurveyLayout",
+    "email": "prism.helios.epc@gmail.com"
+  },
+  "LEDGER2": {
+    "name": "LEDGER2-Finance",
+    "email": "ledger2.helios.epc@gmail.com"
+  },
+  "SUMMIT": {
+    "name": "SUMMIT-AdminHR",
+    "email": "summit.helios.epc@gmail.com"
+  },
+  "PERMIT": {
+    "name": "PERMIT-Permits",
+    "email": "permit.helios.epc@gmail.com"
+  }
+}
