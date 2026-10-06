@@ -45,5 +45,5 @@
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
   - Result: 10–12 weeks of lead time created; DTH mobilization and test pile qualification occur entirely during pre-construction window; net impact on Project COD = **0 days**.
 - **Contractual & Commercial Actions:**
-  - Instructed COUNSEL to serve FIDIC Sub-Clause 4.12 / 20.1 Reservation Notice of Claim within statutory 28-day window (deadline: 2026-11-03).
+  - Notice Served: COUNSEL served formal FIDIC Sub-Clause 4.12 / 20.1 Notice of Claim HELIOS-NTC-001 on 2026-10-06 (Claim Ref CLM-001, 26 days ahead of 2026-11-03 statutory deadline).
   - Cost tracking established with LEDGER under code `CC-VAR-EVT-001` to capture equipment mobilization, tooling wear, and grouting costs.
