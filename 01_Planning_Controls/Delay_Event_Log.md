@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** Day 40, Month 2 (2026-11-10)
+**Data Date:** Day 41, Month 2 (2026-11-11)
 
 ---
 
@@ -240,6 +240,13 @@
   - 33/220kV GSS Substation: 220kV GIS building external wall cladding reached **100.0% completion** (full weather-tight building envelope achieved!), roof metal decking reached 70% (+12 calendar days float). 100MVA MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (**Day 28 of 182**) on schedule at POWERTRANS works. Critical path total float = **0 calendar days**; COD locked at Month 18.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**.
   - Event EVT-001 Formal Closeout: Fragnet `FRAG-PRD-001` retired. All physical works under `FDC-CIV-001` completed. Status transitioned to **CLOSED / MITIGATED (Net Delay: 0 Days)**.
+- **Day 41 Performance Validation (2026-11-11 / Month 2 / Week 6 Day 6 / Week 6 Closeout Eve):**
+  - Zero Open Delay Events: All logged delay events (`EVT-001`, `EVT-002`) remain 100% closed, mitigated, and retired with 0 calendar days net COD impact. P6 master network operates in full green health.
+  - 33/220kV GSS Substation: 220kV GIS building roof metal decking reached **100.0% completion** (full weather-tight building envelope achieved; +12 calendar days float). 100MVA MPT manufacturing entering **Day 29 of 182** at POWERTRANS works on schedule (0d float).
+  - Mechanical Tracker Assembly: EREKTOR assembled 120 tracker tables in Block 5 (140 / 850 tables, 16.47%). Cumulative tracker assembly reached **3,540 / 5,100 tables (69.41% completion; +45d float preserved)**.
+  - PV Module Mounting: ELECTRA mounted 1,500 modules in Block 1, reaching **19,200 modules (11.14 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **640 strings (10.0% of plant scope)**.
+  - Site Demobilization: Crawler DTH hammer drill rigs and high-pressure compressors formally demobilized from site following 100% piling completion.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
