@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** Day 42, Month 2 (2026-11-12)
+**Data Date:** Day 43, Month 2 (2026-11-13)
 
 ---
 
@@ -253,6 +253,13 @@
   - PV Module Mounting Crosses 20k Units & 12 MWp: ELECTRA installed 1,500 modules in Block 1, crossing both 20,000 units and 12 MWp at **20,700 modules (12.01 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **690 strings (10.78% of plant scope)**.
   - 33/220kV GSS Substation: 220kV GIS hall crane runway rails aligned and torqued (+12d float). Floor screed ready for epoxy finish. 100MVA MPT manufacturing entering **Day 30 of 182** at POWERTRANS works on schedule (0d float).
   - HSE Milestone: 6 full operational weeks completed with Zero Harm / Zero LTI (**74,084 safe man-hours**).
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
+- **Day 43 Performance Validation (2026-11-13 / Month 2 / Week 7 Day 1 / Week 7 Kickoff):**
+  - Major Handover Milestone: Handover Certificate HC-MEC-ELC-002 executed for final 450 tables in Block 1; 100% of Block 1 (850 tables) under electrical trade custody (+35d ahead of baseline schedule).
+  - PV Module Mounting Rate Acceleration: ELECTRA ramped installation to 1,600 modules/day in Block 1, reaching **22,300 modules (12.93 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **745 strings (11.64% scope)**.
+  - Mechanical Tracker Assembly: EREKTOR assembled 120 tables in Block 5 (380 / 850 tables, 44.71%). Cumulative tracker assembly reached **3,780 / 5,100 tables (74.12% completion)** vs 2,100 baseline plan (**+1,680 tables / +80.0% ahead of baseline pace; +45d float preserved**).
+  - 33/220kV GSS Substation: 220kV GIS hall floor dust-proof epoxy coating applied across 450 m² area (+12d float). 25T EOT bridge crane components staged for hoisting. 100MVA MPT manufacturing entering **Day 31 of 182** at POWERTRANS works on schedule (0d float).
+  - HSE Milestone: Cumulative safe man-hours surpassed 76k to reach **76,004 safe man-hours** with Zero Harm / Zero LTI.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
