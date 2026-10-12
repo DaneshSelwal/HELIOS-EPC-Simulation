@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** 2026-10-10 (Day 6, Month 1)
+**Data Date:** 2026-10-13 (Day 8, Month 1)
 
 ---
 
@@ -12,8 +12,8 @@
 
 | Delay ID | Event Ref | Date Occurred | Event Description | Responsible Party | Affected Path / WBS | Critical Path? | Local Delay | Master COD Delay | Notice 20.1 Deadline | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock at 0.80m in Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Total Float = +42d to +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | ACTIVE / MITIGATION VALIDATED (Day 6: Pilot DTH at 35 holes/day confirms FDC-CIV-001) |
-| **DEL-002** | EVT-002 | 2026-10-06 | UzbekEnergo Grid Code Revision — Primary Frequency Response (PFR) capability mandated; redesign of Protection Philosophy (`HEL-PR-PHL-0200`). | Employer / Utility (FIDIC Sub-Clause 13.7 & Sub-Clause 13.1) | `HEL.30` Engineering / `HEL.70` 33/220kV GSS Substation (`HEL-ENG-SS-PRT-1010`) | **YES (Critical Path: 0d Float)** | +7 calendar days (Software/PPC revision) | **+7 calendar days** (Critical path exposure; 7d review fragnet running) | 2026-11-03 (28 days) | ACTIVE / PFR REVISION SUBMITTED TO UTILITY (7-day fragnet running) |
+| **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock at 0.80m in Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Total Float = +42d to +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | **ACTIVE / MITIGATION VALIDATED (Day 8: Piling at 82.7%, alluvial completion in 3 days; DTH pre-drilling ongoing)** |
+| **DEL-002** | EVT-002 | 2026-10-06 | UzbekEnergo Grid Code Revision — Primary Frequency Response (PFR) capability mandated; redesign of Protection Philosophy (`HEL-PR-PHL-0200`). | Employer / Utility (FIDIC Sub-Clause 13.7 & Sub-Clause 13.1) | `HEL.30` Engineering / `HEL.70` 33/220kV GSS Substation (`HEL-ENG-SS-PRT-1010`) | **YES (Critical Path: 0d Float)** | +7 calendar days (Software/PPC revision) | **+7 calendar days** (Critical path exposure; 7d review fragnet running) | 2026-11-03 (28 days) | **ACTIVE / PFR UTILITY REVIEW (Day 3 of 7 on expedited review fragnet FRAG-PFR-003; 0d Float)** |
 
 ---
 
@@ -45,6 +45,10 @@
   - DTH pilot pre-drilling commenced in Block 6 following PTW issuance; recorded productivity is **35 holes/day**, directly validating FDC-CIV-001 and Technical Memorandum `HEL-CV-MEM-0001` assumptions (35–40 holes/day).
   - Main ramming campaign across alluvial Blocks 1–5 reached **71.2% physical completion** (10,965 / 15,400 total piles driven) with **SPI = 1.03** (ahead of baseline schedule).
   - Total float on PV field works remains **+42 to +45 calendar days**; net impact on Project COD remains **0 days**.
+- **Day 8 Performance Validation (2026-10-13):**
+  - Cumulative piling reached **12,740 / 15,400 piles (82.7%)**, with alluvial Blocks 1–5 tracking 100% completion within 3 days (by Day 011).
+  - Block 1 handed over; Milestone M5 activated with 25 tracker tables installed on Day 1 of assembly (`HEL-MEC-PV-TRK-0100`).
+  - Total float on PV field works remains intact at **+45 calendar days** to Mechanical Completion; COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
@@ -74,7 +78,7 @@
 - **Fragnet Structure (`FRAG-EVT-002`):**
   1. `FRAG-PFR-001`: Joint Protection & Automation Technical Feasibility Review (VOLTA / CIPHER) — Completed Day 5.
   2. `FRAG-PFR-002`: Protection Philosophy Revision `HEL-PR-PHL-0200 Rev 1` & SLD `HEL-HV-SLD-0101` Update (ARCHON / CIPHER) — Completed Day 6. Software/PPC droop logic route confirmed (no CT/PT hardware resizing needed).
-  3. `FRAG-PFR-003`: Formal Submission to UzbekEnergo / NEGU and Contractual Review (ARCHON / GRIDMASTER) — **ACTIVE (Day 6)**: Grid Code PFR software revision submitted to utility; 7-day expedited review fragnet running.
+  3. `FRAG-PFR-003`: Formal Submission to UzbekEnergo / NEGU and Contractual Review (ARCHON / GRIDMASTER) — **ACTIVE (Day 8: Day 3 of 7 elapsed)**: Grid Code PFR software revision actively under expedited review; critical path float remains 0 days. MPT PO release Drop Dead Date is Day 12/13.
   4. `FRAG-PFR-004`: Baseline Schedule Recalculation & Time Impact Analysis (TIA) Finalization (KRONOS) — 2 calendar days upon approval.
 - **Mitigation & Recovery Actions:**
   - PO releases for 220kV CT/PT cleared from hardware modification risk; PPC software configuration baseline confirmed.
