@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** Day 16, Month 1 (2026-10-21)
+**Data Date:** Day 18, Month 1 (2026-10-23)
 
 ---
 
@@ -12,8 +12,8 @@
 
 | Delay ID | Event Ref | Date Occurred | Event Description | Responsible Party | Affected Path / WBS | Critical Path? | Local Delay | Master COD Delay | Notice 20.1 Deadline | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock at 0.80m in Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Total Float = +42d to +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | **ACTIVE / MITIGATION ACCELERATED (Day 16: Mass driving at 80 piles/day in pre-drilled sockets under FDC-CIV-001 / FRAG-PRD-001; 530 rock socket piles installed, 13,370/15,400 project piles; triple gangs at 100 tables/day across Blocks 1, 2 & 3 with 585 cumulative tables; +45d float preserved)** |
-| **DEL-002** | EVT-002 | 2026-10-06 | UzbekEnergo Grid Code Revision — Primary Frequency Response (PFR) capability mandated; redesign of Protection Philosophy (`HEL-PR-PHL-0200`). | Employer / Utility (FIDIC Sub-Clause 13.7 & Sub-Clause 13.1) | `HEL.30` Engineering / `HEL.70` 33/220kV GSS Substation (`HEL-ENG-SS-PRT-1010`) | **YES (Critical Path: 0d Float)** | 0 calendar days (Software/PPC revision approved) | **0 days** (Critical path float restored to 0d; zero net delay to Project COD) | 2026-11-03 (28 days) | **CLOSED / MITIGATED (Net Delay: 0 Days)** (Day 12: UzbekEnergo approval letter received; Fragnet FRAG-PFR-003 retired; 33/220kV GSS CP float restored to 0d; PO-HEL-EQ-001 awarded to POWERTRANS linking to HEL-PRO-SS-MPT-2010 at Day 4 of 182) |
+| **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock at 0.80m in Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Total Float = +42d to +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | **ACTIVE / MITIGATION ACCELERATED (Day 18: Mass driving at 80 piles/day in pre-drilled sockets under FDC-CIV-001 / FRAG-PRD-001; 690 rock socket piles installed, 13,530/15,400 project piles [87.86%]; triple gangs maintain 100 tables/day with 785 cumulative tables [+195 ahead of baseline]; +45d float preserved; Block 4 activation modeled for Day 19)** |
+| **DEL-002** | EVT-002 | 2026-10-06 | UzbekEnergo Grid Code Revision — Primary Frequency Response (PFR) capability mandated; redesign of Protection Philosophy (`HEL-PR-PHL-0200`). | Employer / Utility (FIDIC Sub-Clause 13.7 & Sub-Clause 13.1) | `HEL.30` Engineering / `HEL.70` 33/220kV GSS Substation (`HEL-ENG-SS-PRT-1010`) | **YES (Critical Path: 0d Float)** | 0 calendar days (Software/PPC revision approved) | **0 days** (Critical path float restored to 0d; zero net delay to Project COD) | 2026-11-03 (28 days) | **CLOSED / MITIGATED (Net Delay: 0 Days)** (Day 12: UzbekEnergo approval letter received; Fragnet FRAG-PFR-003 retired; 33/220kV GSS CP float restored to 0d; PO-HEL-EQ-001 awarded to POWERTRANS linking to HEL-PRO-SS-MPT-2010 at Day 6 of 182 supported by rapid Code 1 drawing clearance; 220kV GIS excavation initiated on schedule) |
 
 ---
 
@@ -83,6 +83,16 @@
   - PV Field Tracker Assembly: Triple gangs (Gangs A, B, and C across Blocks 1, 2, and 3) achieved record installation run-rate of **100 tables/day**, reaching cumulative **585 / 5,100 tables** project-wide (**+175 tables ahead of baseline pace**). Total float on PV field works firmly preserved at **+45 calendar days** to Mechanical Completion (Month 15).
   - Block 6 Geotechnical Mass Driving: Maintained sustained production velocity of **80 piles/day** driven into pre-drilled rock sockets under `FDC-CIV-001` / `FRAG-PRD-001`, bringing cumulative Block 6 rock-socket piles to **530** and project-wide piling to **13,370 / 15,400 piles (86.82%)**. Progress strictly aligns with recovery fragnet `FRAG-PRD-001` schedule duration.
   - Master Critical Path: MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (100MVA 220/33kV MPT Manufacturing & FAT) tracks at **Day 4 of 182** on schedule with POWERTRANS under `PO-HEL-EQ-001`. Critical path total float = **0 calendar days**; Project COD locked at **Month 18**.
+  - Net Project COD impact remains **0 days**.
+- **Day 17 Performance Validation (2026-10-22 / Week 3 Day 3):**
+  - Substation Civil & MEP Fitout: Control Room interior partition masonry and embedded electrical conduit installations commenced; 100MVA MPT foundation plinth formwork cleanly stripped, wet burlap curing ongoing.
+  - PV Field Tracker Assembly: Maintained 100 tables/day run-rate across Blocks 1, 2, and 3, reaching cumulative 685 / 5,100 tables (13.43%). Total float preserved at **+45 calendar days**.
+  - Block 6 Geotechnical Mass Driving: 80 piles/day driven into pre-drilled rock sockets (cumulative 610 rock-socket piles; cumulative project piling at 13,450 / 15,400 piles [87.34%]). Dual DTH pre-drilling advanced to 785 holes (30.66%) maintaining 175-hole lead buffer.
+  - Master Critical Path: MPT manufacturing `HEL-PRO-SS-MPT-2010` tracks at Day 5 of 182 on schedule. Critical path total float = **0 calendar days**.
+- **Day 18 Performance Validation (2026-10-23 / Week 3 Day 4):**
+  - 33/220kV GSS Substation: 220kV GIS building excavation activity initiated on schedule (`HEL-CIV-SS-GIS-2030`). 100MVA MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (Day 6 of 182) supported by rapid Code 1 drawing clearance (core/coil assembly & GA drawings approved without comments by ARCHON/PATRON). Master critical path total float = **0 calendar days**; Project COD locked at **Month 18**.
+  - PV Field Tracker Assembly: Sustained steady 100 tables/day run-rate, bringing project cumulative tracker assembly to **785 / 5,100 tables** (**+195 tables ahead of baseline pace**). Total float firmly preserved at **+45 calendar days**. Parallel activation of Activity `HEL-MEC-PV-TRK-0400` (Block 4) modeled in P6 for Day 19 following planned execution of Handover Certificate `HC-CIV-MEC-004`.
+  - Block 6 Geotechnical Recovery: 80 piles/day mass driving strictly tracking `FRAG-PRD-001` / `FDC-CIV-001`, bringing cumulative Block 6 rock-socket piles to **690 / 2,560** and total project piling to **13,530 / 15,400 piles (87.86%)**. Piling completion tracks Day 40 forecast (+5 days ahead of recovery target; +42 calendar days float).
   - Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
