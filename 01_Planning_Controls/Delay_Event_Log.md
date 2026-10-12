@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** Day 50, Month 2 (2026-11-20)
+**Data Date:** Day 51, Month 2 (2026-11-21)
 
 ---
 
@@ -302,6 +302,13 @@
   - PV Module Mounting Advances to 33,500 Modules / 19.43 MWp: ELECTRA mounted 1,600 TOPCon bifacial 580W modules in Block 1 today, taking cumulative module installation to **33,500 modules (19.43 MWp / 19.39% of plant capacity)** pacing at **+35 calendar days ahead of baseline schedule**. DC string cabling reached **1,130 / 6,400 strings (17.66% scope)**. Handover Certificate `HC-MEC-ELC-003` prepared for Block 2 handover.
   - 33/220kV GSS Substation: In the Control Building, secondary injection testing, relay auxiliary wiring, and CT/PT circuit verification commenced across all 16 cubicles of 33kV Switchboard-A under CIPHER and SWITCHMAN (+15d float). 220kV GIS hall maintains ISO cleanroom conditions; certified 25T crane ready for switchgear delivery (+12d float). 100MVA MPT manufacturing entering **Day 38 of 182** at POWERTRANS works on schedule (0d float). 33kV trenching reached 46.67% (11.2 km) and cabling reached 23.33% (16.8 km).
   - Safety Milestone: 50 consecutive operational days completed with Zero Harm / Zero LTI across all fronts (**89,444 safe man-hours**).
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
+- **Day 51 Performance Validation (2026-11-21 / Month 2 / Week 8 Day 2):**
+  - Major Trade Handover Milestone — Handover Certificate `HC-MEC-ELC-003` Executed: RAMPART, SENTINEL, and ELECTRA formally executed `HC-MEC-ELC-003`, transferring custody of **Block 2 (all 850 tracker tables / 16.5 MWp)** to ELECTRA for module mounting and string cabling (+35 calendar days ahead of baseline schedule). Blocks 1 and 2 (1,700 tables / 33.0 MWp) are now both under active electrical installation.
+  - PV Module Mounting Crosses 20 MWp (35,100 Modules Installed): ELECTRA mounted 1,600 TOPCon bifacial 580W modules today, advancing cumulative installation across the twenty-megawatt milestone to **35,100 modules (20.36 MWp / 20.31% of plant capacity)**; pacing at **+35 calendar days ahead of baseline schedule**. DC string cabling reached **1,185 / 6,400 strings (18.52% scope)**.
+  - Solar Tracker Assembly — Block 6 Passes 50% & Plant Total Reaches 92.75%: EREKTOR assembled 120 tracker tables in Block 6 today, taking Block 6 to **480 / 850 tables (56.47%)** and cumulative project tracker assembly to **4,730 / 5,100 tables (92.75% complete vs 2,580 baseline plan)** — **+2,150 tables / +83.3% ahead of baseline pace**, preserving **+45 calendar days total float**. Only 370 tables remain in the entire 100MW project! Blocks 1 through 5 remain 100% mechanically complete.
+  - 33/220kV GSS Substation: In the Control Building, secondary injection testing, CT/PT circuit verification, and numeric protection relay auxiliary wiring continued across 33kV Switchboard-A under CIPHER and SWITCHMAN (+15d float). First 4 cubicles of Switchboard-B positioned on base channels. 220kV GIS hall maintains ISO cleanroom conditions; certified 25T crane ready on standby (+12d float). 100MVA MPT manufacturing entering **Day 39 of 182** at POWERTRANS works on schedule (0d float). 33kV trenching reached 48.33% (11.6 km) and cabling reached 24.17% (17.4 km).
+  - Safety Milestone: 51 consecutive operational days completed with Zero Harm / Zero LTI across all fronts (**91,364 safe man-hours**).
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
