@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** Day 41, Month 2 (2026-11-11)
+**Data Date:** Day 42, Month 2 (2026-11-12)
 
 ---
 
@@ -246,6 +246,13 @@
   - Mechanical Tracker Assembly: EREKTOR assembled 120 tracker tables in Block 5 (140 / 850 tables, 16.47%). Cumulative tracker assembly reached **3,540 / 5,100 tables (69.41% completion; +45d float preserved)**.
   - PV Module Mounting: ELECTRA mounted 1,500 modules in Block 1, reaching **19,200 modules (11.14 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **640 strings (10.0% of plant scope)**.
   - Site Demobilization: Crawler DTH hammer drill rigs and high-pressure compressors formally demobilized from site following 100% piling completion.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
+- **Day 42 Performance Validation (2026-11-12 / Month 2 / Week 6 Day 7 / Week 6 Formal Closeout):**
+  - Master CPM Float & Risk Status: Zero open delay events across project network. Network stability verified with total float on critical path = 0 days (Month 18 COD secure).
+  - Mechanical Tracker Assembly Crosses 70%: EREKTOR assembled 120 tables in Block 5 (260 / 850 tables, 30.59%). Cumulative tracker assembly reached **3,660 / 5,100 tables (71.76% completion)** vs 2,040 baseline plan (**+1,620 tables / +79.4% ahead of baseline pace; +45d float preserved**).
+  - PV Module Mounting Crosses 20k Units & 12 MWp: ELECTRA installed 1,500 modules in Block 1, crossing both 20,000 units and 12 MWp at **20,700 modules (12.01 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **690 strings (10.78% of plant scope)**.
+  - 33/220kV GSS Substation: 220kV GIS hall crane runway rails aligned and torqued (+12d float). Floor screed ready for epoxy finish. 100MVA MPT manufacturing entering **Day 30 of 182** at POWERTRANS works on schedule (0d float).
+  - HSE Milestone: 6 full operational weeks completed with Zero Harm / Zero LTI (**74,084 safe man-hours**).
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
