@@ -4,7 +4,7 @@
 **Custodian:** KRONOS (Planning Manager)  
 **Project:** HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan  
 **Contract Baseline:** FIDIC Yellow Book 1999  
-**Data Date:** 2026-10-06 (Day 2, Month 1)
+**Data Date:** 2026-10-08 (Day 4, Month 1)
 
 ---
 
@@ -13,6 +13,7 @@
 | Delay ID | Event Ref | Date Occurred | Event Description | Responsible Party | Affected Path / WBS | Critical Path? | Local Delay | Master COD Delay | Notice 20.1 Deadline | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **DEL-001** | EVT-001 | 2026-10-06 | Geotechnical Anomaly — Competent Rock at 0.80m in Block 6 vs 1.50m design embedment depth causing pile refusal. | Employer (FIDIC Sub-Clause 4.12 Unforeseeable Physical Condition) | `HEL.60` PV Field Piling (Block 6) / `HEL-CIV-PV-PLG-0600` | No (Total Float = +45d) | +24 calendar days (Block 6 local path) | **0 days** (Absorbed by re-sequencing Blocks 1–5 first & float) | 2026-11-03 (28 days) | ACTIVE / MITIGATION IMPLEMENTED |
+| **DEL-002** | EVT-002 | 2026-10-06 | UzbekEnergo Grid Code Revision — Primary Frequency Response (PFR) capability mandated; redesign of Protection Philosophy (`HEL-PR-PHL-0200`). | Employer / Utility (FIDIC Sub-Clause 13.7 & Sub-Clause 13.1) | `HEL.30` Engineering / `HEL.70` 33/220kV GSS Substation (`HEL-ENG-SS-PRT-1010`) | **YES (Critical Path: 0d Float)** | +7 to +14 calendar days (GSS engineering path) | **+7 to +14 calendar days** (Critical path day-for-day exposure) | 2026-11-03 (28 days) | ACTIVE / TIA FRAGNET INSERTED |
 
 ---
 
@@ -47,3 +48,38 @@
 - **Contractual & Commercial Actions:**
   - Notice Served: COUNSEL served formal FIDIC Sub-Clause 4.12 / 20.1 Notice of Claim HELIOS-NTC-001 on 2026-10-06 (Claim Ref CLM-001, 26 days ahead of 2026-11-03 statutory deadline).
   - Cost tracking established with LEDGER under code `CC-VAR-EVT-001` to capture equipment mobilization, tooling wear, and grouting costs.
+
+---
+
+### Event Record: DEL-002 (EVT-002)
+- **Activity Affected:** `HEL-ENG-SS-PRT-1010` (Rework of Substation Protection & Control Philosophy)
+- **Predecessor:** `HEL-ENG-SS-PRT-1000` (Receipt of Revised UzbekEnergo Grid Code & Issue MOC-002)
+- **Successor:** `HEL-ENG-SS-PRT-1020` (UzbekEnergo / NEGU Formal Review & Approval Cycle) -> `HEL-PRO-SS-MPT-2010` (MPT & High Voltage Equipment Manufacturing Release)
+- **Discovery Date:** 2026-10-06 (Project Day 2, Month 1 from LNTP; Formally logged Day 4: 2026-10-08)
+- **Baseline Schedule Context:**
+  - Today: Day 4, Month 1
+  - Site Mobilization (`HEL.20`): Month 2
+  - Engineering Freeze Milestone: Month 3
+  - First Energization (Back-feed from NEGU): Month 16
+  - Grid Synchronization / COD (`HEL.10`): Month 18
+  - Total Float on Substation Path: **0 calendar days (True Master Critical Path)**.
+- **CPM Float Status & Critical Path Impact:**
+  - Unlike PV field works (which possess +45d float), the 33/220kV GSS electrical engineering path dictates the project completion date.
+  - Zero float available: any extension to `HEL-ENG-SS-PRT-1010` or the subsequent utility review cycle impacts COD directly day-for-day.
+  - Critical Path status: **CRITICAL PATH DELAY EXPOSURE (Amber / High Priority)**.
+- **Fragnet Structure (`FRAG-EVT-002`):**
+  1. `FRAG-PFR-001`: Joint Protection & Automation Technical Feasibility Review (VOLTA / CIPHER) — 2 calendar days
+  2. `FRAG-PFR-002`: Protection Philosophy Revision `HEL-PR-PHL-0200 Rev 1` & SLD `HEL-HV-SLD-0101` Update (ARCHON / CIPHER) — 5 to 12 calendar days (Total engineering rework: **7 to 14 calendar days**)
+     - *Best-case (Firmware only via PPC & droop logic):* 7 calendar days total duration.
+     - *Worst-case (CT/PT Hardware modifications, sizing & vendor coordination):* 14 calendar days total duration.
+  3. `FRAG-PFR-003`: Formal Submission to UzbekEnergo / NEGU and Contractual Review (ARCHON / GRIDMASTER) — 14 calendar days contractual cycle per Yellow Book Sub-Clause 5.2.
+  4. `FRAG-PFR-004`: Baseline Schedule Recalculation & Time Impact Analysis (TIA) Finalization (KRONOS) — 2 calendar days.
+- **Mitigation & Recovery Actions:**
+  - Hold placed on 220kV instrument transformer PO releases (`CONVOY`) to avoid procurement obsolescence or cancellation charges.
+  - Fast-track technical alignment workshop requested with UzbekEnergo grid compliance engineers to run review concurrently with final redrafting, targeting reduction of review duration from 14d to 7d.
+  - If hardware change is confirmed, explore air-freighting critical long-lead relay components to recover switchgear delivery window.
+- **Contractual & Commercial Actions:**
+  - Notice Served: Formal FIDIC Sub-Clause 13.7 / 13.1 / 20.1 Notice of Claim `HELIOS-NTC-002` drafted/issued by COUNSEL on 2026-10-06 (Claim Ref `CLM-002`).
+  - Statutory 28-day time-bar deadline: 2026-11-03 preserved.
+  - Full detailed claim under Sub-Clause 20.1 due within 42 days (2026-11-17).
+  - Cost code `CC-VAR-EVT-002` assigned by LEDGER for engineering rework and potential vendor variation costs.
