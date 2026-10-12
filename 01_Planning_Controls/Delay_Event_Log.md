@@ -225,6 +225,14 @@
   - 33/220kV GSS Substation: 220kV GIS building wall cladding 60% hung and sealed, roof metal decking initiated (+12 calendar days float). 100MVA MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (**Day 26 of 182**) on schedule at POWERTRANS works. Critical path total float = **0 calendar days**; COD locked at Month 18.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**.
   - Net Project COD impact remains **0 days**.
+- **Day 39 Performance Validation (2026-11-09 / Month 2 / Week 6 Day 4 / Final Piling Eve):**
+  - Major Geotechnical Milestone — Block 6 DTH Pre-Drilling 100% Complete: Activity `FRAG-PRD-001` rock pilot pre-drilling achieved **100.0% completion across all 2,560 boreholes** with zero safety or environmental incidents (+42d float). Rigs decommissioned.
+  - Major Mechanical Milestone — Block 3 100% Mechanical Completion: Activity `HEL-MEC-PV-TRK-0300` (Block 3 Tracker Table Erection) achieved **100.0% completion (850 / 850 tables)** with zero open punch items (+45d float). Blocks 1, 2, and 3 (2,550 tables total / 50MWp) are now 100% mechanically complete. Block 4 reached **750 / 850 tables (88.24%)**. Plant-wide tracker assembly reached **3,300 / 5,100 tables (64.71% completion)** vs 1,860 baseline plan (**+1,440 tables / +77.4% ahead of baseline pace; +45d float**).
+  - Substructure Final Countdown (Only 190 Remaining Piles!): Block 6 rock-socket pile driving reached **2,370 / 2,560 piles (92.58%)**. Total project piling reached **15,210 / 15,400 piles (98.77%; only 190 piles remaining)**. Final completion of all plant piling strictly scheduled for Day 40 (+42d float).
+  - PV Module Mounting: Activity `HEL-ELC-PV-MOD-0100` progressed by 1,500 modules today, crossing 16,000 modules to reach **16,200 modules (9.40 MWp; +35 calendar days ahead of baseline schedule)** in Block 1. 100% torque clamp (8–10 N·m) and megger insulation (>1000 MΩ) verified.
+  - 33/220kV GSS Substation: 220kV GIS building wall cladding 85% hung, roof metal decking reached 40% (+12 calendar days float). 100MVA MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (**Day 27 of 182**) on schedule at POWERTRANS works. Critical path total float = **0 calendar days**; COD locked at Month 18.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**.
+  - Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
