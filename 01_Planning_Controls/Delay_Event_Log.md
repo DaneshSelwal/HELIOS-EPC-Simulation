@@ -285,6 +285,12 @@
   - PV Module Mounting & DC Cabling: Sustained at 1,600 modules/day in Block 1, reaching **28,700 modules (16.65 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **965 strings (15.08% scope — crosses 15%!)**.
   - HSE Milestone: Cumulative safe man-hours reached **83,684 safe man-hours** with Zero Harm / Zero LTI across 47 consecutive days.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
+- **Day 48 Performance Validation (2026-11-18 / Month 2 / Week 7 Day 6 / Week 7 Closeout Eve):**
+  - Major Mechanical Milestone — Block 6 Tracker Campaign Kickoff: EREKTOR commenced assembly in Block 6 (final block of the 100MW project), erecting the first 120 tables (120 / 850 tables, 14.12%). Cumulative tracker assembly reached **4,370 / 5,100 tables (85.69% completion)** vs 2,400 baseline plan (**+1,970 tables / +82.1% ahead of baseline pace; +45d float preserved**). Blocks 1 to 5 remain 100% mechanically complete.
+  - PV Module Mounting Crosses 30,000 Modules & 17.5 MWp: Sustained at 1,600 modules/day in Block 1, reaching **30,300 modules (17.57 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling crossed 1,000 strings to reach **1,020 / 6,400 strings (15.94% scope)**.
+  - 33/220kV GSS Substation: 220kV GIS hall indoor environmental cleanliness and HVAC air purging maintained ahead of switchgear arrival (+12d float). First 8 cubicles of 33kV switchgear busbar coupled and torqued in Control Room. 100MVA MPT manufacturing entering **Day 36 of 182** at POWERTRANS works on schedule (0d float). 33kV trenching reached 43.33% (10.4 km) and cabling reached 21.67% (15.6 km).
+  - HSE Milestone: Cumulative safe man-hours reached **85,604 safe man-hours** with Zero Harm / Zero LTI across 48 consecutive days.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
