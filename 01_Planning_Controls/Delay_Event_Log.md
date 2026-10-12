@@ -279,6 +279,12 @@
   - 33/220kV GSS Substation — Control Building 100% Civil Complete & Crane Testing: Substation Control Building reached 100.0% civil completion (240 / 240 m²); 25T EOT bridge crane completed static deflection and electrical interlock checks in 220kV GIS hall; dynamic proof load testing scheduled for Day 47 (`HEL-CIV-SS-GIS-2070`; +12d float). 100MVA MPT manufacturing entering **Day 34 of 182** at POWERTRANS works on schedule (0d float). 33kV trenching reached 40.0% (9.6 km) and cabling reached 20.0% (14.4 km).
   - HSE Milestone: Cumulative safe man-hours reached **81,764 safe man-hours** with Zero Harm / Zero LTI across 46 consecutive days.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
+- **Day 47 Performance Validation (2026-11-17 / Month 2 / Week 7 Day 5):**
+  - Monumental Mechanical Milestone — Block 5 100% Mechanical Completion: EREKTOR assembled the remaining 110 tables in Block 5 (850 / 850 tables, 100.0% mechanical completion). Five out of six blocks (Blocks 1–5 — 4,250 tables / 83.33% of plant scope) are now 100% mechanically erected! Cumulative tracker assembly reached **4,250 / 5,100 tables (83.33% completion)** vs 2,340 baseline plan (**+1,910 tables / +81.6% ahead of baseline pace; +45d float preserved**). Block 6 staging commenced.
+  - 33/220kV GSS Substation — 25T EOT Crane Proof Load Tested & Certified: Crane successfully lifted 31.25 tonnes (125% rated load) inside 220kV GIS hall under third-party certification; zero permanent deformation; certified ready for GIS switchgear module rigging (`HEL-CIV-SS-GIS-2070`; +12d float). First 8 cubicles of 33kV switchgear positioned in Control Room. 100MVA MPT manufacturing entering **Day 35 of 182** at POWERTRANS works on schedule (0d float).
+  - PV Module Mounting & DC Cabling: Sustained at 1,600 modules/day in Block 1, reaching **28,700 modules (16.65 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **965 strings (15.08% scope — crosses 15%!)**.
+  - HSE Milestone: Cumulative safe man-hours reached **83,684 safe man-hours** with Zero Harm / Zero LTI across 47 consecutive days.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
