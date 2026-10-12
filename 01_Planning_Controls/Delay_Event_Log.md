@@ -273,6 +273,12 @@
   - 33/220kV GSS Substation — 25T Crane Busbar Energization: Power feed busbars for the 25-tonne EOT bridge crane energized; travel and hoist commissioning tests initiated (`HEL-CIV-SS-GIS-2070`; +12d float). Control Room finishing reached 98%; battery room acid-proof tiling 100% complete; SCADA cubicles positioning underway. 100MVA MPT manufacturing entering **Day 33 of 182** at POWERTRANS works on schedule (0d float).
   - HSE Milestone: Cumulative safe man-hours reached **79,844 safe man-hours** with Zero Harm / Zero LTI across 45 consecutive days.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
+- **Day 46 Performance Validation (2026-11-16 / Month 2 / Week 7 Day 4):**
+  - Major Mechanical Milestone — Block 5 Tracker Assembly Reaches 87%: EREKTOR assembled 120 tables in Block 5 (740 / 850 tables, 87.06% — only 110 tables remaining). Cumulative tracker assembly reached **4,140 / 5,100 tables (81.18% completion)** vs 2,280 baseline plan (**+1,860 tables / +81.6% ahead of baseline pace; +45d float preserved**). Blocks 1 to 4 remain 100% mechanically complete.
+  - PV Module Mounting Advances to 27,100 Modules / 15.72 MWp: Sustained at 1,600 modules/day in Block 1, reaching **27,100 modules (15.72 MWp; +35 calendar days ahead of baseline schedule)**. DC string cabling reached **910 strings (14.22% scope)**.
+  - 33/220kV GSS Substation — Control Building 100% Civil Complete & Crane Testing: Substation Control Building reached 100.0% civil completion (240 / 240 m²); 25T EOT bridge crane completed static deflection and electrical interlock checks in 220kV GIS hall; dynamic proof load testing scheduled for Day 47 (`HEL-CIV-SS-GIS-2070`; +12d float). 100MVA MPT manufacturing entering **Day 34 of 182** at POWERTRANS works on schedule (0d float). 33kV trenching reached 40.0% (9.6 km) and cabling reached 20.0% (14.4 km).
+  - HSE Milestone: Cumulative safe man-hours reached **81,764 safe man-hours** with Zero Harm / Zero LTI across 46 consecutive days.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**. Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
