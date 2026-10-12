@@ -202,6 +202,13 @@
   - 33/220kV GSS Substation: 220kV GIS building superstructure steel framing completed 6 portal frame roof bays, purlins and roof bracing commenced (+12 calendar days float). 100MVA MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (**Day 23 of 182**) on schedule at POWERTRANS works. Critical path total float = **0 calendar days**; COD locked at Month 18.
   - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**.
   - Net Project COD impact remains **0 days**.
+- **Day 36 Performance Validation (2026-11-06 / Month 2 / Week 6 Day 1 / Week 6 Kickoff):**
+  - Substructure Countdown (Only 430 Remaining Piles): Block 6 rock-socket pile driving reached **2,130 / 2,560 piles (83.20%)**; DTH pre-drilling crossed 90% to **2,305 / 2,560 holes (90.04%)** maintaining 175-socket advance buffer. Total project piling reached **14,970 / 15,400 piles (97.21%; only 430 piles remaining)**. Completion forecast firmly locked at Day 40 (+42d float).
+  - Mechanical Tracker Assembly: Quad-gang assembly sustained 120 tables/day, reaching **2,940 / 5,100 tables (57.65% completion)** vs 1,680 baseline plan (**+1,260 tables / +75.0% ahead of baseline pace; +45d float**). Block 1 reached 835 tables (98.24% — 15 tables to 100%) and Block 2 reached 820 tables (96.47% — 30 tables to 100%).
+  - PV Module Mounting: Activity `HEL-ELC-PV-MOD-0100` progressed by 1,500 modules today, reaching **11,700 modules (6.79 MWp; +35 calendar days ahead of baseline schedule)** in Block 1. 100% torque clamp (8–10 N·m) and megger insulation (>1000 MΩ) verified.
+  - 33/220kV GSS Substation: 220kV GIS building superstructure steel framing completed 50% of purlins and wall girts across 6 portal bays (+12 calendar days float). 100MVA MPT manufacturing activity `HEL-PRO-SS-MPT-2010` (**Day 24 of 182**) on schedule at POWERTRANS works. Critical path total float = **0 calendar days**; COD locked at Month 18.
+  - EVM Performance Dashboard: **SPI = 1.15**, **CPI = 1.02**.
+  - Net Project COD impact remains **0 days**.
 - **Workfront Re-sequencing Decision:**
   - Piling sequence modified: Deploy all hydraulic ramming rigs to **Blocks 1 through 5 first** upon Month 4 mobilization.
   - Re-allocate Block 6 to the rear position (Campaign Step 6, projected start Month 6–7).
