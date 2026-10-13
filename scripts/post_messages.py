@@ -51,13 +51,19 @@ def run_command(cmd):
         print(f"Command failed ({res.returncode}): {cmd}\nStderr: {res.stderr}", file=sys.stderr)
     return res.stdout.strip(), res.returncode
 
+EXISTING_LABELS = None
+
 def ensure_label_exists(label_name):
-    cmd = f'gh label list --json name -q ".[].name"'
-    out, rc = run_command(cmd)
-    existing_labels = set(out.splitlines())
-    if label_name not in existing_labels:
+    global EXISTING_LABELS
+    if EXISTING_LABELS is None:
+        cmd = f'gh label list --json name -q ".[].name"'
+        out, rc = run_command(cmd)
+        EXISTING_LABELS = set(out.splitlines()) if rc == 0 else set()
+    if label_name not in EXISTING_LABELS:
         # Create label
-        run_command(f'gh label create "{label_name}" --color "ededed" --force')
+        out, rc = run_command(f'gh label create "{label_name}" --color "ededed" --force')
+        if rc == 0:
+            EXISTING_LABELS.add(label_name)
 
 def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_day, sim_time="09:00", action_by_day=None, parent_msg_id="", cc_agents=None, thread_key=None):
     """
