@@ -99,10 +99,10 @@ def run_simulation_day(target_day, prior_state=None, history=None, write_state=T
     # A. Engineering Packages
     # Daily incremental progress for active design packages
     eng_daily_burn = {
-        "WP-ENG-CIV": (0.85, 2600.0),  # (progress %, daily actual cost)
-        "WP-ENG-ELE": (0.75, 2800.0),
-        "WP-ENG-MEC": (0.70, 1500.0),
-        "WP-ENG-SUB": (0.80, 1600.0)
+        "WP-ENG-CIV": (0.85, 9100.0),  # (progress %, daily actual cost)
+        "WP-ENG-ELE": (0.75, 12300.0),
+        "WP-ENG-MEC": (0.70, 5750.0),
+        "WP-ENG-SUB": (0.80, 6550.0)
     }
 
     for eng_id, (prog_rate, cost_rate) in eng_daily_burn.items():
@@ -128,8 +128,16 @@ def run_simulation_day(target_day, prior_state=None, history=None, write_state=T
                 "eta": 194
             }
             mpt_wp["committed"] = 1800000.0
-            # 15% advance payment incurred
-            mpt_wp["actual_cost"] = round(mpt_wp["actual_cost"] + 270000.0, 2)
+            # Advance payments (15% APBG) and commitments are cash flow, NOT ACWP:
+            mpt_wp["advance_paid_usd"] = 270000.0
+            mpt_wp["cash_flow_out_usd"] = 270000.0
+            # Procurement Rule of Credit: PO issued milestone (10% of package budget earned)
+            if "milestones" not in mpt_wp:
+                mpt_wp["milestones"] = {}
+            mpt_wp["milestones"]["po_issued"] = True
+            mpt_wp["qc_accepted"] = 0.10 * mpt_wp["total_qty"]
+            # ACWP accrues only on certified milestone work:
+            mpt_wp["actual_cost"] = round(mpt_wp["actual_cost"] + 180000.0, 2)
 
     # Check for procurement deliveries
     for proc_id in ["WP-PROC-PIL", "WP-PROC-TRK", "WP-PROC-MOD", "WP-PROC-INV", "WP-PROC-TRA", "WP-PROC-GIS", "WP-PROC-CAB-DC", "WP-PROC-CAB-MV", "WP-PROC-BOP"]:
@@ -138,6 +146,11 @@ def run_simulation_day(target_day, prior_state=None, history=None, write_state=T
             po = wp["po_issued"]
             if target_day >= po["eta"] and wp["delivered"] < wp["total_qty"]:
                 wp["delivered"] = wp["total_qty"]
+                if "milestones" not in wp:
+                    wp["milestones"] = {}
+                wp["milestones"]["delivered"] = True
+                wp["qc_accepted"] = wp["total_qty"]
+                wp["actual_cost"] = wp["budget"]
                 wp["qc_accepted"] = round(wp["total_qty"] * 0.98, 2)
 
     # C. Construction Packages
@@ -256,6 +269,9 @@ def run_simulation_day(target_day, prior_state=None, history=None, write_state=T
 
     res_summary = {
         "day": target_day,
+        "bcws": evm_metrics["bcws"],
+        "bcwp": evm_metrics["bcwp"],
+        "acwp": evm_metrics["acwp"],
         "piles": int(new_state["work_packages"]["WP-CON-CIV-PIL"]["installed"]),
         "modules": int(new_state["work_packages"]["WP-CON-MEC-MOD"]["installed"]),
         "spi": evm_metrics["spi"],
@@ -278,6 +294,9 @@ if __name__ == "__main__":
     elif args.from_day and args.to_day:
         state_acc = None
         hist_acc = []
+        header = f"{'Day':4} | {'BCWS ($)':12} | {'BCWP ($)':12} | {'ACWP ($)':12} | {'SPI':7} | {'CPI':7} | {'Events':10} | {'Status/Warning'}"
+        print(header)
+        print("-" * len(header))
         for d in range(args.from_day, args.to_day + 1):
             res, state_acc = run_simulation_day(d, prior_state=state_acc, history=hist_acc, write_state=not args.dry_run)
             hist_acc.append({
@@ -286,7 +305,15 @@ if __name__ == "__main__":
                 "spi": res["spi"],
                 "cpi": res["cpi"]
             })
-            evts = ",".join(res["active_events"]) if res["active_events"] else "none"
-            print(f"Day {res['day']:3d} | Piles: {res['piles']:5d} | Modules: {res['modules']:6d} | SPI: {res['spi']:.4f} | CPI: {res['cpi']:.4f} | Events: {evts}")
+            cpi = res["cpi"]
+            warn = ""
+            if cpi < 0.85:
+                warn = "WARNING: CPI < 0.85 (Cost Overrun Breach)"
+            elif cpi > 1.15:
+                warn = "WARNING: CPI > 1.15 (Cost Underrun Breach)"
+            else:
+                warn = "OK (Within 0.85-1.15)"
+            evts = ",".join(res["active_events"]) if res["active_events"] else "None"
+            print(f"Day {res['day']:2d} | ${res['bcws']:10,.2f} | ${res['bcwp']:10,.2f} | ${res['acwp']:10,.2f} | {res['spi']:.4f}  | {res['cpi']:.4f}  | {evts:10} | {warn}")
     else:
         print("Usage: python3 engine/run_day.py --day N OR python3 engine/run_day.py --from START --to END")

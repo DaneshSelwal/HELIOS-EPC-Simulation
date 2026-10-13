@@ -7,9 +7,9 @@
   "project_totals": {
     "contract_price_usd": 85000000.0,
     "bac_usd": 85000000.0,
-    "bcws_usd": 212500.00,
-    "bcwp_usd": 212700.00,
-    "acwp_usd": 218000.00,
+    "bcws_usd": 212500.0,
+    "bcwp_usd": 212700.0,
+    "acwp_usd": 218000.0,
     "spi": 1.0009,
     "cpi": 0.9757
   },
@@ -97,7 +97,18 @@
       "budget": 1540000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-CIV"]
+      "predecessors": [
+        "WP-ENG-CIV"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-TRK": {
       "wp_id": "WP-PROC-TRK",
@@ -114,7 +125,18 @@
       "budget": 8500000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-MEC"]
+      "predecessors": [
+        "WP-ENG-MEC"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-MOD": {
       "wp_id": "WP-PROC-MOD",
@@ -131,7 +153,18 @@
       "budget": 22000000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-ELE"]
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-INV": {
       "wp_id": "WP-PROC-INV",
@@ -148,7 +181,18 @@
       "budget": 5500000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-ELE"]
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-TRA": {
       "wp_id": "WP-PROC-TRA",
@@ -165,7 +209,18 @@
       "budget": 1800000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-SUB"]
+      "predecessors": [
+        "WP-ENG-SUB"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-GIS": {
       "wp_id": "WP-PROC-GIS",
@@ -182,7 +237,18 @@
       "budget": 2200000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-SUB"]
+      "predecessors": [
+        "WP-ENG-SUB"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-CAB-DC": {
       "wp_id": "WP-PROC-CAB-DC",
@@ -199,7 +265,18 @@
       "budget": 3260000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-ELE"]
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-CAB-MV": {
       "wp_id": "WP-PROC-CAB-MV",
@@ -216,7 +293,18 @@
       "budget": 1200000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-ELE"]
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-PROC-BOP": {
       "wp_id": "WP-PROC-BOP",
@@ -233,7 +321,19 @@
       "budget": 5000000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-CIV", "WP-ENG-ELE"]
+      "predecessors": [
+        "WP-ENG-CIV",
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
     },
     "WP-CON-MOB": {
       "wp_id": "WP-CON-MOB",
@@ -267,7 +367,10 @@
       "budget": 2500000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-CON-MOB", "WP-ENG-CIV"]
+      "predecessors": [
+        "WP-CON-MOB",
+        "WP-ENG-CIV"
+      ]
     },
     "WP-CON-CIV-PIL": {
       "wp_id": "WP-CON-CIV-PIL",
@@ -284,7 +387,11 @@
       "budget": 2200000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-CIV", "WP-PROC-PIL", "WP-CON-CIV-GRD"]
+      "predecessors": [
+        "WP-ENG-CIV",
+        "WP-PROC-PIL",
+        "WP-CON-CIV-GRD"
+      ]
     },
     "WP-CON-MEC-TRK": {
       "wp_id": "WP-CON-MEC-TRK",
@@ -301,7 +408,11 @@
       "budget": 4500000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-MEC", "WP-PROC-TRK", "WP-CON-CIV-PIL"]
+      "predecessors": [
+        "WP-ENG-MEC",
+        "WP-PROC-TRK",
+        "WP-CON-CIV-PIL"
+      ]
     },
     "WP-CON-MEC-MOD": {
       "wp_id": "WP-CON-MEC-MOD",
@@ -318,7 +429,11 @@
       "budget": 4800000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-ELE", "WP-PROC-MOD", "WP-CON-MEC-TRK"]
+      "predecessors": [
+        "WP-ENG-ELE",
+        "WP-PROC-MOD",
+        "WP-CON-MEC-TRK"
+      ]
     },
     "WP-CON-ELE-DC": {
       "wp_id": "WP-CON-ELE-DC",
@@ -335,7 +450,10 @@
       "budget": 3000000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-PROC-CAB-DC", "WP-CON-MEC-MOD"]
+      "predecessors": [
+        "WP-PROC-CAB-DC",
+        "WP-CON-MEC-MOD"
+      ]
     },
     "WP-CON-ELE-MV": {
       "wp_id": "WP-CON-ELE-MV",
@@ -352,7 +470,10 @@
       "budget": 2000000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-PROC-CAB-MV", "WP-CON-CIV-FND"]
+      "predecessors": [
+        "WP-PROC-CAB-MV",
+        "WP-CON-CIV-FND"
+      ]
     },
     "WP-CON-CIV-FND": {
       "wp_id": "WP-CON-CIV-FND",
@@ -369,7 +490,10 @@
       "budget": 1800000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-CIV", "WP-CON-CIV-GRD"]
+      "predecessors": [
+        "WP-ENG-CIV",
+        "WP-CON-CIV-GRD"
+      ]
     },
     "WP-CON-SUB-ERE": {
       "wp_id": "WP-CON-SUB-ERE",
@@ -386,7 +510,12 @@
       "budget": 3200000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-ENG-SUB", "WP-CON-CIV-FND", "WP-PROC-TRA", "WP-PROC-GIS"]
+      "predecessors": [
+        "WP-ENG-SUB",
+        "WP-CON-CIV-FND",
+        "WP-PROC-TRA",
+        "WP-PROC-GIS"
+      ]
     },
     "WP-TNC-COL": {
       "wp_id": "WP-TNC-COL",
@@ -403,7 +532,11 @@
       "budget": 1500000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-CON-MEC-MOD", "WP-CON-ELE-DC", "WP-CON-ELE-MV"]
+      "predecessors": [
+        "WP-CON-MEC-MOD",
+        "WP-CON-ELE-DC",
+        "WP-CON-ELE-MV"
+      ]
     },
     "WP-TNC-HOT": {
       "wp_id": "WP-TNC-HOT",
@@ -420,7 +553,10 @@
       "budget": 1250000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-TNC-COL", "WP-CON-SUB-ERE"]
+      "predecessors": [
+        "WP-TNC-COL",
+        "WP-CON-SUB-ERE"
+      ]
     },
     "WP-TNC-GSS": {
       "wp_id": "WP-TNC-GSS",
@@ -437,7 +573,10 @@
       "budget": 1000000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-TNC-COL", "WP-CON-SUB-ERE"]
+      "predecessors": [
+        "WP-TNC-COL",
+        "WP-CON-SUB-ERE"
+      ]
     },
     "WP-TNC-PR": {
       "wp_id": "WP-TNC-PR",
@@ -454,7 +593,10 @@
       "budget": 500000.0,
       "committed": 0.0,
       "actual_cost": 0.0,
-      "predecessors": ["WP-TNC-HOT", "WP-TNC-GSS"]
+      "predecessors": [
+        "WP-TNC-HOT",
+        "WP-TNC-GSS"
+      ]
     }
   }
 }
