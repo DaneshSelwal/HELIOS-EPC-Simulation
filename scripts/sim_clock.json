@@ -1,8 +1,9 @@
 {
-  "day": 4,
+  "day": 5,
   "month": 1,
   "week": 1,
-  "week_day": 4,
-  "sim_date": "2026-10-09",
-  "last_advanced_real_ts": "2026-10-12T04:41:27Z"
+  "week_day": 5,
+  "sim_date": "2026-10-10",
+  "status": "Day 5 complete",
+  "last_advanced_real_ts": "2026-10-13T15:26:32.186610"
 }
