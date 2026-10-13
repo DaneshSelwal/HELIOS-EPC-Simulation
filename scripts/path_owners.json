@@ -1,0 +1,164 @@
+{
+  "rules": [
+    {
+      "pattern": ".*DPR.*",
+      "owner": "SIGMA",
+      "description": "Daily Progress Reports"
+    },
+    {
+      "pattern": "12_Daily_Reports/.*",
+      "owner": "SIGMA",
+      "description": "Daily Reports folder"
+    },
+    {
+      "pattern": ".*WPR.*",
+      "owner": "SIGMA",
+      "description": "Weekly Progress Reports"
+    },
+    {
+      "pattern": "13_Weekly_Reports/.*",
+      "owner": "SIGMA",
+      "description": "Weekly Reports folder"
+    },
+    {
+      "pattern": ".*MPR.*",
+      "owner": "KRONOS",
+      "description": "Monthly Progress Reports"
+    },
+    {
+      "pattern": "14_Monthly_Reports/.*",
+      "owner": "KRONOS",
+      "description": "Monthly Reports folder"
+    },
+    {
+      "pattern": ".*Delay_Event_Log.*",
+      "owner": "KRONOS",
+      "description": "Delay Event Log"
+    },
+    {
+      "pattern": ".*NCR.*",
+      "owner": "SENTINEL",
+      "description": "Non-Conformance Register"
+    },
+    {
+      "pattern": ".*Procurement_Tracker.*",
+      "owner": "CONVOY",
+      "description": "Procurement Tracker"
+    },
+    {
+      "pattern": ".*Billing.*",
+      "owner": "INVOICE",
+      "description": "Billing Register"
+    },
+    {
+      "pattern": ".*PTW.*",
+      "owner": "AEGIS",
+      "description": "Permit To Work Log"
+    },
+    {
+      "pattern": ".*(?:Claim|Notice|NTC|Sub-Clause|FIDIC).*",
+      "owner": "COUNSEL",
+      "description": "Claims and FIDIC notice files"
+    },
+    {
+      "pattern": "11_Shared_Registers/Communication_Log\\.csv",
+      "owner": "HELIOS-ENGINE",
+      "description": "Communication Log CSV"
+    },
+    {
+      "pattern": "11_Shared_Registers/COMM_MATRIX\\.md",
+      "owner": "HELIOS-ENGINE",
+      "description": "Communication Matrix MD"
+    },
+    {
+      "pattern": "state/.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "State engine state snapshots"
+    },
+    {
+      "pattern": "engine/.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "Deterministic engine scripts and models"
+    },
+    {
+      "pattern": "scripts/.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "Simulation scripts"
+    },
+    {
+      "pattern": ".*STATE_AUDIT.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "State audit reports"
+    },
+    {
+      "pattern": "00_Project_Overview/archive/.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "State audit archive"
+    },
+    {
+      "pattern": "15_Event_Engine/.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "Event Engine files"
+    },
+    {
+      "pattern": "00_Project_Overview/.*",
+      "owner": "ATLAS",
+      "description": "Project Overview and Management"
+    },
+    {
+      "pattern": "01_Planning_Controls/.*",
+      "owner": "KRONOS",
+      "description": "Planning & Project Controls"
+    },
+    {
+      "pattern": "02_Engineering_Design/.*",
+      "owner": "ARCHON",
+      "description": "Engineering Design packages"
+    },
+    {
+      "pattern": "03_SCM/.*",
+      "owner": "CONVOY",
+      "description": "Supply Chain & Procurement"
+    },
+    {
+      "pattern": "04_Construction/.*",
+      "owner": "RAMPART",
+      "description": "Construction Management"
+    },
+    {
+      "pattern": "05_Quality/.*",
+      "owner": "SENTINEL",
+      "description": "Quality Assurance & Control"
+    },
+    {
+      "pattern": "06_EHS/.*",
+      "owner": "AEGIS",
+      "description": "Environment, Health & Safety"
+    },
+    {
+      "pattern": "07_Contracts/.*",
+      "owner": "COUNSEL",
+      "description": "Commercial & Contracts"
+    },
+    {
+      "pattern": "08_TC/.*",
+      "owner": "IGNITE",
+      "description": "Testing & Commissioning"
+    },
+    {
+      "pattern": "09_Admin/.*",
+      "owner": "SUMMIT",
+      "description": "Site Administration"
+    },
+    {
+      "pattern": "10_Subcontractors/.*",
+      "owner": "RAMPART",
+      "description": "Subcontractor Coordination"
+    },
+    {
+      "pattern": "11_Shared_Registers/.*",
+      "owner": "HELIOS-ENGINE",
+      "description": "Shared project registers"
+    }
+  ]
+}

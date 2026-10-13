@@ -264,5 +264,13 @@
     "name": "HERALD-CommunityPR",
     "email": "herald.helios.epc@gmail.com",
     "status": "NO_PERSONA_FILE"
+  },
+  "HELIOS-ENGINE": {
+    "name": "HELIOS-ENGINE",
+    "email": "engine.helios.epc@gmail.com"
+  },
+  "HELIOS_ENGINE": {
+    "name": "HELIOS-ENGINE",
+    "email": "engine.helios.epc@gmail.com"
   }
 }

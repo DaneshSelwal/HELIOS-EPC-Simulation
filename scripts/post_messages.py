@@ -82,7 +82,7 @@ def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_da
     msg_id = f"HEL-{from_dept}-{to_dept}-{msg_type}-{next_num:04d}"
     real_iso = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    action_by_str = f"Day {action_by_day:03d}" if action_by_day else f"Day {sim_day+1:03d}"
+    action_by_str = f"Day {int(action_by_day):03d}" if (action_by_day is not None and str(action_by_day).isdigit()) else f"Day {sim_day+1:03d}"
     cc_str = ", ".join(cc_agents) if cc_agents else "None"
     parent_ref = parent_msg_id if parent_msg_id else "None"
 
@@ -178,11 +178,12 @@ def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_da
 
     print(f"Posted {msg_id} on Issue #{issue_no}: {comment_url}")
 
-    # Commit via agent_commit.py
-    commit_script = os.path.join(REPO_ROOT, "scripts", "agent_commit.py")
-    if os.path.exists(commit_script):
-        commit_cmd = f'python3 "{commit_script}" --agent "{from_agent.upper()}" --message "comm({msg_type.lower()}): log {msg_id} - {subject[:40]}" --file "11_Shared_Registers/Communication_Log.csv"'
-        run_command(commit_cmd)
+    # Commit via commit_as
+    try:
+        from engine.git_identity import commit_as
+        commit_as(agent=from_agent.upper(), paths="11_Shared_Registers/Communication_Log.csv", message=f"comm({msg_type.lower()}): log {msg_id} - {subject[:40]}")
+    except Exception as e:
+        print(f"Warning: commit_as failed: {e}", file=sys.stderr)
 
     return {
         "msg_id": msg_id,
