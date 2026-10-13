@@ -1,0 +1,52 @@
+{
+  "day": 5,
+  "max_invocations_allowed": 8,
+  "total_triggered_candidates": 7,
+  "invoked_count": 7,
+  "deferred_count": 0,
+  "invoked": [
+    {
+      "agent": "TERRA",
+      "priority_score": 80,
+      "reason": "EVT-001 active: Geotechnical report shows rock layer at 0.8m in Block 6 (design assumed 1.5m)",
+      "inbox_items": []
+    },
+    {
+      "agent": "MERIDIAN",
+      "priority_score": 80,
+      "reason": "EVT-001 active: Geotechnical report shows rock layer at 0.8m in Block 6 (design assumed 1.5m)",
+      "inbox_items": []
+    },
+    {
+      "agent": "BASTION",
+      "priority_score": 80,
+      "reason": "EVT-001 active: Geotechnical report shows rock layer at 0.8m in Block 6 (design assumed 1.5m)",
+      "inbox_items": []
+    },
+    {
+      "agent": "KRONOS",
+      "priority_score": 80,
+      "reason": "EVT-001 active: Geotechnical report shows rock layer at 0.8m in Block 6 (design assumed 1.5m)",
+      "inbox_items": []
+    },
+    {
+      "agent": "COUNSEL",
+      "priority_score": 80,
+      "reason": "EVT-001 active: Geotechnical report shows rock layer at 0.8m in Block 6 (design assumed 1.5m)",
+      "inbox_items": []
+    },
+    {
+      "agent": "ATLAS",
+      "priority_score": 35,
+      "reason": "Scheduled daily duty: Project direction and PD brief orchestration",
+      "inbox_items": []
+    },
+    {
+      "agent": "SIGMA",
+      "priority_score": 30,
+      "reason": "Scheduled daily duty: Daily Progress Report (DPR) data compilation",
+      "inbox_items": []
+    }
+  ],
+  "deferred": []
+}
