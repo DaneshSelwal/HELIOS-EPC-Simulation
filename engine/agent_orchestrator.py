@@ -43,16 +43,18 @@ def load_json(filepath):
 def clean_json_response(raw_text):
     """Cleans up markdown code fences and extracts JSON object"""
     text = raw_text.strip()
-    # Remove markdown code fence if present
-    m = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', text, re.DOTALL)
-    if m:
-        text = m.group(1).strip()
-    else:
-        # Look for first { to last }
-        start = text.find("{")
-        end = text.rfind("}")
-        if start != -1 and end != -1 and end > start:
-            text = text[start:end+1]
+    if "```" in text:
+        m = re.search(r'```(?:json)?\s*(.*?)\s*```', text, re.DOTALL)
+        if m:
+            text = m.group(1).strip()
+    start = text.find("{")
+    end = text.rfind("}")
+    if start != -1 and end != -1 and end > start:
+        candidate = text[start:end+1]
+        try:
+            return json.loads(candidate)
+        except Exception:
+            pass
     try:
         return json.loads(text)
     except Exception as e:
