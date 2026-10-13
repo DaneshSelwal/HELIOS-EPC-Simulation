@@ -125,9 +125,9 @@ def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_da
             # Create new topic issue
             issue_title = f"[{msg_id}] D{sim_day:03d} | {from_dept} -> {to_dept} | {subject}"
             labels = [
-                f"from:{from_dept.lower()}",
-                f"to:{to_dept.lower()}",
-                f"type:{msg_type.lower()}",
+                f"from:{from_dept.upper()}",
+                f"to:{to_dept.upper()}",
+                f"type:{msg_type.upper()}",
                 f"prio:{priority.lower()}",
                 "status:open"
             ]
