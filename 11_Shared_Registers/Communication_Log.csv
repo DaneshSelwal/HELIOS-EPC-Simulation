@@ -1,2 +1,3 @@
 msg_id,real_timestamp,sim_day,sim_time,from_agent,from_dept,to_agent,to_dept,cc,type,topic,priority,issue_no,comment_url,parent_msg_id,status
 HEL-ENG-ENG-ESC-0001,2026-10-13T10:05:24Z,5,09:00,TERRA,ENG,ARCHON,ENG,"KRONOS, COUNSEL, ATLAS",ESC,EVT-001 Technical Escalation: Block 6 Rock Refusal at 0.8m Depth & FDC-CIV-001 Issuance,critical,12,https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/12,None,open
+HEL-ENG-CON-INS-0002,2026-10-13T10:05:31Z,5,09:00,TERRA,ENG,BASTION,CON,"RAMPART, PLUMBLINE, ARCHON",INS,Site Directive: Piling Hold on Array Block 6 & Implementation of FDC-CIV-001,high,13,https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/13,None,open
