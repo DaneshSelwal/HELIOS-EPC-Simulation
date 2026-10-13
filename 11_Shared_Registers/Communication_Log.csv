@@ -1,1 +1,2 @@
 msg_id,real_timestamp,sim_day,sim_time,from_agent,from_dept,to_agent,to_dept,cc,type,topic,priority,issue_no,comment_url,parent_msg_id,status
+HEL-ENG-ENG-ESC-0001,2026-10-13T10:05:24Z,5,09:00,TERRA,ENG,ARCHON,ENG,"KRONOS, COUNSEL, ATLAS",ESC,EVT-001 Technical Escalation: Block 6 Rock Refusal at 0.8m Depth & FDC-CIV-001 Issuance,critical,12,https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/12,None,open
