@@ -159,5 +159,7 @@ def generate_report():
     print(f"Generated {REPORT_PATH} successfully ({len(lines)} lines).")
     return content
 
+generate_comm_report = generate_report
+
 if __name__ == "__main__":
     generate_report()
