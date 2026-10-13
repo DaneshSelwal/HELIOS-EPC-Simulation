@@ -81,7 +81,8 @@
   },
   "PATRON": {
     "name": "PATRON-ClientRep",
-    "email": "patron.helios.epc@gmail.com"
+    "email": "patron.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
   },
   "VENDOR": {
     "name": "VENDOR-SubcontractBuyer",
@@ -218,5 +219,50 @@
   "PERMIT": {
     "name": "PERMIT-Permits",
     "email": "permit.helios.epc@gmail.com"
+  },
+  "AUDITOR": {
+    "name": "AUDITOR-ExternalAuditor",
+    "email": "auditor.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "GRIDMASTER": {
+    "name": "GRIDMASTER-GridCodeConsultant",
+    "email": "gridmaster.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "LUMINOS": {
+    "name": "LUMINOS-TrackerOEM",
+    "email": "luminos.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "INVERSA": {
+    "name": "INVERSA-InverterOEM",
+    "email": "inversa.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "POWERTRANS": {
+    "name": "POWERTRANS-TransformerOEM",
+    "email": "powertrans.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "INSPECTOR": {
+    "name": "INSPECTOR-ThirdPartyInspection",
+    "email": "inspector.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "CERTIFIER": {
+    "name": "CERTIFIER-GridComplianceCertifier",
+    "email": "certifier.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "NEXUS": {
+    "name": "NEXUS-ConsortiumPartner",
+    "email": "nexus.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
+  },
+  "HERALD": {
+    "name": "HERALD-CommunityPR",
+    "email": "herald.helios.epc@gmail.com",
+    "status": "NO_PERSONA_FILE"
   }
 }
