@@ -5,7 +5,15 @@ Thin wrapper around engine.git_identity.commit_as.
 
 import argparse
 import os
+import subprocess
 import sys
+
+def run_cmd(cmd):
+    result = subprocess.run(cmd, shell=True, text=True, capture_output=True)
+    if result.returncode != 0:
+        print(f"Error running command: {cmd}\n{result.stderr}", file=sys.stderr)
+        sys.exit(1)
+    return result.stdout.strip()
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, REPO_ROOT)
