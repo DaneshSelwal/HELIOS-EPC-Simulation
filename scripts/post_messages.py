@@ -46,9 +46,9 @@ def get_next_msg_num():
     return max_num + 1
 
 def run_command(cmd):
-    res = subprocess.run(cmd, shell=True, text=True, capture_output=True)
+    res = subprocess.run(cmd, text=True, capture_output=True)
     if res.returncode != 0:
-        print(f"Command failed ({res.returncode}): {cmd}\nStderr: {res.stderr}", file=sys.stderr)
+        print(f"Command failed ({res.returncode}): {' '.join(cmd) if isinstance(cmd, list) else cmd}\nStderr: {res.stderr}", file=sys.stderr)
     return res.stdout.strip(), res.returncode
 
 EXISTING_LABELS = None
@@ -56,12 +56,12 @@ EXISTING_LABELS = None
 def ensure_label_exists(label_name):
     global EXISTING_LABELS
     if EXISTING_LABELS is None:
-        cmd = f'gh label list --json name -q ".[].name"'
+        cmd = ["gh", "label", "list", "--json", "name", "-q", ".[].name"]
         out, rc = run_command(cmd)
         EXISTING_LABELS = set(out.splitlines()) if rc == 0 else set()
     if label_name not in EXISTING_LABELS:
         # Create label
-        out, rc = run_command(f'gh label create "{label_name}" --color "ededed" --force')
+        out, rc = run_command(["gh", "label", "create", label_name, "--color", "ededed", "--force"])
         if rc == 0:
             EXISTING_LABELS.add(label_name)
 
@@ -110,7 +110,7 @@ def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_da
 
     if is_pd_brief:
         issue_no = 11
-        cmd = f"gh issue comment 11 --body {json.dumps(formatted_body)}"
+        cmd = ["gh", "issue", "comment", "11", "--body", formatted_body]
         out, rc = run_command(cmd)
         comment_url = out if out.startswith("http") else f"https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/11#issuecomment-{next_num}"
     else:
@@ -118,7 +118,7 @@ def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_da
         effective_thread_key = thread_key or parent_msg_id or subject.split(":")[0].strip()
         if effective_thread_key in threads:
             issue_no = threads[effective_thread_key]
-            cmd = f"gh issue comment {issue_no} --body {json.dumps(formatted_body)}"
+            cmd = ["gh", "issue", "comment", str(issue_no), "--body", formatted_body]
             out, rc = run_command(cmd)
             comment_url = out if out.startswith("http") else f"https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/{issue_no}#issuecomment-{next_num}"
         else:
@@ -134,8 +134,10 @@ def post_message(from_agent, to_agent, msg_type, priority, subject, body, sim_da
             for lbl in labels:
                 ensure_label_exists(lbl)
 
-            lbl_args = " ".join([f'--label "{lbl}"' for lbl in labels])
-            cmd = f"gh issue create --title {json.dumps(issue_title)} --body {json.dumps(formatted_body)} {lbl_args}"
+            cmd = ["gh", "issue", "create", "--title", issue_title, "--body", formatted_body]
+            for lbl in labels:
+                cmd.extend(["--label", lbl])
+
             out, rc = run_command(cmd)
             # out contains issue url e.g. https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/12
             comment_url = out

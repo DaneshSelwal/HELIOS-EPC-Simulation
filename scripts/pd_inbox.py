@@ -19,8 +19,8 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROCESSED_FILE = os.path.join(REPO_ROOT, "state", "pd_inbox_processed.json")
 
 def get_issue_comments(issue_no=11):
-    cmd = f"gh api repos/DaneshSelwal/HELIOS-EPC-Simulation/issues/{issue_no}/comments"
-    res = subprocess.run(cmd, shell=True, text=True, capture_output=True)
+    cmd = ["gh", "api", f"repos/DaneshSelwal/HELIOS-EPC-Simulation/issues/{issue_no}/comments"]
+    res = subprocess.run(cmd, text=True, capture_output=True)
     if res.returncode != 0:
         return []
     try:
