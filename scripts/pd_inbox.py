@@ -17,8 +17,21 @@ import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROCESSED_FILE = os.path.join(REPO_ROOT, "state", "pd_inbox_processed.json")
+THREAD_TRACKER_PATH = os.path.join(REPO_ROOT, "state", "thread_issues.json")
 
-def get_issue_comments(issue_no=11):
+def get_ch01_issue_no():
+    if os.path.exists(THREAD_TRACKER_PATH):
+        try:
+            with open(THREAD_TRACKER_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return int(data.get("CH-01", 11))
+        except Exception:
+            pass
+    return 11
+
+def get_issue_comments(issue_no=None):
+    if issue_no is None:
+        issue_no = get_ch01_issue_no()
     cmd = f"gh api repos/DaneshSelwal/HELIOS-EPC-Simulation/issues/{issue_no}/comments"
     res = subprocess.run(cmd, shell=True, text=True, capture_output=True)
     if res.returncode != 0:
@@ -41,10 +54,11 @@ def save_processed_ids(processed_set):
 
 def check_pd_inbox():
     """
-    Checks Issue #11 for new comments and extracts Danesh commands.
+    Checks CH-01 Issue for new comments and extracts Danesh commands.
     Returns list of inbox action items.
     """
-    comments = get_issue_comments(11)
+    ch01_no = get_ch01_issue_no()
+    comments = get_issue_comments(ch01_no)
     processed = load_processed_ids()
     new_inbox_items = []
 

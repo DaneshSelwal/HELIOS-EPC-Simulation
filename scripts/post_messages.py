@@ -87,26 +87,37 @@ def infer_work_code(subject, body, from_agent, to_agent):
         return "MOB"
     return "GEN"
 
+def get_channel_issue_no(ch_code, default_no):
+    if os.path.exists(THREAD_TRACKER_PATH):
+        try:
+            with open(THREAD_TRACKER_PATH, "r", encoding="utf-8") as f:
+                mapping = json.load(f)
+                if ch_code in mapping:
+                    return int(mapping[ch_code])
+        except Exception:
+            pass
+    return default_no
+
 def resolve_channel(from_agent, to_agent, from_dept, to_dept, subject, work_code):
     if to_agent.upper() in ["PD", "DANESH"] or from_agent.upper() in ["PD", "DANESH"] or "[PD BRIEF]" in subject.upper():
-        return "CH-01", 11
+        return "CH-01", get_channel_issue_no("CH-01", 11)
     if from_dept == "COM" or to_dept == "COM":
-        return "CH-09", 19
+        return "CH-09", get_channel_issue_no("CH-09", 19)
     if from_dept == "QAQ" or to_dept == "QAQ":
-        return "CH-07", 17
+        return "CH-07", get_channel_issue_no("CH-07", 17)
     if from_dept in ["EHS", "ADM"] or to_dept in ["EHS", "ADM"]:
-        return "CH-08", 18
+        return "CH-08", get_channel_issue_no("CH-08", 18)
     if from_dept == "TNC" or to_dept == "TNC" or to_agent.upper() == "GRIDMASTER":
-        return "CH-10", 20
+        return "CH-10", get_channel_issue_no("CH-10", 20)
     if from_dept == "SCM" or to_dept == "SCM":
-        return "CH-04", 14
+        return "CH-04", get_channel_issue_no("CH-04", 14)
     if from_dept == "ENG" or to_dept == "ENG":
-        return "CH-03", 13
+        return "CH-03", get_channel_issue_no("CH-03", 13)
     if from_dept in ["CON", "SUB"] or to_dept in ["CON", "SUB"]:
         if work_code in ["CAB", "INV", "FND", "SUB"]:
-            return "CH-06", 16
-        return "CH-05", 15
-    return "CH-02", 12
+            return "CH-06", get_channel_issue_no("CH-06", 16)
+        return "CH-05", get_channel_issue_no("CH-05", 15)
+    return "CH-02", get_channel_issue_no("CH-02", 12)
 
 def get_next_msg_num():
     max_num = 0

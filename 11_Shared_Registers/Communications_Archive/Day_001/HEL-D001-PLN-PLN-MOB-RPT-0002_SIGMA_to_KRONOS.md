@@ -3,7 +3,7 @@
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PLN-PLN-MOB-RPT-0002` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **SIGMA** (`PLN`) -> **KRONOS** (`PLN`) \| CC: `ATLAS, LEDGER` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `RPT` \| Priority: `HIGH` \| Action By: `Day 002` |

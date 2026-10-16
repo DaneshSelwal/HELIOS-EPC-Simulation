@@ -29,59 +29,59 @@
 | **KRONOS** | KRONOS-PlanningManager | 0 | 2 | 2 |
 | **ATLAS** | ATLAS-ProjectManager | 2 | 0 | 2 |
 | **SIGMA** | SIGMA-MISEngineer | 1 | 0 | 1 |
-| **TERRA** | TERRA-CivilLead | 0 | 0 | 0 |
-| **IGNITE** | IGNITE-TCManager | 0 | 0 | 0 |
-| **LEDGER** | LEDGER-CostControl | 0 | 0 | 0 |
-| **BASTION** | BASTION-CivilSupervision | 0 | 0 | 0 |
-| **CONDUIT** | CONDUIT-DCElectrical | 0 | 0 | 0 |
-| **ARCHON** | ARCHON-DesignManager | 0 | 0 | 0 |
-| **PLUMBLINE** | PLUMBLINE-CivilQC | 0 | 0 | 0 |
-| **PRISM** | PRISM-SurveyLayout | 0 | 0 | 0 |
-| **LEDGER2** | LEDGER2-Finance | 0 | 0 | 0 |
-| **CHECKER** | CHECKER-SubBillingVerifier | 0 | 0 | 0 |
-| **DOSSIER** | DOSSIER-QADocCoordinator | 0 | 0 | 0 |
-| **EREKTOR** | EREKTOR-MMSSub | 0 | 0 | 0 |
-| **WATT** | WATT-ElecPlanning | 0 | 0 | 0 |
-| **CIPHER** | CIPHER-ProtectionSCADA | 0 | 0 | 0 |
-| **NEXGEN** | NEXGEN-DesignCoordinator | 0 | 0 | 0 |
-| **VENDOR** | VENDOR-SubcontractBuyer | 0 | 0 | 0 |
+| **INVOICE** | INVOICE-BillingQS | 0 | 0 | 0 |
 | **GRIDCON** | GRIDCON-SubstationCivilSub | 0 | 0 | 0 |
-| **ROUTE** | ROUTE-LogisticsCustoms | 0 | 0 | 0 |
-| **GRIDLOCK** | GRIDLOCK-GridSCADA | 0 | 0 | 0 |
+| **RAMPART** | RAMPART-ConstructionMgr | 0 | 0 | 0 |
+| **VENDOR** | VENDOR-SubcontractBuyer | 0 | 0 | 0 |
+| **LEDGER** | LEDGER-CostControl | 0 | 0 | 0 |
+| **PRISM** | PRISM-SurveyLayout | 0 | 0 | 0 |
+| **ARCHON** | ARCHON-DesignManager | 0 | 0 | 0 |
+| **ELECTRA** | ELECTRA-ElecSub | 0 | 0 | 0 |
+| **SUMMIT** | SUMMIT-AdminHR | 0 | 0 | 0 |
+| **DEPOT** | DEPOT-BOPBuyer | 0 | 0 | 0 |
+| **GUARDIAN** | GUARDIAN-SafetyCivil | 0 | 0 | 0 |
+| **OHMMETER** | OHMMETER-ElectricalQC | 0 | 0 | 0 |
+| **CONVOY** | CONVOY-SCMManager | 0 | 0 | 0 |
+| **EREKTOR** | EREKTOR-MMSSub | 0 | 0 | 0 |
+| **CHECKER** | CHECKER-SubBillingVerifier | 0 | 0 | 0 |
+| **VERDANT** | VERDANT-EnvSocial | 0 | 0 | 0 |
+| **SPARK** | SPARK-LVMVEngineer | 0 | 0 | 0 |
+| **ARCLINE** | ARCLINE-MVCable | 0 | 0 | 0 |
 | **AMPERE** | AMPERE-DCElectrical | 0 | 0 | 0 |
 | **VAULT** | VAULT-SiteStores | 0 | 0 | 0 |
-| **GUARDIAN** | GUARDIAN-SafetyCivil | 0 | 0 | 0 |
-| **ARCLINE** | ARCLINE-MVCable | 0 | 0 | 0 |
-| **FORTRESS** | FORTRESS-SubstationCivil | 0 | 0 | 0 |
-| **STRATUM** | STRATUM-MMSTracker | 0 | 0 | 0 |
-| **SOLARIS** | SOLARIS-MMSTracker | 0 | 0 | 0 |
-| **ELECTRA** | ELECTRA-ElecSub | 0 | 0 | 0 |
-| **TORQUE** | TORQUE-MechStructuralQC | 0 | 0 | 0 |
-| **SPARK** | SPARK-LVMVEngineer | 0 | 0 | 0 |
-| **PERMIT** | PERMIT-Permits | 0 | 0 | 0 |
-| **SWITCHMAN** | SWITCHMAN-SubstationEM | 0 | 0 | 0 |
-| **INVOICE** | INVOICE-BillingQS | 0 | 0 | 0 |
-| **CONVOY** | CONVOY-SCMManager | 0 | 0 | 0 |
-| **VECTOR** | VECTOR-CivilPlanning | 0 | 0 | 0 |
-| **VOLTA** | VOLTA-ACSubstation | 0 | 0 | 0 |
-| **OHMMETER** | OHMMETER-ElectricalQC | 0 | 0 | 0 |
 | **AEGIS** | AEGIS-EHSManager | 0 | 0 | 0 |
-| **HELIOS-ENGINE** | HELIOS-ENGINE | 0 | 0 | 0 |
-| **MERIDIAN** | MERIDIAN-SurveyGeotech | 0 | 0 | 0 |
-| **COUNSEL** | COUNSEL-ContractsMgr | 0 | 0 | 0 |
-| **HELIOS_ENGINE** | HELIOS-ENGINE | 0 | 0 | 0 |
+| **CONDUIT** | CONDUIT-DCElectrical | 0 | 0 | 0 |
 | **LEDGE** | LEDGE-CommercialCoordinator | 0 | 0 | 0 |
-| **TRACER** | TRACER-Expediter | 0 | 0 | 0 |
-| **VERDANT** | VERDANT-EnvSocial | 0 | 0 | 0 |
-| **DEPOT** | DEPOT-BOPBuyer | 0 | 0 | 0 |
-| **FORGE** | FORGE-EquipmentProcurement | 0 | 0 | 0 |
-| **CLAIMS** | CLAIMS-ClaimsVariationEngineer | 0 | 0 | 0 |
-| **SUMMIT** | SUMMIT-AdminHR | 0 | 0 | 0 |
 | **GROUNDWORK** | GROUNDWORK-CivilSub | 0 | 0 | 0 |
+| **ROUTE** | ROUTE-LogisticsCustoms | 0 | 0 | 0 |
+| **FORTRESS** | FORTRESS-SubstationCivil | 0 | 0 | 0 |
+| **PERMIT** | PERMIT-Permits | 0 | 0 | 0 |
+| **TRACER** | TRACER-Expediter | 0 | 0 | 0 |
+| **MERIDIAN** | MERIDIAN-SurveyGeotech | 0 | 0 | 0 |
+| **STRATUM** | STRATUM-MMSTracker | 0 | 0 | 0 |
+| **FORGE** | FORGE-EquipmentProcurement | 0 | 0 | 0 |
 | **WARDEN** | WARDEN-SafetyElec | 0 | 0 | 0 |
-| **SENTINEL** | SENTINEL-QAQCManager | 0 | 0 | 0 |
-| **RAMPART** | RAMPART-ConstructionMgr | 0 | 0 | 0 |
+| **WATT** | WATT-ElecPlanning | 0 | 0 | 0 |
+| **HELIOS_ENGINE** | HELIOS-ENGINE | 0 | 0 | 0 |
+| **CLAIMS** | CLAIMS-ClaimsVariationEngineer | 0 | 0 | 0 |
+| **SWITCHMAN** | SWITCHMAN-SubstationEM | 0 | 0 | 0 |
+| **VOLTA** | VOLTA-ACSubstation | 0 | 0 | 0 |
+| **PLUMBLINE** | PLUMBLINE-CivilQC | 0 | 0 | 0 |
+| **HELIOS-ENGINE** | HELIOS-ENGINE | 0 | 0 | 0 |
+| **NEXGEN** | NEXGEN-DesignCoordinator | 0 | 0 | 0 |
+| **VECTOR** | VECTOR-CivilPlanning | 0 | 0 | 0 |
+| **IGNITE** | IGNITE-TCManager | 0 | 0 | 0 |
 | **RELAY** | RELAY-ProtectionEngineer | 0 | 0 | 0 |
+| **SOLARIS** | SOLARIS-MMSTracker | 0 | 0 | 0 |
+| **GRIDLOCK** | GRIDLOCK-GridSCADA | 0 | 0 | 0 |
+| **COUNSEL** | COUNSEL-ContractsMgr | 0 | 0 | 0 |
+| **TORQUE** | TORQUE-MechStructuralQC | 0 | 0 | 0 |
+| **DOSSIER** | DOSSIER-QADocCoordinator | 0 | 0 | 0 |
+| **SENTINEL** | SENTINEL-QAQCManager | 0 | 0 | 0 |
+| **CIPHER** | CIPHER-ProtectionSCADA | 0 | 0 | 0 |
+| **LEDGER2** | LEDGER2-Finance | 0 | 0 | 0 |
+| **BASTION** | BASTION-CivilSupervision | 0 | 0 | 0 |
+| **TERRA** | TERRA-CivilLead | 0 | 0 | 0 |
 
 ---
 
@@ -155,6 +155,6 @@ All tracked items are currently answered or closed. No open items pending action
 ## e) Last 20 Messages (Chronological by Real Timestamp)
 | Msg-ID | Real Timestamp (UTC) | Sim Day | From -> To | Type | Priority | Topic | Link |
 |---|---|---|---|---|---|---|---|
-| `HEL-D001-PMO-PMO-MOB-RPT-0003` | 2026-10-16T06:59:53Z | Day 1 | ATLAS -> DANESH | RPT | high | [CH-01|MOB] [PD BRIEF] Day 001 Executive Brie | [Comment](https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/11#issuecomment-0003) |
-| `HEL-D001-PLN-PLN-MOB-RPT-0002` | 2026-10-16T06:59:53Z | Day 1 | SIGMA -> KRONOS | RPT | high | [CH-02|MOB] DPR Day 001 Compilation & EVM Bas | [Comment](https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/12#issuecomment-0002) |
-| `HEL-D001-PMO-PLN-MOB-INS-0001` | 2026-10-16T06:59:53Z | Day 1 | ATLAS -> KRONOS | INS | high | [CH-02|MOB] LNTP Project Kickoff Directive: M | [Comment](https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/12#issuecomment-0001) |
+| `HEL-D001-PMO-PMO-MOB-RPT-0003` | 2026-10-16T06:59:53Z | Day 1 | ATLAS -> DANESH | RPT | high | [CH-01|MOB] [PD BRIEF] Day 001 Executive Brie | [Comment](https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/31#issuecomment-0003) |
+| `HEL-D001-PLN-PLN-MOB-RPT-0002` | 2026-10-16T06:59:53Z | Day 1 | SIGMA -> KRONOS | RPT | high | [CH-02|MOB] DPR Day 001 Compilation & EVM Bas | [Comment](https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/32#issuecomment-0002) |
+| `HEL-D001-PMO-PLN-MOB-INS-0001` | 2026-10-16T06:59:53Z | Day 1 | ATLAS -> KRONOS | INS | high | [CH-02|MOB] LNTP Project Kickoff Directive: M | [Comment](https://github.com/DaneshSelwal/HELIOS-EPC-Simulation/issues/32#issuecomment-0001) |

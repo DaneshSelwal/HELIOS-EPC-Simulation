@@ -7,8 +7,8 @@
 
 | Mail Code (Msg-ID) | Sim Day | Channel | From -> To (CC) | Work Code | Type | Priority | Subject | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `HEL-D001-PMO-PLN-MOB-INS-0001` | Day 001 | `CH-02` (#12) | **ATLAS** -> **KRONOS** (ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL) | `MOB` | `INS` | `HIGH` | [CH-02|MOB] LNTP Project Kickoff Directive: Master Schedule, MDR Submittals & Long-Lead RFQs | `OPEN` |
-| `HEL-D001-PLN-PLN-MOB-RPT-0002` | Day 001 | `CH-02` (#12) | **SIGMA** -> **KRONOS** (ATLAS, LEDGER) | `MOB` | `RPT` | `HIGH` | [CH-02|MOB] DPR Day 001 Compilation & EVM Baseline Verification (BCWS $53,125 / SPI 0.9965) | `OPEN` |
+| `HEL-D001-PMO-PLN-MOB-INS-0001` | Day 001 | `CH-02` (#32) | **ATLAS** -> **KRONOS** (ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL) | `MOB` | `INS` | `HIGH` | [CH-02|MOB] LNTP Project Kickoff Directive: Master Schedule, MDR Submittals & Long-Lead RFQs | `OPEN` |
+| `HEL-D001-PLN-PLN-MOB-RPT-0002` | Day 001 | `CH-02` (#32) | **SIGMA** -> **KRONOS** (ATLAS, LEDGER) | `MOB` | `RPT` | `HIGH` | [CH-02|MOB] DPR Day 001 Compilation & EVM Baseline Verification (BCWS $53,125 / SPI 0.9965) | `OPEN` |
 
 ## 2. Full Coded Mail Records
 
@@ -19,7 +19,7 @@
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PLN-MOB-INS-0001` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **KRONOS** (`PLN`) \| CC: `ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `INS` \| Priority: `HIGH` \| Action By: `Day 002` |
@@ -33,7 +33,7 @@ Limited Notice to Proceed (LNTP) is effective Sim Day 001 (2026-10-06). All 10 d
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PLN-PLN-MOB-RPT-0002` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **SIGMA** (`PLN`) -> **KRONOS** (`PLN`) \| CC: `ATLAS, LEDGER` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `RPT` \| Priority: `HIGH` \| Action By: `Day 002` |

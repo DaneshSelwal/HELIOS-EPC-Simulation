@@ -15,7 +15,6 @@ import re
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_ENGINE = os.path.join(REPO_ROOT, "engine", "authority_matrix.json")
-OUTPUT_ROOT = os.path.join(REPO_ROOT, "authority_matrix.json")
 
 VALID_ESCALATION_TARGETS = {
     "DANESH", "ATLAS", "NEXUS", "KRONOS", "ARCHON", "CONVOY", "RAMPART",
@@ -173,12 +172,9 @@ def extract_authority_matrix():
 
     with open(OUTPUT_ENGINE, "w", encoding="utf-8") as f:
         json.dump(matrix, f, indent=2)
-    with open(OUTPUT_ROOT, "w", encoding="utf-8") as f:
-        json.dump(matrix, f, indent=2)
 
     print(f"Generated authority_matrix.json with {len(matrix)} agent definitions at:")
     print(f"  - {OUTPUT_ENGINE}")
-    print(f"  - {OUTPUT_ROOT}")
     return matrix
 
 if __name__ == "__main__":

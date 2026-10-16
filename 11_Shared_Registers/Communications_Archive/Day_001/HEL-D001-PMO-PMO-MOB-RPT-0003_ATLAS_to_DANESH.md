@@ -3,7 +3,7 @@
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PMO-MOB-RPT-0003` |
-| **Channel & Issue** | `CH-01` (GitHub Issue `#11`) |
+| **Channel & Issue** | `CH-01` (GitHub Issue `#31`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **DANESH** (`PMO`) \| CC: `NEXUS, KRONOS, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `RPT` \| Priority: `HIGH` \| Action By: `Day 002` |

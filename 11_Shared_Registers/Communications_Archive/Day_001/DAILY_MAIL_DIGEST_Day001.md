@@ -5,7 +5,7 @@
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PLN-MOB-INS-0001` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **KRONOS** (`PLN`) \| CC: `ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `INS` \| Priority: `HIGH` \| Action By: `Day 002` |
@@ -19,7 +19,7 @@ Limited Notice to Proceed (LNTP) is effective Sim Day 001 (2026-10-06). All 10 d
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PLN-PLN-MOB-RPT-0002` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **SIGMA** (`PLN`) -> **KRONOS** (`PLN`) \| CC: `ATLAS, LEDGER` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `RPT` \| Priority: `HIGH` \| Action By: `Day 002` |
@@ -33,7 +33,7 @@ Compiled Daily Progress Report DPR_Day001.md verified against state/day_001_stat
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PMO-MOB-RPT-0003` |
-| **Channel & Issue** | `CH-01` (GitHub Issue `#11`) |
+| **Channel & Issue** | `CH-01` (GitHub Issue `#31`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **DANESH** (`PMO`) \| CC: `NEXUS, KRONOS, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `RPT` \| Priority: `HIGH` \| Action By: `Day 002` |

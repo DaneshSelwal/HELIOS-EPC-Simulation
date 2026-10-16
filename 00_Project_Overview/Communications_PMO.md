@@ -7,8 +7,8 @@
 
 | Mail Code (Msg-ID) | Sim Day | Channel | From -> To (CC) | Work Code | Type | Priority | Subject | Status |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| `HEL-D001-PMO-PLN-MOB-INS-0001` | Day 001 | `CH-02` (#12) | **ATLAS** -> **KRONOS** (ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL) | `MOB` | `INS` | `HIGH` | [CH-02|MOB] LNTP Project Kickoff Directive: Master Schedule, MDR Submittals & Long-Lead RFQs | `OPEN` |
-| `HEL-D001-PMO-PMO-MOB-RPT-0003` | Day 001 | `CH-01` (#11) | **ATLAS** -> **DANESH** (NEXUS, KRONOS, COUNSEL) | `MOB` | `RPT` | `HIGH` | [CH-01|MOB] [PD BRIEF] Day 001 Executive Brief: LNTP Kickoff Complete & 64-Agent Ecosystem Online | `OPEN` |
+| `HEL-D001-PMO-PLN-MOB-INS-0001` | Day 001 | `CH-02` (#32) | **ATLAS** -> **KRONOS** (ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL) | `MOB` | `INS` | `HIGH` | [CH-02|MOB] LNTP Project Kickoff Directive: Master Schedule, MDR Submittals & Long-Lead RFQs | `OPEN` |
+| `HEL-D001-PMO-PMO-MOB-RPT-0003` | Day 001 | `CH-01` (#31) | **ATLAS** -> **DANESH** (NEXUS, KRONOS, COUNSEL) | `MOB` | `RPT` | `HIGH` | [CH-01|MOB] [PD BRIEF] Day 001 Executive Brief: LNTP Kickoff Complete & 64-Agent Ecosystem Online | `OPEN` |
 
 ## 2. Full Coded Mail Records
 
@@ -19,7 +19,7 @@
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PLN-MOB-INS-0001` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **KRONOS** (`PLN`) \| CC: `ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `INS` \| Priority: `HIGH` \| Action By: `Day 002` |
@@ -33,7 +33,7 @@ Limited Notice to Proceed (LNTP) is effective Sim Day 001 (2026-10-06). All 10 d
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PMO-MOB-RPT-0003` |
-| **Channel & Issue** | `CH-01` (GitHub Issue `#11`) |
+| **Channel & Issue** | `CH-01` (GitHub Issue `#31`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **DANESH** (`PMO`) \| CC: `NEXUS, KRONOS, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `RPT` \| Priority: `HIGH` \| Action By: `Day 002` |

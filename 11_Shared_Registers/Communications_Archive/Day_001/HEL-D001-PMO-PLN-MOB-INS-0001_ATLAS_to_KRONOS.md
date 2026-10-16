@@ -3,7 +3,7 @@
 | Mail Field | Coded Value |
 | :--- | :--- |
 | **Mail Code (Msg-ID)** | `HEL-D001-PMO-PLN-MOB-INS-0001` |
-| **Channel & Issue** | `CH-02` (GitHub Issue `#12`) |
+| **Channel & Issue** | `CH-02` (GitHub Issue `#32`) |
 | **From -> To (CC)** | **ATLAS** (`PMO`) -> **KRONOS** (`PLN`) \| CC: `ARCHON, CONVOY, RAMPART, AEGIS, SENTINEL, COUNSEL` |
 | **Work Package Code** | `MOB` |
 | **Type & Priority** | `INS` \| Priority: `HIGH` \| Action By: `Day 002` |
