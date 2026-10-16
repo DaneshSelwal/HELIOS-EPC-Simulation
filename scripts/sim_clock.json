@@ -1,9 +1,9 @@
 {
-  "day": 5,
+  "day": 1,
   "month": 1,
   "week": 1,
-  "week_day": 5,
-  "sim_date": "2026-10-10",
-  "status": "Day 5 complete",
-  "last_advanced_real_ts": "2026-10-13T15:26:32.186610"
+  "week_day": 1,
+  "sim_date": "2026-10-06",
+  "status": "Day 1 complete \u2014 LNTP Start Position",
+  "last_advanced_real_ts": "2026-10-06T18:00:00Z"
 }

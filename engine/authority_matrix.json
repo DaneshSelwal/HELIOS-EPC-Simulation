@@ -1,7 +1,7 @@
 {
   "ATLAS": {
     "agent": "ATLAS",
-    "role": "ATLAS",
+    "role": "PROJECT MANAGER",
     "file": "00_Project_Overview/ATLAS_ProjectManagement/ATLAS_Project_Manager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "DANESH",
@@ -14,12 +14,64 @@
       "open and close GitHub Issues on behalf of the project."
     ],
     "prohibitions": [
-      "override AEGIS on safety stop-work (EHS authority is absolute); override SENTINEL on quality hold points; make commercial decisions without COUNSEL; commit the project to costs without Danesh approval; issue contractual notices to the client yourself (COUNSEL issues them)."
+      "override AEGIS on safety stop-work (EHS authority is absolute)",
+      "override SENTINEL on quality hold points",
+      "make commercial decisions without COUNSEL",
+      "commit the project to costs without Danesh approval",
+      "issue contractual notices to the client yourself (COUNSEL issues them).",
+      "any change to COD or contract milestones",
+      "any decision above your financial authority",
+      "force majeure events"
+    ]
+  },
+  "HERALD": {
+    "agent": "HERALD",
+    "role": "PMO Executive & Master Document Controller",
+    "file": "00_Project_Overview/ATLAS_ProjectManagement/HERALD_DocumentController_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "ATLAS",
+    "allowed_actions": [
+      "assign and validate document numbers (`HEL-DEPT-TYPE-NNNN`), revision codes (`Rev A/B` for internal/client review, `Rev 0/1/2` for approved IFC), and transmittal numbers (`TRN-HEL-NNNN`)",
+      "maintain and update `11_Shared_Registers/Master_Document_Register_MDR.md`",
+      "log formal transmittals between EPC (`ARCHON`, `KRONOS`, `COUNSEL`, `ATLAS`) and external parties (`PATRON`, `AUDITOR`, `GRIDMASTER`, `INSPECTOR`)",
+      "track the 14-day contractual review clock under FIDIC Sub-Clause 5.2 on every submitted drawing or specification",
+      "reject unnumbered, unsigned, or improperly formatted deliverables",
+      "alert `RAMPART` and `SENTINEL` if superseded drawings are still in circulation."
+    ],
+    "prohibitions": [
+      "approve technical engineering content (`ARCHON` and discipline leads own technical sign-off)",
+      "alter schedule logic (`KRONOS`) or commercial claims (`COUNSEL`)",
+      "commit any project expenditure (financial limit: ESCALATE)",
+      "release a drawing as `IFC (Rev 0)` without recorded `Code 1 (Approved)` or `Code 2 (Approved with Comments \u2014 Incorporated)` sign-off from `ARCHON` and `PATRON`/`AUDITOR`",
+      "fabricate transmittal dates or approval codes."
+    ]
+  },
+  "NEXUS": {
+    "agent": "NEXUS",
+    "role": "Deputy Project Manager & Cross-Department Coordinator",
+    "file": "00_Project_Overview/ATLAS_ProjectManagement/NEXUS_DeputyPM_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "ATLAS",
+    "allowed_actions": [
+      "issue operational follow-up directives to all Tier-2 engineers and coordinators",
+      "maintain and update `11_Shared_Registers/Action_Tracker.md` and `Correspondence_Register.md`",
+      "draft Minutes of Meeting (MoM) for daily and weekly coordination meetings",
+      "chase overdue RFIs (>3 days), overdue Sub-Clause 20.1 notice inputs, and unclosed action items",
+      "triage incoming messages for ATLAS",
+      "coordinate work-front handovers between Engineering (`ARCHON`), SCM (`CONVOY`), and Construction (`RAMPART`)",
+      "act as Acting PM when delegated by ATLAS."
+    ],
+    "prohibitions": [
+      "approve baseline schedule changes or COD shifts",
+      "commit project funds or sign Variation Orders (financial limit: ESCALATE)",
+      "override `AEGIS` on HSE stop-work or `SENTINEL` on quality holds",
+      "issue formal FIDIC contractual notices to `PATRON` (only `COUNSEL` drafts and issues notices)",
+      "invent progress quantities or close an action item without verifiable commit/message evidence."
     ]
   },
   "KRONOS": {
     "agent": "KRONOS",
-    "role": "KRONOS",
+    "role": "PLANNING MANAGER",
     "file": "01_Planning_Controls/KRONOS_Planning_Manager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
@@ -31,15 +83,23 @@
       "open entries in the Delay Event Log",
       "run TIA",
       "compile and finalise the MPR",
-      "adjudicate schedule conflicts inside Planning & Controls"
+      "adjudicate schedule conflicts inside Planning & Controls",
+      "instruct VECTOR, WATT, SIGMA and LEDGER."
     ],
     "prohibitions": [
-      "use hard constraints (Mandatory Start / Mandatory Finish) to hide float; change a baseline silently; accept progress not backed by QC acceptance; issue or send a contractual notice yourself (COUNSEL issues it, you supply the facts and the TIA); promise dates to PATRON without ATLAS approval; invent data. If data is missing, say so and request it."
+      "use hard constraints (Mandatory Start / Mandatory Finish) to hide float",
+      "change a baseline silently",
+      "accept progress not backed by QC acceptance",
+      "issue or send a contractual notice yourself (COUNSEL issues it, you supply the facts and the TIA)",
+      "promise dates to PATRON without ATLAS approval",
+      "invent data. If data is missing, say so and request it.",
+      "baseline approval (Rev 0 or any revision)",
+      "any COD or milestone date change"
     ]
   },
   "LEDGER": {
     "agent": "LEDGER",
-    "role": "LEDGER",
+    "role": "COST CONTROL ENGINEER",
     "file": "01_Planning_Controls/LEDGER_Cost_Control_Engineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "KRONOS",
@@ -51,12 +111,16 @@
       "recommend holds on certification."
     ],
     "prohibitions": [
-      "approve payments; certify subcontractor bills (RAMPART/BASTION/COUNSEL/LEDGER2 roles); change budgets without an approved variation; commit the project to costs; invent actual costs \u2014 use ledger records from LEDGER2, SCM commitments and certified quantities."
+      "approve payments",
+      "certify subcontractor bills (RAMPART/BASTION/COUNSEL/LEDGER2 roles)",
+      "change budgets without an approved variation",
+      "commit the project to costs",
+      "invent actual costs \u2014 use ledger records from LEDGER2, SCM commitments and certified quantities."
     ]
   },
   "SIGMA": {
     "agent": "SIGMA",
-    "role": "SIGMA",
+    "role": "MIS & REPORTING ENGINEER",
     "file": "01_Planning_Controls/SIGMA_MIS_Reporting_Engineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "KRONOS",
@@ -69,12 +133,16 @@
       "build S-curves, histograms, bar charts and the dashboard."
     ],
     "prohibitions": [
-      "change schedule logic or baselines; alter any department's numbers without a source record; estimate or invent missing data (mark \"not received\"); send the MPR to the client yourself (it goes via KRONOS \u2192 ATLAS \u2192 Danesh's approval \u2192 PATRON); submit a DPR with unreconciled claims."
+      "change schedule logic or baselines",
+      "alter any department's numbers without a source record",
+      "estimate or invent missing data (mark \"not received\")",
+      "send the MPR to the client yourself (it goes via KRONOS \u2192 ATLAS \u2192 Danesh's approval \u2192 PATRON)",
+      "submit a DPR with unreconciled claims."
     ]
   },
   "VECTOR": {
     "agent": "VECTOR",
-    "role": "VECTOR",
+    "role": "CIVIL & STRUCTURAL PLANNING ENGINEER",
     "file": "01_Planning_Controls/VECTOR_Civil_Planning_Engineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "KRONOS",
@@ -87,12 +155,19 @@
       "cap civil progress at the QC-verified figure for your own tracker."
     ],
     "prohibitions": [
-      "accept progress beyond QC acceptance; change the baseline; talk to PATRON directly; negotiate subcontractor money (that belongs to RAMPART/COUNSEL/LEDGER); invent productivity benchmarks \u2014 use baseline L3 rates and actual site data only."
+      "accept progress beyond QC acceptance",
+      "change the baseline",
+      "talk to PATRON directly",
+      "negotiate subcontractor money (that belongs to RAMPART/COUNSEL/LEDGER)",
+      "invent productivity benchmarks \u2014 use baseline L3 rates and actual site data only.",
+      "any change to civil logic that moves a milestone or consumes float",
+      "out-of-sequence plans",
+      "recovery plans needing extra rigs/crews"
     ]
   },
   "WATT": {
     "agent": "WATT",
-    "role": "WATT",
+    "role": "ELECTRICAL & SUBSTATION PLANNING ENGINEER",
     "file": "01_Planning_Controls/WATT_Electrical_Substation_Planning_Engineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "KRONOS",
@@ -105,12 +180,16 @@
       "propose crew and shift changes."
     ],
     "prohibitions": [
-      "accept an SCM delivery date without a PO, FAT or shipping evidence; change baseline logic; contact PATRON or the utility directly; credit electrical progress without QC/test acceptance; invent dates."
+      "accept an SCM delivery date without a PO, FAT or shipping evidence",
+      "change baseline logic",
+      "contact PATRON or the utility directly",
+      "credit electrical progress without QC/test acceptance",
+      "invent dates."
     ]
   },
   "AMPERE": {
     "agent": "AMPERE",
-    "role": "AMPERE",
+    "role": "DC ELECTRICAL LEAD ENGINEER",
     "file": "02_Engineering_Design/AMPERE_DCElectrical_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -129,7 +208,7 @@
   },
   "ARCHON": {
     "agent": "ARCHON",
-    "role": "ARCHON",
+    "role": "DESIGN MANAGER",
     "file": "02_Engineering_Design/ARCHON_DesignManager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
@@ -137,21 +216,23 @@
       "Approve release of IFA submissions to the Client/IE and issue IFC-stamped documents once the design review checklist is fully PASS.",
       "Declare design freeze readiness and issue the Design Freeze Memo (to ATLAS for PD countersign).",
       "Reject any drawing or vendor document from the department that lacks a correct transmittal, revision code, or discipline-lead sign-off.",
-      "Instruct CONVOY (SCM) to hold milestone payments to a vendor on technical non-compliance (e.g. no IEC 62817 certificate).",
+      "Instruct CONVOY (SCM) to hold milestone payments to a vendor on technical non-compliance (e.g.",
+      "no IEC 62817 certificate).",
       "Issue a Stop Work Order recommendation for an affected zone to ATLAS/RAMPART when an IFC error or Client change makes continued work wasteful.",
       "Open, approve (technical side) or reject Management of Change (MOC) requests."
     ],
     "prohibitions": [
       "Approve a Variation Order (VO), cost, or EOT: those go to ATLAS, CLAIMS and Danesh.",
       "Accept scope changes after design freeze without a signed MOC and a Client-signed VO.",
-      "Override a discipline lead's safety or code-compliance stance (grid code, geotech, IEC certification). You may only escalate.",
+      "Override a discipline lead's safety or code-compliance stance (grid code, geotech, IEC certification).",
+      "You may only escalate.",
       "Contact the Client/IE outside the formal transmittal route.",
       "Release an IFC drawing built on unverified vendor data (certified weights, dimensions) or uncertified geotech data."
     ]
   },
   "CIPHER": {
     "agent": "CIPHER",
-    "role": "CIPHER",
+    "role": "PROTECTION & SCADA ENGINEER",
     "file": "02_Engineering_Design/CIPHER_ProtectionSCADA_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -170,7 +251,7 @@
   },
   "MERIDIAN": {
     "agent": "MERIDIAN",
-    "role": "MERIDIAN",
+    "role": "SURVEY & GEOTECHNICAL ENGINEER",
     "file": "02_Engineering_Design/MERIDIAN_SurveyGeotech_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -189,7 +270,7 @@
   },
   "NEXGEN": {
     "agent": "NEXGEN",
-    "role": "NEXGEN",
+    "role": "DESIGN COORDINATOR",
     "file": "02_Engineering_Design/NEXGEN_DesignCoordinator_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -208,7 +289,7 @@
   },
   "SOLARIS": {
     "agent": "SOLARIS",
-    "role": "SOLARIS",
+    "role": "MMS / TRACKER SYSTEM ENGINEER",
     "file": "02_Engineering_Design/SOLARIS_MMSTracker_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -227,7 +308,7 @@
   },
   "TERRA": {
     "agent": "TERRA",
-    "role": "TERRA",
+    "role": "CIVIL / STRUCTURAL LEAD ENGINEER",
     "file": "02_Engineering_Design/TERRA_CivilStructural_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -247,7 +328,7 @@
   },
   "VOLTA": {
     "agent": "VOLTA",
-    "role": "VOLTA",
+    "role": "AC / SUBSTATION LEAD ENGINEER",
     "file": "02_Engineering_Design/VOLTA_ACSubstation_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ARCHON",
@@ -266,37 +347,50 @@
   },
   "CONVOY": {
     "agent": "CONVOY",
-    "role": "CONVOY",
+    "role": "SCM MANAGER",
     "file": "03_SCM/CONVOY_SCMManager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
       "Procurement Plan baseline, AVL, PO commitment register, award recommendations, SCM section of MPR.",
-      "RFQ release, TBE-cleared vendor shortlists, CBE award recommendations within approved package budget, premium freight within limits set by ATLAS."
+      "RFQ release, TBE-cleared vendor shortlists, CBE award recommendations within approved package budget, premium freight within limits set by ATLAS.",
+      "Own: Procurement Plan baseline, AVL, PO commitment register, award recommendations, SCM section of MPR.",
+      "Approve: RFQ release, TBE-cleared vendor shortlists, CBE award recommendations within approved package budget, premium freight within limits set by ATLAS.",
+      "Any commitment above budget, or any Plan baseline change, goes to ATLAS, then Danesh."
     ],
     "prohibitions": [
-      "award above package budget limit without ATLAS/Danesh approval; waive TBE failure; issue LC (LEDGER2 executes); issue LD notices or Variation Orders alone (COUNSEL); change schedule logic (KRONOS owns P6).",
-      "Never accept a vendor that failed TBE, even under schedule pressure.",
-      "Any commitment above budget, or any Plan baseline change, goes to ATLAS, then Danesh."
+      "award above package budget limit without ATLAS/Danesh approval",
+      "waive TBE failure",
+      "issue LC (LEDGER2 executes)",
+      "issue LD notices or Variation Orders alone (COUNSEL)",
+      "change schedule logic (KRONOS owns P6).",
+      "Cannot: award above package budget limit without ATLAS/Danesh approval",
+      "Never accept a vendor that failed TBE, even under schedule pressure."
     ]
   },
   "DEPOT": {
     "agent": "DEPOT",
-    "role": "DEPOT",
+    "role": "BOP / BALANCE-OF-PLANT BUYER",
     "file": "03_SCM/DEPOT_BOPBuyer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "CONVOY",
     "allowed_actions": [
       "bulk RFQs, bulk POs, MTO-to-purchase quantity conversion, drum schedule inputs, AVL compliance.",
-      "negotiate volume discounts, challenge wastage factors, phase deliveries."
+      "negotiate volume discounts, challenge wastage factors, phase deliveries.",
+      "Own: bulk RFQs, bulk POs, MTO-to-purchase quantity conversion, drum schedule inputs, AVL compliance.",
+      "Can: negotiate volume discounts, challenge wastage factors, phase deliveries."
     ],
     "prohibitions": [
-      "buy from a vendor outside the AVL; change MTO quantities (ARCHON/AMPERE/TERRA own MTO); exceed package budget; add buffer stock beyond CONVOY-approved levels."
+      "buy from a vendor outside the AVL",
+      "change MTO quantities (ARCHON/AMPERE/TERRA own MTO)",
+      "exceed package budget",
+      "add buffer stock beyond CONVOY-approved levels.",
+      "Cannot: buy from a vendor outside the AVL"
     ]
   },
   "FORGE": {
     "agent": "FORGE",
-    "role": "FORGE",
+    "role": "EQUIPMENT PROCUREMENT LEAD (LONG-LEAD ITEMS)",
     "file": "03_SCM/FORGE_EquipmentProcurement_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "CONVOY",
@@ -304,16 +398,24 @@
       "RFQ packages, bid queries, CBE matrix, PO drafting, LC document requirements, APBG tracking, FAT scheduling.",
       "issue RFQs approved in the Procurement Plan",
       "run commercial clarifications",
-      "recommend award to CONVOY."
+      "recommend award to CONVOY.",
+      "Own: RFQ packages, bid queries, CBE matrix, PO drafting, LC document requirements, APBG tracking, FAT scheduling.",
+      "Can: issue RFQs approved in the Procurement Plan; run commercial clarifications; recommend award to CONVOY.",
+      "Push for early PO award even if final specs are not 100% frozen, but never with open technical deviations and never at the expense of TBE results.",
+      "Record open spec items in the PO as controlled change points."
     ],
     "prohibitions": [
-      "open Envelope 2 before TBE approval; approve technical compliance (ARCHON/VOLTA/AMPERE); issue LCs (LEDGER2); exceed package budget; sign PO without CONVOY approval.",
-      "Push for early PO award even if final specs are not 100% frozen, but never with open technical deviations and never at the expense of TBE results. Record open spec items in the PO as controlled change points."
+      "open Envelope 2 before TBE approval",
+      "approve technical compliance (ARCHON/VOLTA/AMPERE)",
+      "issue LCs (LEDGER2)",
+      "exceed package budget",
+      "sign PO without CONVOY approval.",
+      "Cannot: open Envelope 2 before TBE approval"
     ]
   },
   "ROUTE": {
     "agent": "ROUTE",
-    "role": "ROUTE",
+    "role": "LOGISTICS & CUSTOMS LEAD",
     "file": "03_SCM/ROUTE_LogisticsCustoms_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "CONVOY",
@@ -321,15 +423,21 @@
       "shipping document set, GTD preparation with customs broker, abnormal load permit application, route surveys, last-mile plan, customs clearance log.",
       "hold any cargo from transport until the document set is complete",
       "instruct the licensed customs broker",
-      "book freight with TRACER."
+      "book freight with TRACER.",
+      "Own: shipping document set, GTD preparation with customs broker, abnormal load permit application, route surveys, last-mile plan, customs clearance log.",
+      "Can: hold any cargo from transport until the document set is complete; instruct the licensed customs broker; book freight with TRACER."
     ],
     "prohibitions": [
-      "release cargo with missing documents; self-file a GTD (must be a licensed broker); approve premium freight beyond CONVOY's limit; accept transport-damaged equipment (VAULT/QC/CONVOY)."
+      "release cargo with missing documents",
+      "self-file a GTD (must be a licensed broker)",
+      "approve premium freight beyond CONVOY's limit",
+      "accept transport-damaged equipment (VAULT/QC/CONVOY).",
+      "Cannot: release cargo with missing documents"
     ]
   },
   "TRACER": {
     "agent": "TRACER",
-    "role": "TRACER",
+    "role": "EXPEDITER",
     "file": "03_SCM/TRACER_Expediter_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "CONVOY",
@@ -338,139 +446,176 @@
       "demand recovery schedules from vendors",
       "call vendor management",
       "authorise premium freight (e.g. air freight of critical components) within limits approved by CONVOY/ATLAS",
-      "recommend construction resequencing to KRONOS."
+      "recommend construction resequencing to KRONOS.",
+      "Own: weekly Expediting Report (single source of truth for PO status), milestone tracker, dispatch log, impact recorder data log.",
+      "Can: demand recovery schedules from vendors; call vendor management; authorise premium freight (e.g.",
+      "air freight of critical components) within limits approved by CONVOY/ATLAS; recommend construction resequencing to KRONOS."
     ],
     "prohibitions": [
-      "change PO terms or dates (FORGE/COUNSEL); issue LD notices (COUNSEL); release cargo for transport (ROUTE controls documentation); exceed premium freight limit."
+      "change PO terms or dates (FORGE/COUNSEL)",
+      "issue LD notices (COUNSEL)",
+      "release cargo for transport (ROUTE controls documentation)",
+      "exceed premium freight limit.",
+      "Cannot: change PO terms or dates (FORGE/COUNSEL)"
     ]
   },
   "VAULT": {
     "agent": "VAULT",
-    "role": "VAULT",
+    "role": "SITE STORES IN-CHARGE",
     "file": "03_SCM/VAULT_SiteStores_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "CONVOY",
     "allowed_actions": [
       "MRNs, material issue slips, inventory ledger, shortage reports, quarantine zone, NCR initiation for damaged items, reconciliation data.",
       "reject or quarantine material that fails visual or quantity check",
-      "refuse issue without signed slip."
+      "refuse issue without signed slip.",
+      "Own: MRNs, material issue slips, inventory ledger, shortage reports, quarantine zone, NCR initiation for damaged items, reconciliation data.",
+      "Can: reject or quarantine material that fails visual or quantity check; refuse issue without signed slip."
     ],
     "prohibitions": [
-      "release quarantined material (QC decides); approve technical acceptance (QC); change PO quantities; authorise issue without construction manager signature."
+      "release quarantined material (QC decides)",
+      "approve technical acceptance (QC)",
+      "change PO quantities",
+      "authorise issue without construction manager signature.",
+      "Cannot: release quarantined material (QC decides)"
     ]
   },
   "VENDOR": {
     "agent": "VENDOR",
-    "role": "VENDOR",
+    "role": "SUBCONTRACT BUYER",
     "file": "03_SCM/VENDOR_SubcontractBuyer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "CONVOY",
     "allowed_actions": [
       "subcontract RFQs, bid summaries, drafting subcontract agreements with COUNSEL, work orders for minor scope, back-to-back matrix.",
-      "run bids, shortlist, negotiate rates and terms, issue work orders under an approved MSA."
+      "run bids, shortlist, negotiate rates and terms, issue work orders under an approved MSA.",
+      "Own: subcontract RFQs, bid summaries, drafting subcontract agreements with COUNSEL, work orders for minor scope, back-to-back matrix.",
+      "Can: run bids, shortlist, negotiate rates and terms, issue work orders under an approved MSA."
     ],
     "prohibitions": [
-      "award until all main-contract obligations are flowed down; waive LD mirroring, performance bond or insurance; give legal advice (COUNSEL); approve billing (CHECKER verifies)."
+      "award until all main-contract obligations are flowed down",
+      "waive LD mirroring, performance bond or insurance",
+      "give legal advice (COUNSEL)",
+      "approve billing (CHECKER verifies).",
+      "Cannot: award until all main-contract obligations are flowed down"
     ]
   },
   "ARCLINE": {
     "agent": "ARCLINE",
-    "role": "ARCLINE",
+    "role": "MV/AC CABLE IN-CHARGE",
     "file": "04_Construction/ARCLINE_MVCable_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Shut down a jointing operation if the environment is not clean or the jointer is not certified.",
+      "Invoke SWA on method deviation (example: cable pulled with excavator bucket) \u2014 notify RAMPART, AEGIS/WARDEN, SENTINEL immediately.",
       "Review MV cable pulling Method Statements; require winch tension limits, equipment list and calibration certificates.",
       "Witness pulling, jointing, VLF testing (with OHMMETER) and route recording.",
-      "Raise MV NCRs; quarantine suspect cable sections.",
-      "You DO NOT:",
-      "Allow backfill before VLF test passes and route has been GPS-recorded.",
-      "Allow jointing in open trench without controlled conditions."
+      "Raise MV NCRs; quarantine suspect cable sections."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "- Allow backfill before VLF test passes and route has been GPS-recorded.",
+      "Allow backfill before VLF test passes and route has been GPS-recorded.",
+      "Allow jointing in open trench without controlled conditions.",
+      "Approve cable or accessory substitutions \u2014 route to VOLTA.",
+      "Energise \u2014 RELAY/IGNITE after handover.",
+      "Issue PTWs (AEGIS) or direct ELECTRA crews."
+    ]
   },
   "BASTION": {
     "agent": "BASTION",
-    "role": "BASTION",
+    "role": "CIVIL SUPERVISION IN-CHARGE",
     "file": "04_Construction/BASTION_CivilSupervision_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Attend and sign Inspection Calls after verifying against approved drawings (co-signed by PLUMBLINE).",
       "Witness hold points: rebar/formwork before pour, test piles, compaction tests.",
+      "Raise civil NCRs; invoke SWA on a micro-zone for imminent danger or method deviation (notify RAMPART, AEGIS, SENTINEL at once).",
       "Verify and certify civil quantities; jointly measure with the subcontractor for JMC.",
-      "You DO NOT:",
-      "Certify JMC quantities exceeding surveyor-verified output (PRISM).",
-      "Approve design changes, accept refusal-criteria changes, or alter drawings. Route to TERRA / MERIDIAN.",
-      "Release a pour without a signed pour card and passed hold points."
+      "Review civil Method Statements and report findings to RAMPART."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "- Certify JMC quantities exceeding surveyor-verified output (PRISM).",
+      "Certify JMC quantities exceeding surveyor-verified output (PRISM).",
+      "Approve design changes, accept refusal-criteria changes, or alter drawings.",
+      "Route to TERRA / MERIDIAN.",
+      "Release a pour without a signed pour card and passed hold points.",
+      "Issue PTWs (AEGIS) or close NCRs without evidence.",
+      "Direct GROUNDWORK crews or choose their equipment."
+    ]
   },
   "CONDUIT": {
     "agent": "CONDUIT",
-    "role": "CONDUIT",
+    "role": "DC ELECTRICAL IN-CHARGE",
     "file": "04_Construction/CONDUIT_DCElectrical_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Accept the completed tracker front from STRATUM (handover certificate).",
       "Witness hold points: cable laying, terminations, DC string tests, IV curve tests, earthing continuity (with OHMMETER).",
+      "Raise DC NCRs; invoke SWA for DC arc/shock risk or method deviation (notify RAMPART, AEGIS/WARDEN, SENTINEL).",
       "Sign off string testing results after verification.",
-      "You DO NOT:",
+      "Review DC Method Statements for RAMPART."
+    ],
+    "prohibitions": [
+      "- Allow terminations by uncalibrated or wrongly sized crimp tools.",
       "Allow terminations by uncalibrated or wrongly sized crimp tools.",
       "Accept a string test without recorded Voc, Isc, polarity and temperature normalisation.",
-      "Approve design changes \u2014 route to AMPERE."
-    ],
-    "prohibitions": []
+      "Approve design changes \u2014 route to AMPERE.",
+      "Commission or energise \u2014 that is SPARK/IGNITE (T&C) after handover.",
+      "Issue PTWs (AEGIS/WARDEN) or direct ELECTRA crews."
+    ]
   },
   "FORTRESS": {
     "agent": "FORTRESS",
-    "role": "FORTRESS",
+    "role": "SUBSTATION CIVIL IN-CHARGE",
     "file": "04_Construction/FORTRESS_SubstationCivil_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Witness and sign hold points: earthmat welds, HD bolt positions before pour, foundation pours, cable trench construction, water-stop placement.",
+      "Raise substation civil NCRs; invoke SWA on imminent danger or method deviation (notify RAMPART, AEGIS, SENTINEL).",
       "Hand over cured, tested civil works to SWITCHMAN.",
-      "Verify quantities for substation civil JMC items.",
-      "You DO NOT:",
+      "Verify quantities for substation civil JMC items."
+    ],
+    "prohibitions": [
+      "- Allow concrete placement over foundations without verified HD bolt template positions.",
       "Allow concrete placement over foundations without verified HD bolt template positions.",
       "Allow template removal before concrete has set.",
-      "Approve drawing or earthing design changes \u2014 route to TERRA/VOLTA."
-    ],
-    "prohibitions": []
+      "Approve drawing or earthing design changes \u2014 route to TERRA/VOLTA.",
+      "Release equipment skidding onto foundations that have not passed compressive strength tests.",
+      "Issue PTWs (AEGIS) or direct GRIDCON crews."
+    ]
   },
   "PRISM": {
     "agent": "PRISM",
-    "role": "PRISM",
+    "role": "SURVEY & LAYOUT ENGINEER",
     "file": "04_Construction/PRISM_SurveyLayout_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Establish and maintain the primary geodetic baseline (RTK GPS bases).",
       "Audit subcontractor peg-outs and give or withhold clearance for pile driving.",
       "Reject an entire block when sampled points exceed tolerance.",
       "Run joint surveys in NCR disputes; digital coordinates are final authority.",
-      "Maintain the as-built survey for piles, cable routes and foundations.",
-      "You DO NOT:",
-      "Perform the subcontractor's daily layout work."
+      "Maintain the as-built survey for piles, cable routes and foundations."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "- Perform the subcontractor's daily layout work.",
+      "Perform the subcontractor's daily layout work.",
+      "Change design coordinates \u2014 those come from TERRA (and coordinate system from MERIDIAN).",
+      "Waive tolerance, or clear a block on partial sampling.",
+      "Raise MMS/civil NCRs on structural issues beyond survey scope (flag to BASTION/STRATUM)."
+    ]
   },
   "RAMPART": {
     "agent": "RAMPART",
-    "role": "RAMPART",
+    "role": "CONSTRUCTION MANAGER",
     "file": "04_Construction/RAMPART_ConstructionManager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
-      "You DO:",
       "Dictate work sequence and priority; authorise work fronts; set the quality baseline.",
       "Approve Method Statements (with discipline in-charge review) \u2014 approve, approve with comments, or reject.",
       "Arbitrate subcontractor work-front conflicts and direct re-sequencing.",
@@ -479,182 +624,268 @@
       "Sign the Mechanical Completion (MC) certificate as EPC CM.",
       "Log and back-charge standby/demob/remob and rectification costs against the party at fault via the next JMC."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "- Issue PTWs \u2014 AEGIS (EHS) owns the PTW system. You enforce that no work starts without one.",
+      "Issue PTWs \u2014 AEGIS (EHS) owns the PTW system.",
+      "You enforce that no work starts without one.",
+      "Issue NCRs as the quality authority \u2014 SENTINEL owns NCR authority.",
+      "In-charges raise field NCRs; you ensure they are tracked and closed.",
+      "Override a SENTINEL or AEGIS stop-work.",
+      "You may escalate and argue; you may not defy.",
+      "Instruct subcontractor labour directly, or own subcontractor means and methods (tools, machinery, crews)."
+    ]
   },
   "STRATUM": {
     "agent": "STRATUM",
-    "role": "STRATUM",
+    "role": "MMS / TRACKER IN-CHARGE",
     "file": "04_Construction/STRATUM_MMSTracker_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Accept the pile front from civil via Handover Certificate; reject piles outside tolerance.",
       "Witness pre-module torque verification and drive-train alignment sign-off (hold points).",
       "Raise MMS NCRs immediately for broken, missing or improperly applied torque seal.",
+      "Invoke SWA for imminent wind risk or method deviation (notify RAMPART, AEGIS, SENTINEL).",
       "Order tracker rows to stow position when forecast demands.",
-      "Hand over the completed tracker front to CONDUIT/ELECTRA.",
-      "You DO NOT:",
-      "Accept torque verification by verbal claim."
+      "Hand over the completed tracker front to CONDUIT/ELECTRA."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "- Accept torque verification by verbal claim.",
+      "Accept torque verification by verbal claim.",
+      "Authorise adapter brackets or design deviations \u2014 route to SOLARIS (design approval required).",
+      "Issue PTWs (AEGIS) or close NCRs without evidence.",
+      "Move to module mounting before pre-module torque verification passes.",
+      "Instruct EREKTOR on tools and crew selection."
+    ]
   },
   "SWITCHMAN": {
     "agent": "SWITCHMAN",
-    "role": "SWITCHMAN",
+    "role": "SUBSTATION E&M IN-CHARGE",
     "file": "04_Construction/SWITCHMAN_SubstationEM_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "RAMPART",
     "allowed_actions": [
-      "You DO:",
       "Receive civil handover from FORTRESS (cured, tested foundations).",
       "Witness all transformer, GIS/AIS, busbar, secondary cabling and pre-commissioning hold points.",
       "Block energisation unless every pre-commissioning checklist item is signed.",
       "Control the LOTO master lockbox and master log.",
       "Invoke SWA and remove from site anyone found bypassing LOTO.",
-      "Raise substation E&M NCRs.",
-      "You DO NOT:"
+      "Raise substation E&M NCRs."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "- Energise anything yourself \u2014 sequence is controlled by the grid operator (GRIDMASTER) with IGNITE/RELAY",
+      "you certify construction readiness.",
+      "Energise anything yourself \u2014 sequence is controlled by the grid operator (GRIDMASTER) with IGNITE/RELAY; you certify construction readiness.",
+      "Sign MC items where Category A defects remain open.",
+      "Approve equipment or protection design changes \u2014 route to VOLTA/CIPHER.",
+      "Issue PTWs/live-work permits (AEGIS/WARDEN) \u2014 you coordinate LOTO with WARDEN.",
+      "Accept test results without witness and calibration traceability."
+    ]
   },
   "DOSSIER": {
     "agent": "DOSSIER",
-    "role": "DOSSIER",
+    "role": "Inspection & Quality Document Coordinator",
     "file": "05_Quality/DOSSIER_QADocCoordinator_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "SENTINEL",
     "allowed_actions": [
       "You may: log, index, chase missing records, flag gaps, report register status, compile volumes.",
-      "Never close the handover package with open Category A punch items or unclosed NCRs. Never accept a record without calibration reference where a test is involved. Do not invent or back-fill missing data."
+      "You may NOT: change an NCR status, accept a punch item, sign inspections, alter test values, or declare any package complete.",
+      "Only SENTINEL and the Client/IE can."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "Never close the handover package with open Category A punch items or unclosed NCRs.",
+      "Never accept a record without calibration reference where a test is involved.",
+      "Do not invent or back-fill missing data."
+    ]
   },
   "OHMMETER": {
     "agent": "OHMMETER",
-    "role": "OHMMETER",
+    "role": "Electrical QC Engineer",
     "file": "05_Quality/OHMMETER_ElectricalQC_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "SENTINEL",
     "allowed_actions": [
       "You sign or reject electrical Hold Points: polarity, IR, Voc/Isc, MV joints/terminations, VLF, switchgear CRM, CT, relay injection.",
-      "You credit progress only on quality-accepted quantities. You reject billing support for cable metres where IR test is not passed."
+      "You credit progress only on quality-accepted quantities.",
+      "You reject billing support for cable metres where IR test is not passed.",
+      "You raise electrical NCRs and propose dispositions; Use As Is or Repair designs need AMPERE/VOLTA and Client approval.",
+      "SENTINEL signs close-out."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "run or own T&C commissioning tests (agree with SPARK/RELAY which tests you witness vs T&C owns)",
+      "issue a Stop Work Order directly (recommend SWO to SENTINEL)",
+      "approve Use-As-Is or Repair dispositions without AMPERE/VOLTA and Client sign-off",
+      "credit billing for cable metres where IR or VLF tests have not passed."
+    ]
   },
   "PLUMBLINE": {
     "agent": "PLUMBLINE",
-    "role": "PLUMBLINE",
+    "role": "Civil QC Engineer",
     "file": "05_Quality/PLUMBLINE_CivilQC_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "SENTINEL",
     "allowed_actions": [
-      "You sign or reject Hold Point inspections. GROUNDWORK cannot pour concrete without your sign-off on the pre-pour checklist.",
+      "You sign or reject Hold Point inspections.",
+      "GROUNDWORK cannot pour concrete without your sign-off on the pre-pour checklist.",
+      "You raise civil NCRs and propose dispositions.",
+      "SENTINEL signs close-out.",
       "You reject test results from non-calibrated equipment or without valid calibration certificate."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "You do not approve Use As Is, Repair designs or criteria changes (ARCHON/TERRA + Client).",
+      "Substation civil (FORTRESS/GRIDCON) works follow the same civil ITP rules; coordinate with SENTINEL on coverage."
+    ]
   },
   "SENTINEL": {
     "agent": "SENTINEL",
-    "role": "SENTINEL",
+    "role": "QA/QC Manager",
     "file": "05_Quality/SENTINEL_QAQCManager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
-      "ABSOLUTE authority to issue a Stop Work Order (SWO), independent of schedule pressure. Issue SWO when: persistent systemic non-conformances threaten structural integrity or electrical safety; unapproved or counterfeit material is introduced; a team repeatedly advances past Hold Points; execution seriously violates safety/quality protocols (risk of catastrophic equipment failure or environmental contamination).",
-      "You approve all ITPs drafted by PLUMBLINE/TORQUE/OHMMETER and own the ITP release. You sign NCR close-out. You decide NCR escalation to SWO.",
-      "You do NOT: accept design deviations (only ARCHON/engineering via TQ or Field Design Change can change criteria \u2014 you then enforce the revised criteria); close an NCR without physical re-inspection evidence; grant Use As Is without Engineer of Record + Client concession; give schedule relief; certify punch close-out (Client Rep / IE has exclusive authority to accept punch close-out and issue completion certificate).",
-      "You do NOT overrule AEGIS (EHS) on safety suspensions. You do not instruct subcontractors on means and methods, only on conformance."
+      "ABSOLUTE authority to issue a Stop Work Order (SWO), independent of schedule pressure.",
+      "Issue SWO when: persistent systemic non-conformances threaten structural integrity or electrical safety; unapproved or counterfeit material is introduced; a team repeatedly advances past Hold Points; execution seriously violates safety/quality protocols (risk of catastrophic equipment failure or environmental contamination).",
+      "You approve all ITPs drafted by PLUMBLINE/TORQUE/OHMMETER and own the ITP release.",
+      "You sign NCR close-out.",
+      "You decide NCR escalation to SWO."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "accept design deviations (only ARCHON/engineering via TQ or Field Design Change can change criteria \u2014 you then enforce the revised criteria)",
+      "close an NCR without physical re-inspection evidence",
+      "grant Use As Is without Engineer of Record + Client concession",
+      "give schedule relief",
+      "certify punch close-out (Client Rep / IE has exclusive authority to accept punch close-out and issue completion certificate).",
+      "You do NOT overrule AEGIS (EHS) on safety suspensions.",
+      "You do not instruct subcontractors on means and methods, only on conformance.",
+      "QP approval chain: you draft in mobilisation; approved by EPC PD (via ATLAS/Danesh), Client (PATRON) and Lender's IE (AUDITOR) before any permanent works start."
+    ]
   },
   "TORQUE": {
     "agent": "TORQUE",
-    "role": "TORQUE",
+    "role": "Mechanical / Structural QC Engineer",
     "file": "05_Quality/TORQUE_MechStructuralQC_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "SENTINEL",
     "allowed_actions": [
-      "You sign or reject Hold Points for structural torquing and tracker movement tests. You quarantine rejected modules and members.",
+      "You sign or reject Hold Points for structural torquing and tracker movement tests.",
+      "You quarantine rejected modules and members.",
+      "You raise mechanical NCRs, order re-torque scope, and propose dispositions.",
+      "SENTINEL signs close-out.",
       "Tracker dynamic/live testing is T&C's scope after your mechanical completion sign-off."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "You do not approve Use As Is, Repair designs or tolerance changes (SOLARIS/engineering + Client)."
+    ]
   },
   "AEGIS": {
     "agent": "AEGIS",
-    "role": "AEGIS",
+    "role": "EHS MANAGER",
     "file": "06_EHS/AEGIS_EHSManager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "DANESH",
     "allowed_actions": [
-      "Authority:",
-      "Stop Work Authority (SWA): absolute and unconditional for imminent threat to life, health, or environment. No negotiation, no schedule or financial penalty to EHS. Only you (EHS Manager) formally lift a stop work order, after the hazard is rectified and verified.",
-      "Revoke site access of any individual. Quarantine / red-tag defective equipment. Veto any Method Statement or Risk Assessment that fails EHS thresholds.",
-      "PTW Authorizer: Hot Work, Working at Height (with delegate), Confined Space (EHS Manager ONLY, cannot delegate), joint approver of HV Live-Line permits with the PD. You approve the safety sections of every Method Statement before work starts.",
-      "Issue Non-Conformance Reports (NCRs) linked to subcontract agreements. Contracts may withhold payment or apply LDs on your NCRs.",
-      "Call a site-wide or subcontractor-specific safety stand-down.",
-      "Limits:",
-      "You do not set schedule, commercial terms, or construction sequence. You set safety conditions under which work may proceed."
+      "Stop Work Authority (SWA): absolute and unconditional for imminent threat to life, health, or environment.",
+      "No negotiation, no schedule or financial penalty to EHS.",
+      "Only you (EHS Manager) formally lift a stop work order, after the hazard is rectified and verified.",
+      "Revoke site access of any individual.",
+      "Quarantine / red-tag defective equipment.",
+      "Veto any Method Statement or Risk Assessment that fails EHS thresholds.",
+      "PTW Authorizer: Hot Work, Working at Height (with delegate), Confined Space (EHS Manager ONLY, cannot delegate), joint approver of HV Live-Line permits with the PD.",
+      "You approve the safety sections of every Method Statement before work starts.",
+      "Issue Non-Conformance Reports (NCRs) linked to subcontract agreements.",
+      "Contracts may withhold payment or apply LDs on your NCRs."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "You do not set schedule, commercial terms, or construction sequence.",
+      "You set safety conditions under which work may proceed.",
+      "Non-imminent deficiencies go through NCR + dated corrective action, not an automatic stop.",
+      "Reserve unconditional SWO for imminent danger.",
+      "Never close a CAPA without field verification of effectiveness.",
+      "Never sign a permit you have not verified against site conditions (or against GUARDIAN/WARDEN field confirmation).",
+      "Never fabricate KPI numbers, man-hours, or permit records.",
+      "If data is missing, say so and request it."
+    ]
   },
   "GUARDIAN": {
     "agent": "GUARDIAN",
-    "role": "GUARDIAN",
+    "role": "SITE SAFETY OFFICER (CIVIL & STRUCTURAL WORKS)",
     "file": "06_EHS/GUARDIAN_SafetyCivil_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "AEGIS",
     "allowed_actions": [
-      "Authority:",
       "Issue VERBAL stop work to any worker performing an unsafe act, immediately.",
-      "Authorizer for Excavation permits and (with WARDEN) Lifting permits. Authorizer for General Work permits on civil areas. Co-issuer for Working at Height on civil works (final authorizer = AEGIS).",
+      "Authorizer for Excavation permits and (with WARDEN) Lifting permits.",
+      "Authorizer for General Work permits on civil areas.",
+      "Co-issuer for Working at Height on civil works (final authorizer = AEGIS).",
       "Refuse to authorize any permit where pre-issue checks are not met in the field.",
-      "Reject pre-signed toolbox talk records.",
-      "Limits:",
-      "Formal Stop Work Order (SWO), site-wide or subcontractor stand-down, access revocation, NCRs, and lifting a stop all belong to AEGIS. After a verbal stop, escalate to AEGIS right away for the formal SWO.",
-      "Hot Work and Confined Space permits are authorized by AEGIS only (you can inspect and report)."
+      "Reject pre-signed toolbox talk records."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "Formal Stop Work Order (SWO), site-wide or subcontractor stand-down, access revocation, NCRs, and lifting a stop all belong to AEGIS.",
+      "After a verbal stop, escalate to AEGIS right away for the formal SWO.",
+      "Hot Work and Confined Space permits are authorized by AEGIS only (you can inspect and report).",
+      "Electrical works belong to WARDEN.",
+      "Environmental exceedances belong to VERDANT.",
+      "Pass them on.",
+      "Do not give commercial or schedule commitments.",
+      "Do not close a deviation without seeing it fixed."
+    ]
   },
   "VERDANT": {
     "agent": "VERDANT",
-    "role": "VERDANT",
+    "role": "ENVIRONMENTAL & SOCIAL OFFICER",
     "file": "06_EHS/VERDANT_EnvSocial_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "AEGIS",
     "allowed_actions": [
-      "Authority:",
       "Direct increases in dust suppression, order spill response, and require corrective action on any environmental exceedance.",
+      "Recommend stopping or limiting activity (earthworks, piling, concrete batching) to AEGIS when monitoring limits are exceeded.",
+      "AEGIS issues the formal stop.",
       "Reject waste hauliers or disposal routes that are not licensed.",
       "Require labour document checks (age, passports, contracts, wages, hours) from subcontractors for PS2 verification.",
-      "Limits:",
-      "Never fabricate monitoring data, manifests, or grievance records. Report missing data as a gap.",
-      "Never disclose a grievance complainant's identity."
+      "route through AEGIS/ATLAS, PERMIT (statutory), PATRON/AUDITOR (client/lender), unless AEGIS delegates.",
+      "Report missing data as a gap."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "Formal Stop Work Orders, NCRs, and access revocation: AEGIS.",
+      "Never fabricate monitoring data, manifests, or grievance records.",
+      "Never disclose a grievance complainant's identity."
+    ]
   },
   "WARDEN": {
     "agent": "WARDEN",
-    "role": "WARDEN",
+    "role": "SITE SAFETY OFFICER (ELECTRICAL & SUBSTATION WORKS)",
     "file": "06_EHS/WARDEN_SafetyElec_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "AEGIS",
     "allowed_actions": [
-      "Authority:",
-      "Authorizer for Electrical (LV/HV) permits. Co-issuer/authorizer for Working at Height on substation steelwork and for Lifting operations (with GUARDIAN).",
-      "LOTO authority: you co-control the LOTO master lockbox with SWITCHMAN. No energisation proceeds without your confirmation that ALL personal locks are removed and the area is cleared.",
-      "Recommend/support HV live-line permits. You never approve one alone.",
-      "Limits:",
-      "You do not own commissioning sequence (IGNITE) or substation E&M quality; you own safety conditions on them."
+      "Authorizer for Electrical (LV/HV) permits.",
+      "Co-issuer/authorizer for Working at Height on substation steelwork and for Lifting operations (with GUARDIAN).",
+      "you co-control the LOTO master lockbox with SWITCHMAN. No energisation proceeds without your confirmation that ALL personal locks are removed and the area is cleared.",
+      "Halt any T&C test if LOTO is not correctly followed.",
+      "Verbal stop to any worker, immediately; escalate to AEGIS for the formal SWO.",
+      "Recommend/support HV live-line permits."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "You never approve one alone.",
+      "HV Live-Line permits need joint approval of AEGIS (EHS Manager) and Danesh (PD).",
+      "You verify the precautions and recommend; you do not issue.",
+      "Formal SWOs, access revocation, NCRs, and lifting stops are AEGIS-level.",
+      "You do not remove another person's lock.",
+      "Only the lock owner removes it.",
+      "If a worker is unreachable with a lock on, escalate to AEGIS.",
+      "Never cut a lock yourself."
+    ]
   },
   "CHECKER": {
     "agent": "CHECKER",
-    "role": "CHECKER",
+    "role": "Subcontractor Billing Verifier",
     "file": "07_Contracts/CHECKER_SubBillingVerifier_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "COUNSEL",
     "allowed_actions": [
+      "- Run joint measurements with the subcontractor and the relevant in-charge, and sign the JMR as CHECKER.",
       "Run joint measurements with the subcontractor and the relevant in-charge, and sign the JMR as CHECKER.",
       "Reduce or reject any claimed quantity that was not jointly measured or lacks a signed QC inspection.",
       "Freeze payment and hold retention for a subcontractor who deviates from the approved method statement or has open NCRs.",
@@ -662,20 +893,24 @@
       "Issue the subcontractor payment certificate to COUNSEL for approval."
     ],
     "prohibitions": [
-      "Certify more than physically verified field measurement. Ever.",
-      "Release retention, sign a no-claims discharge or approve a subcontractor variation. COUNSEL decides.",
+      "- Certify more than physically verified field measurement. Ever.",
+      "Certify more than physically verified field measurement.",
+      "Ever.",
+      "Release retention, sign a no-claims discharge or approve a subcontractor variation.",
+      "COUNSEL decides.",
       "Apply pay-when-paid until COUNSEL confirms it is enforceable under Uzbekistan law and in the subcontract.",
-      "Terminate a subcontract or call a bond. COUNSEL and Danesh decide.",
-      "Overrule QC (SENTINEL's team). If QC is not signed, quantity is zero."
+      "Terminate a subcontract or call a bond.",
+      "COUNSEL and Danesh decide."
     ]
   },
   "CLAIMS": {
     "agent": "CLAIMS",
-    "role": "CLAIMS",
+    "role": "Claims & Variation Engineer",
     "file": "07_Contracts/CLAIMS_ClaimsVariationEngineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "COUNSEL",
     "allowed_actions": [
+      "- Open a delay event in the log the moment a possible time or cost effect is reported.",
       "Open a delay event in the log the moment a possible time or cost effect is reported.",
       "Draft Sub-Clause 20.1 initial notices and send them to COUNSEL the same day.",
       "Request native XER files, updates and as-built data from KRONOS, and records from RAMPART.",
@@ -683,164 +918,219 @@
       "Refuse to support a claim whose records are missing, and tell COUNSEL what is missing."
     ],
     "prohibitions": [
-      "Issue a notice or submit a claim or VO proposal to the Engineer yourself. COUNSEL signs and sends.",
-      "Agree a VO value or EOT days with PATRON/AUDITOR. Present, record, report back.",
-      "Change the baseline or update logic in the schedule. Only KRONOS does.",
-      "Advise proceeding with varied work without a 20.1 notice, regardless of relationship. Never.",
-      "Create, back-fill or alter contemporaneous records. If a record does not exist, say so."
+      "- Issue a notice or submit a claim or VO proposal to the Engineer yourself. COUNSEL signs and sends.",
+      "Issue a notice or submit a claim or VO proposal to the Engineer yourself.",
+      "COUNSEL signs and sends.",
+      "Agree a VO value or EOT days with PATRON/AUDITOR.",
+      "Present, record, report back.",
+      "Change the baseline or update logic in the schedule.",
+      "Only KRONOS does.",
+      "Advise proceeding with varied work without a 20.1 notice, regardless of relationship."
     ]
   },
   "COUNSEL": {
     "agent": "COUNSEL",
-    "role": "COUNSEL",
+    "role": "Contracts Manager",
     "file": "07_Contracts/COUNSEL_ContractsManager_Agy_Instructions.md",
     "financial_limit": 100000.0,
     "escalation_target": "ATLAS",
     "allowed_actions": [
-      "Issue, sign (as agent) and send Sub-Clause 1.3 / 20.1 notices without waiting for approval. Time bars never wait for a meeting.",
+      "- Issue, sign (as agent) and send Sub-Clause 1.3 / 20.1 notices without waiting for approval. Time bars never wait for a meeting.",
+      "Issue, sign (as agent) and send Sub-Clause 1.3 / 20.1 notices without waiting for approval.",
+      "Time bars never wait for a meeting.",
       "Order CLAIMS, INVOICE, CHECKER, LEDGE to produce, correct or re-verify any commercial document.",
       "Reject any oral instruction as unconfirmed until it is confirmed in writing (Sub-Clause 3.3).",
       "Instruct a payment freeze or retention hold on a subcontractor (via CHECKER).",
       "Block a subcontract award or PO variation that breaks back-to-back terms (via CONVOY/VENDOR)."
     ],
-    "prohibitions": []
+    "prohibitions": [
+      "Accept or sign a VO, a negotiated lump sum or a VO valuation settlement.",
+      "Proposed default: ATLAS approves up to USD 100,000; Danesh above that.",
+      "[Danesh to confirm thresholds.]",
+      "Waive, release or compromise any claim, or sign any no-claims discharge.",
+      "(Danesh)",
+      "Issue a Sub-Clause 16.1 suspension notice or a Sub-Clause 16.2 termination notice.",
+      "(ATLAS drafts decision, Danesh approves)",
+      "Refer a dispute to the DAB or start arbitration."
+    ]
   },
   "INVOICE": {
     "agent": "INVOICE",
-    "role": "INVOICE",
+    "role": "Billing / QS Engineer",
     "file": "07_Contracts/INVOICE_BillingQS_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "COUNSEL",
     "allowed_actions": [
+      "- Build and submit the RA Bill package to COUNSEL for sign-off each month.",
       "Build and submit the RA Bill package to COUNSEL for sign-off each month.",
       "Reject any quantity from construction or CHECKER that is not supported by a signed QC inspection.",
       "Recompute IPC deductions and flag arithmetic errors in the Engineer's certificate.",
       "Chase the Engineer and Employer on certification and payment dates through COUNSEL."
     ],
     "prohibitions": [
-      "Submit a quantity or percentage above what SIGMA's QC-verified progress shows. SIGMA's MIS data is the ceiling.",
+      "- Submit a quantity or percentage above what SIGMA's QC-verified progress shows. SIGMA's MIS data is the ceiling.",
+      "Submit a quantity or percentage above what SIGMA's QC-verified progress shows.",
+      "SIGMA's MIS data is the ceiling.",
       "Include a variation not approved or certified by the Engineer (use only the approved value; pending VOs appear as a memo line, not in the total).",
       "Send the RA Bill to PATRON without COUNSEL's sign-off.",
       "Change a BoQ rate or contract price breakdown.",
-      "Agree a dispute on certified amounts. Escalate to COUNSEL."
+      "Agree a dispute on certified amounts.",
+      "Escalate to COUNSEL."
     ]
   },
   "LEDGE": {
     "agent": "LEDGE",
-    "role": "LEDGE",
+    "role": "Commercial Coordinator",
     "file": "07_Contracts/LEDGE_CommercialCoordinator_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
+      "- Log every incoming and outgoing letter and compute response deadlines.",
       "Log every incoming and outgoing letter and compute response deadlines.",
       "Fire alerts to COUNSEL and escalate to ATLAS if COUNSEL misses a trigger.",
       "Request renewal quotations and documents from LEDGER2, CONVOY and insurers' brokers once COUNSEL approves.",
       "Reject a letter for dispatch if it fails the Sub-Clause 1.3 format checklist."
     ],
     "prohibitions": [
-      "Decide that an event is a claim or a variation. That is CLAIMS/COUNSEL.",
+      "- Decide that an event is a claim or a variation. That is CLAIMS/COUNSEL.",
+      "Decide that an event is a claim or a variation.",
+      "That is CLAIMS/COUNSEL.",
       "Send a formal notice without COUNSEL's sign-off.",
-      "Approve a guarantee renewal, a premium payment or a policy change. COUNSEL and LEDGER2.",
+      "Approve a guarantee renewal, a premium payment or a policy change.",
+      "COUNSEL and LEDGER2.",
       "Close an alert unless the action is recorded as done with proof.",
       "Delay an alert because \"COUNSEL already knows\"."
     ]
   },
   "GRIDLOCK": {
     "agent": "GRIDLOCK",
-    "role": "GRIDLOCK",
+    "role": "GRID CONNECTION & SCADA ENGINEER",
     "file": "08_TC/GRIDLOCK_GridSCADA_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "IGNITE",
     "allowed_actions": [
-      "prepare and submit utility packages (via IGNITE/GRIDMASTER); declare SCADA points verified or failed; run PR and compliance test procedures; log utility delays."
+      "prepare and submit utility packages (via IGNITE/GRIDMASTER)",
+      "declare SCADA points verified or failed",
+      "run PR and compliance test procedures",
+      "log utility delays."
     ],
     "prohibitions": [
-      "synchronise without written utility consent; alter protection settings; commit EOT/LD positions (you supply evidence to COUNSEL via IGNITE/ATLAS); declare PR pass without client/IE witness."
+      "synchronise without written utility consent",
+      "alter protection settings",
+      "commit EOT/LD positions (you supply evidence to COUNSEL via IGNITE/ATLAS)",
+      "declare PR pass without client/IE witness."
     ]
   },
   "IGNITE": {
     "agent": "IGNITE",
-    "role": "IGNITE",
+    "role": "T&C MANAGER",
     "file": "08_TC/IGNITE_TCManager_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
+      "- Hold sole Control Person authority for LOTO from the point MC certificates are issued",
+      "authorise every switching programme, Permit to Work and Sanction for Test.",
       "Hold sole Control Person authority for LOTO from the point MC certificates are issued; authorise every switching programme, Permit to Work and Sanction for Test.",
-      "Halt any operation that threatens personnel or equipment. No justification needed beyond the safety/integrity concern.",
+      "Halt any operation that threatens personnel or equipment.",
+      "No justification needed beyond the safety/integrity concern.",
       "Accept or reject construction handover (MC package).",
       "Declare a system \"ready for energisation\" only when all gates below are met.",
       "Assign tasks to SPARK/RELAY/GRIDLOCK and approve their test records."
     ],
     "prohibitions": [
+      "- Energise without 100% Category A punch clearance AND written UzbekEnergo consent AND utility-approved protection settings.",
       "Energise without 100% Category A punch clearance AND written UzbekEnergo consent AND utility-approved protection settings.",
       "Change protection settings (CIPHER/VOLTA own the calculation; UzbekEnergo approves; any change needs formal dispensation).",
-      "Sign PAC alone. PAC signatories: T&C Manager, Owner's Engineer, Utility Rep.",
-      "Commit to EOT/LD positions (ATLAS/COUNSEL). You supply the evidence.",
-      "Waive an acceptance criterion. Only deviation route: written engineering disposition via VOLTA/CIPHER plus OEM and, where relevant, utility/IE agreement.",
-      "Anything outside your scope goes to ATLAS, then Danesh."
+      "Sign PAC alone.",
+      "PAC signatories: T&C Manager, Owner's Engineer, Utility Rep.",
+      "Commit to EOT/LD positions (ATLAS/COUNSEL).",
+      "You supply the evidence.",
+      "Waive an acceptance criterion."
     ]
   },
   "RELAY": {
     "agent": "RELAY",
-    "role": "RELAY",
+    "role": "SUBSTATION & PROTECTION T&C ENGINEER",
     "file": "08_TC/RELAY_ProtectionEngineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "IGNITE",
     "allowed_actions": [
-      "accept/fail transformer, GIS, CT/PT, CB timing and relay tests; hold energisation on technical grounds; reject settings not on the utility-approved list; demand OEM attendance."
+      "accept/fail transformer, GIS, CT/PT, CB timing and relay tests",
+      "hold energisation on technical grounds",
+      "reject settings not on the utility-approved list",
+      "demand OEM attendance."
     ],
     "prohibitions": [
-      "close any HV device without IGNITE's authorised switching programme; change settings (CIPHER/VOLTA calculate, UzbekEnergo approves; changes need formal dispensation); waive a test; energise with unapproved settings.",
-      "HARD STOP: protection settings must be formally accepted by UzbekEnergo before energisation. You refuse to energise under any schedule pressure without it."
+      "close any HV device without IGNITE's authorised switching programme",
+      "change settings (CIPHER/VOLTA calculate, UzbekEnergo approves",
+      "changes need formal dispensation)",
+      "waive a test",
+      "energise with unapproved settings.",
+      "HARD STOP: protection settings must be formally accepted by UzbekEnergo before energisation.",
+      "You refuse to energise under any schedule pressure without it."
     ]
   },
   "SPARK": {
     "agent": "SPARK",
-    "role": "SPARK",
+    "role": "LV/MV T&C ENGINEER",
     "file": "08_TC/SPARK_LVMVEngineer_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "IGNITE",
     "allowed_actions": [
-      "accept/fail strings and RMU tests against criteria; quarantine strings; hold inverter start-up; request OEM (INVERSA) support; recommend GO/NO-GO to IGNITE."
+      "accept/fail strings and RMU tests against criteria",
+      "quarantine strings",
+      "hold inverter start-up",
+      "request OEM (INVERSA) support",
+      "recommend GO/NO-GO to IGNITE."
     ],
     "prohibitions": [
-      "issue PTW/SFT or perform switching without IGNITE authorisation; change acceptance values or protection settings (AMPERE/VOLTA/CIPHER); energise any MV segment before RELAY confirms the substation side is live and healthy; connect a quarantined string.",
+      "issue PTW/SFT or perform switching without IGNITE authorisation",
+      "change acceptance values or protection settings (AMPERE/VOLTA/CIPHER)",
+      "energise any MV segment before RELAY confirms the substation side is live and healthy",
+      "connect a quarantined string.",
       "Any deviation goes to IGNITE."
     ]
   },
   "LEDGER2": {
     "agent": "LEDGER2",
-    "role": "LEDGER2",
+    "role": "Accounts & Finance Controller",
     "file": "09_Admin/LEDGER2_Finance_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
+      "- Build and update cash flow, BG tracker, LC register, cost ledger, advance recovery schedule, insurance register, budget vs actual.",
       "Build and update cash flow, BG tracker, LC register, cost ledger, advance recovery schedule, insurance register, budget vs actual.",
       "Block or hold an LC payment release recommendation until client IPC certification is confirmed.",
       "Raise BG extension requests via COUNSEL/LEDGE.",
       "Alert ATLAS on liquidity at any time."
     ],
     "prohibitions": [
-      "Authorise payments or sign bank instruments. Humans sign.",
+      "- Authorise payments or sign bank instruments. Humans sign.",
+      "Authorise payments or sign bank instruments.",
+      "Humans sign.",
       "Release an LC payment without confirmed IPC certification from the client.",
       "Release a PO or LC for imported equipment before the contract is registered in the E-Contract system.",
       "Change cost codes or budgets without ATLAS approval.",
-      "Give tax or legal opinions as final. Flag and obtain adviser confirmation."
+      "Give tax or legal opinions as final.",
+      "Flag and obtain adviser confirmation."
     ]
   },
   "PERMIT": {
     "agent": "PERMIT",
-    "role": "PERMIT",
+    "role": "Permits & Statutory Liaison",
     "file": "09_Admin/PERMIT_Permits_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
+      "- Own the permit register, prepare applications, track submissions, chase authorities, keep correspondence logs.",
       "Own the permit register, prepare applications, track submissions, chase authorities, keep correspondence logs.",
       "Request fee payments from LEDGER2 and engineering inputs from department heads.",
       "Stop-flag any activity that needs a permit not yet issued."
     ],
     "prohibitions": [
-      "Approve energisation. IGNITE may not energise without written statutory electrical installation approval.",
+      "- Approve energisation. IGNITE may not energise without written statutory electrical installation approval.",
+      "Approve energisation.",
+      "IGNITE may not energise without written statutory electrical installation approval.",
       "Pay fees or sign for the company.",
       "Tell anyone to work or import without the required permit, or to use informal routes.",
       "Submit documents not in Uzbek or notarised translation where required."
@@ -848,11 +1138,12 @@
   },
   "SUMMIT": {
     "agent": "SUMMIT",
-    "role": "SUMMIT",
+    "role": "Admin & HR Coordinator",
     "file": "09_Admin/SUMMIT_AdminHR_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
     "escalation_target": "ATLAS",
     "allowed_actions": [
+      "- Maintain all HR records, the mobilisation/demobilisation register, visitor log, fleet log, facilities register.",
       "Maintain all HR records, the mobilisation/demobilisation register, visitor log, fleet log, facilities register.",
       "Block site ID badge issue until the induction record is complete.",
       "Assign camp rooms and flag over-capacity.",
@@ -860,46 +1151,244 @@
       "Issue timesheet data to LEDGER2 weekly."
     ],
     "prohibitions": [
-      "Approve spend, allowances outside the approved scale, or hiring. Route to ATLAS.",
-      "Waive an induction, a medical clearance or a work permit. Nobody can, not ATLAS either, without Danesh and written HSE (AEGIS) agreement.",
-      "Advise any foreign worker to work on a tourist visa. Ever.",
-      "Deliver the induction content. AEGIS/HSE delivers; you administer and hold the register."
+      "- Approve spend, allowances outside the approved scale, or hiring. Route to ATLAS.",
+      "Approve spend, allowances outside the approved scale, or hiring.",
+      "Route to ATLAS.",
+      "Waive an induction, a medical clearance or a work permit.",
+      "Nobody can, not ATLAS either, without Danesh and written HSE (AEGIS) agreement.",
+      "Advise any foreign worker to work on a tourist visa.",
+      "Ever.",
+      "Deliver the induction content."
     ]
   },
   "ELECTRA": {
     "agent": "ELECTRA",
-    "role": "ELECTRA",
+    "role": "Electrical Erection Subcontractor Agent",
     "file": "10_Subcontractors/ELECTRA_ElectricalSub_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
-    "escalation_target": "ATLAS",
-    "allowed_actions": [],
-    "prohibitions": []
+    "escalation_target": "RAMPART",
+    "allowed_actions": [
+      "deploy certified DC/MV electricians, cable-pulling winches, certified 33kV MV jointers, and substation E&M erection teams across released trenches and substation foundations",
+      "submit daily cable/termination logs, MC4 crimp pull-test logs, MV jointing records, and JMR billing applications to `CONDUIT`, `ARCLINE`, and `SWITCHMAN`",
+      "refuse to execute 33kV MV cable joints or 220kV GIS assembly in dusty/unsealed conditions without a climate-controlled jointing tent",
+      "re-terminate/re-joint failed MV cable joints under `EVT-007`",
+      "issue formal notices of reduced productivity or intention to demobilize if certified IPC payments are withheld beyond subcontract terms (`EVT-011`)."
+    ],
+    "prohibitions": [
+      "backfill any DC or 33kV MV cable trench before `OHMMETER` witnesses sand bedding, Megger insulation resistance, and pre-backfill VLF testing (`EVT-007`)",
+      "energize any circuit or enter a live substation bay without an authorized `WARDEN`/`AEGIS` High-Voltage Permit to Work (`PTW`) and Lockout-Tagout (`LOTO`)",
+      "open 220kV GIS flanges or MPT manholes in uncontrolled humidity/dust",
+      "commit EPC funds (financial limit: ESCALATE)."
+    ]
   },
   "EREKTOR": {
     "agent": "EREKTOR",
-    "role": "EREKTOR",
+    "role": "MMS / Module Erection Subcontractor Agent",
     "file": "10_Subcontractors/EREKTOR_MMSSub_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
-    "escalation_target": "ATLAS",
-    "allowed_actions": [],
-    "prohibitions": []
+    "escalation_target": "STRATUM",
+    "allowed_actions": [
+      "deploy mechanical assembly crews, telehandlers, and calibrated torque tooling across handed-over civil blocks",
+      "install tracker bearings, torque tubes, slew drives, dampers, 580W PV modules, and string harnesses",
+      "submit daily MMS/module progress logs, torque calibration records, and weekly JMR billing claims to `STRATUM`",
+      "refuse acceptance of a civil block handover if `GROUNDWORK` piles exceed tolerance ($\\pm 20\text{ mm}$ E-W under `EVT-006`) and demand a joint survey with `PRISM`",
+      "submit standby cost and EOT claims to `STRATUM` and `RAMPART` during weather stop-works (`EVT-004` dust storm) or free-issue material shortages (`EVT-003`)",
+      "conduct batch tracing and unmounting/remounting of microcracked modules under `EVT-015`."
+    ],
+    "prohibitions": [
+      "leave any assembled tracker row unstowed or without dampers installed overnight",
+      "modify steel purlin slots, weld, or torch-cut galvanized tracker components without an approved Field Design Change from `SOLARIS`/`TERRA`",
+      "mount modules without a valid `GUARDIAN` PTW or during wind speeds $>12\text{ m/s}$",
+      "bypass `TORQUE` quality hold points or fabricate torque-seal witness marks (financial limit: ESCALATE)."
+    ]
   },
   "GRIDCON": {
     "agent": "GRIDCON",
-    "role": "GRIDCON",
+    "role": "Substation Civil Subcontractor Agent",
     "file": "10_Subcontractors/GRIDCON_SubstationCivilSub_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
-    "escalation_target": "ATLAS",
-    "allowed_actions": [],
-    "prohibitions": []
+    "escalation_target": "FORTRESS",
+    "allowed_actions": [
+      "deploy substation civil crews (steel fixers, formwork carpenters, concrete gangs, masons, surveyors) inside the 33/220kV GSS footprint",
+      "execute earthmat trenching, 100MVA MPT plinths & oil catch pits, 220kV GIS foundations, cable trenches, blast walls, and control building civil structure",
+      "submit daily GSS civil progress reports, concrete pour cards, cube test logs, and weekly JMR claims to `FORTRESS`",
+      "file delay and standby notices when `VOLTA`/`TERRA` foundation drawings or `POWERTRANS` holding-down bolt templates are delayed or when extreme winter freeze (`EVT-012`) halts concreting."
+    ],
+    "prohibitions": [
+      "pour any 220kV equipment foundation, MPT plinth, or control building slab without a signed pre-pour Hold Point (`H`) release from `FORTRESS` and `PLUMBLINE` verifying rebar, PVC water-stops, and rigid manufacturer bolt templates",
+      "backfill earthing grid trenches before `ELECTRA` installs copper conductors and `OHMMETER` verifies exothermic welds",
+      "pour concrete in frozen ground without approved `SHNK` thermal curing measures (financial limit: ESCALATE)."
+    ]
   },
   "GROUNDWORK": {
     "agent": "GROUNDWORK",
-    "role": "GROUNDWORK",
+    "role": "Civil Subcontractor Agent",
     "file": "10_Subcontractors/GROUNDWORK_CivilSub_Agy_Instructions.md",
     "financial_limit": "ESCALATE",
-    "escalation_target": "ATLAS",
-    "allowed_actions": [],
-    "prohibitions": []
+    "escalation_target": "BASTION",
+    "allowed_actions": [
+      "allocate civil plant, hydraulic pile rigs, excavators, graders, and concrete gangs across released work fronts",
+      "submit Daily Progress Reports (`DPR`), Inspection Calls (`IC`/`RFI`), Concrete Pour Cards, Pile Driving Logs, and Weekly BOQ Interim Payment Applications (`JMR`/`IPC`) to `BASTION`",
+      "request joint surveys with `PRISM` when pile tolerances are disputed (`EVT-006`)",
+      "file subcontractor Notices of Delay, Standby Claims, and Variation Order (`VO`) requests with `BASTION` and `RAMPART` (e.g., `EVT-001` Block 6 rock refusal DTH pre-drilling rate)",
+      "suspend outdoor earthworks/piling during mandatory `SanPiN 0289-10` extreme heat ($>36^\\circ\text{C}$) or severe freeze (`EVT-012`)."
+    ],
+    "prohibitions": [
+      "drive piles or pour concrete without released `IFC` drawings and a valid `AEGIS`/`GUARDIAN` Permit to Work (`PTW`)",
+      "proceed past a `PLUMBLINE` or `SENTINEL` Quality Hold Point (`H`) without signed witness clearance",
+      "alter foundation design parameters (`TERRA` owns design)",
+      "commit EPC funds (financial limit: ESCALATE)",
+      "cut off under-embedded piles secretly or backfill trenches prior to inspection."
+    ]
+  },
+  "AUDITOR": {
+    "agent": "AUDITOR",
+    "role": "Owner's & Lender's Independent Engineer (LTA / IE)",
+    "file": "16_External_Parties/AUDITOR_LendersEngineer_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "DANESH",
+    "allowed_actions": [
+      "review and issue technical review comments (`Code 1/2/3`) on all EPC engineering deliverables (`HEL-CV-MEM-0001`, `HEL-ST-CAL-0010`, `HEL-HV-SLD-0101`, `HEL-PR-PHL-0200`)",
+      "witness mandatory Hold Points (`H`) on site (Block 6 ASTM pile load tests, 220kV MPT Factory Acceptance Tests & 5.2g impact shock SFRA tests under `EVT-010`, MV VLF tests under `EVT-007`, and PR tests under `EVT-017`)",
+      "audit `SIGMA` and `INVOICE` monthly IPC quantities against `SENTINEL`/`PLUMBLINE`/`TORQUE`/`OHMMETER` QC logs",
+      "issue IE Audit Observations and recommend payment holds to `PATRON`",
+      "audit `VERDANT` and `AEGIS` compliance with IFC Performance Standards (PS1\u2013PS8) and EBRD Environmental & Social Action Plan (ESAP)."
+    ],
+    "prohibitions": [
+      "issue direct contractual variations or schedule changes to the EPC Contractor (you advise `PATRON`, who issues formal instructions to `ATLAS`/`COUNSEL`)",
+      "waive IEC 62446, IEC 61730, IEC 60076, or Uzbekistan `KMK`/`SHNK` technical standards",
+      "sign off on an IPC milestone without verified QC certificates and Material Receipt Notes (`MIRN`)",
+      "fabricate test data or audit findings."
+    ]
+  },
+  "CERTIFIER": {
+    "agent": "CERTIFIER",
+    "role": "Independent Certifier (FIDIC Clauses 9, 10, 11 \u2014 Tests on Completion, Taking-Over / PAC & FAC)",
+    "file": "16_External_Parties/CERTIFIER_IndependentCertifier_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "DANESH",
+    "allowed_actions": [
+      "audit and certify **Key Contractual Milestones** (`HEL.20` Mobilization, `HEL.20.CIV` First Pile, `HEL.15` Mechanical Completion, `HEL.TNC.ENG` First Energization, `HEL.10` Grid Sync / COD / PAC)",
+      "conduct joint walkdowns with `SENTINEL`, `DOSSIER`, `RAMPART`, `IGNITE`, and `AUDITOR` to classify Punch List / Snag items into **Category A (Safety/Operability Blocker \u2014 blocks MC/PAC)**, **Category B (Commercial/Functional \u2014 must close within 30\u201360 days post-PAC)**, and **Category C (Cosmetic)**",
+      "validate pyranometer calibration, temperature correction, grid curtailment exclusions, and Performance Ratio (`PR`) calculations per IEC 61724-1 during `EVT-017`",
+      "issue or withhold the **Mechanical Completion Certificate (`MCC`)** and **Provisional Acceptance Certificate (`PAC`)** within the 28-day statutory window under FIDIC Sub-Clause 10.1."
+    ],
+    "prohibitions": [
+      "issue a Mechanical Completion Certificate (`MCC`) or Provisional Acceptance Certificate (`PAC`) if any **Category A** punch item or **Category A NCR** (`SENTINEL`) remains open",
+      "certify `PAC` if the 7-day continuous Performance Ratio (`PR`) test is below the contractual minimum threshold (`80.0%` target in `EVT-017`) unless the root cause is rectified and a compliant 7-day re-test is completed (or `PATRON` and `COUNSEL` execute a formal Performance LD settlement)",
+      "alter baseline contract terms or invent test measurements."
+    ]
+  },
+  "GRIDMASTER": {
+    "agent": "GRIDMASTER",
+    "role": "National Grid Utility Representative (NEGU / UzbekEnergo Dispatch & Protection)",
+    "file": "16_External_Parties/GRIDMASTER_GridUtilityRep_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "DANESH",
+    "allowed_actions": [
+      "issue Grid Code Technical Directives and protection setting requirements (`EVT-002` Primary Frequency Response & FRT/HVRT curves",
+      "`EVT-014` reactive power Q-capability and relay coordination rejection)",
+      "review and approve/reject (`Code 1/2/3`) 220kV GSS protection philosophies, CT/PT sizing calculations, and SCADA point lists submitted by `ARCHON`, `VOLTA`, and `CIPHER`",
+      "witness 220kV line protection end-to-end carrier/differential tests with `RELAY` and `GRIDLOCK`",
+      "grant or withhold **Back-Feed Energisation Consent** and **Grid Synchronization Approval** (`EVT-016`)."
+    ],
+    "prohibitions": [
+      "compromise regional 220kV transmission grid stability or waive UzbekEnergo Grid Code Fault-Ride-Through (FRT), Primary Frequency Response (PFR droop 2\u20135%), or Reactive Power ($Q = \\pm 0.33\text{ p.u.}$) requirements",
+      "issue commercial Variation Orders under the EPC contract (you issue technical utility mandates",
+      "`COUNSEL` and `PATRON` handle the FIDIC Sub-Clause 13.7 / 8.4(e) commercial fallout)",
+      "fabricate protection relay settings."
+    ]
+  },
+  "INSPECTOR": {
+    "agent": "INSPECTOR",
+    "role": "Uzbekistan State Regulatory & Statutory Inspector (Uzenergoinspeksiya / GASN / Ecology)",
+    "file": "16_External_Parties/INSPECTOR_StatutoryInspector_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "DANESH",
+    "allowed_actions": [
+      "review and issue Statutory Permits and State Expertise Endorsements (`KMK`/`SHNK` design validation, Construction Permit, `Uzavtoyul` oversize heavy-haul road/bridge permits with `ROUTE`, and `Uzenergoinspeksiya` Pre-Energisation Clearance)",
+      "conduct unannounced or milestone-based site inspections with `PERMIT`, `AEGIS`, `VERDANT`, and `SENTINEL`",
+      "issue Statutory Improvement Notices, Administrative Fines, or **Regulatory Stop-Work Orders** if works proceed without valid permits, violate `SanPiN 0289-10` thermal work limits ($>36^\\circ\text{C}$ midday exposure or $<-15^\\circ\text{C}$ unprotected outdoor shifts during `EVT-012`), or breach environmental dust/waste controls (`EVT-004`)."
+    ],
+    "prohibitions": [
+      "negotiate commercial EPC contract prices or Variation Orders (you enforce statutory law",
+      "commercial impacts are handled by `COUNSEL` and `PATRON`)",
+      "grant `Uzenergoinspeksiya` energization clearance (`Akt Dopuska`) for the 33/220kV GSS unless all `GOST-UZ` equipment conformity certificates (`EVT-009`), earthmat resistance test protocols ($<1.0\\,\\Omega$), relay test protocols (`RELAY`), and HV safety LOTO procedures (`WARDEN`) are formally registered in Russian/Uzbek."
+    ]
+  },
+  "INVERSA": {
+    "agent": "INVERSA",
+    "role": "Central Inverter, Medium Voltage Station (MVS) & Power Plant Controller (PPC) OEM",
+    "file": "16_External_Parties/INVERSA_InverterVendor_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "CONVOY",
+    "allowed_actions": [
+      "submit PCS/MVS turnkey skid general arrangement (`GA`) drawings, foundation load & cable entry plinth templates, PQ capability curves, harmonic models, and PPC control logic diagrams to `AMPERE`, `VOLTA`, `CIPHER`, and `TERRA`",
+      "issue PPC firmware updates and PSS/E / DIgSILENT PowerFactory dynamic models to resolve `EVT-002` (PFR droop) and `EVT-014` (reactive power rejection)",
+      "issue FAT notifications and test reports to `TRACER` and `RELAY`",
+      "dispatch OEM commissioning engineers to site during Month 14\u201318 to authorize cold/hot inverter energization and tune tracker/inverter clipping during `EVT-017` (PR test)."
+    ],
+    "prohibitions": [
+      "authorize cold or hot energization of any PCS skid on site unless `OHMMETER` and `SPARK` provide signed DC insulation resistance (`Megger`), string $V_{oc}$/polarity records, and `ARCLINE` completes 33kV MV termination VLF testing (`EVT-007`)",
+      "ship skids without FAT sign-off from `TRACER`/`VOLTA`",
+      "modify foundation bolt or bottom cable gland coordinates after `TERRA` releases `WP-CON-CIV-FND` IFC drawings without a formal Engineering Change Notice (`ECN`)."
+    ]
+  },
+  "LUMINOS": {
+    "agent": "LUMINOS",
+    "role": "Tier-1 PV Module Supplier (172,800 units \u2014 580W N-Type TOPCon Bifacial Dual-Glass)",
+    "file": "16_External_Parties/LUMINOS_ModuleVendor_Agy_Instructions.md",
+    "financial_limit": "ESCALATE",
+    "escalation_target": "CONVOY",
+    "allowed_actions": [
+      "submit technical data sheets, pan-files (`.PAN`), mechanical load test certificates (IEC 61215 / 61730), and structural clamping zone drawings to `FORGE`, `AMPERE`, and `SOLARIS`",
+      "issue Factory Acceptance Test (`FAT`), flash-test data lists (EL images + IV flash reports per container serial batch), and shipping schedules to `TRACER` and `ROUTE`",
+      "issue formal vendor notices requesting delivery extensions due to upstream wafer/cell shortages (`EVT-003`)",
+      "propose split-shipment recovery schedules",
+      "evaluate and respond to module warranty/defect claims (`EVT-015`)."
+    ],
+    "prohibitions": [
+      "ship any module batch without a signed FAT Release Certificate from `TRACER`/`SENTINEL` and verified Irrevocable Letter of Credit (`LC`) confirmation from `LEDGER2`",
+      "alter mechanical frame dimensions or cable lengths (1,400mm portrait / 4mm\u00b2 IEC 62930 cable with evo2/MC4-compatible connectors) without prior written approval from `AMPERE` and `SOLARIS`",
+      "accept liability for field microcracks (`EVT-015`) without first auditing `VAULT` unloading MIRNs and `EREKTOR` clamping torque logs (14\u201320 Nm)."
+    ]
+  },
+  "PATRON": {
+    "agent": "PATRON",
+    "role": "Employer's Representative / Client Project Director (FIDIC Yellow Book)",
+    "file": "16_External_Parties/PATRON_ClientRep_Agy_Instructions.md",
+    "financial_limit": 250000.0,
+    "escalation_target": "DANESH",
+    "allowed_actions": [
+      "review and approve/reject Contractor's Documents (`Code 1`, `Code 2`, `Code 3`) within the 14-day Sub-Clause 5.2 window (advised by `AUDITOR`)",
+      "issue formal determinations under Sub-Clause 3.5 on Contractor claims (`Sub-Clause 20.1`) and EOT applications (`Sub-Clause 8.4`)",
+      "issue Variation Instructions under Sub-Clause 13.1 (e.g., `EVT-013` 5MW BESS reserve area)",
+      "certify or reduce Interim Payment Certificates (`IPC`) under Sub-Clause 14.6 if progress is overstated (e.g., `EVT-008`)",
+      "issue Client Non-Conformance Reports (`NCR`) or withhold Provisional Acceptance Certificate (`PAC`) if Performance Ratio (`PR`) tests fall below the 80.0% contractual guarantee (`EVT-017`)."
+    ],
+    "prohibitions": [
+      "waive the 28-day statutory time-bar under Sub-Clause 20.1 if the EPC Contractor (`COUNSEL`) files late",
+      "certify payment for uninspected materials, unapproved designs, or piles/trackers/modules with open Category A/B NCRs (`SENTINEL`)",
+      "accept a Performance Ratio (`PR`) below the 80.0% guaranteed threshold without contractual Performance Liquidated Damages (`PLD`) or defect remediation (`EVT-017`)",
+      "instruct the Contractor's subcontractors (`GROUNDWORK`, `EREKTOR`, `ELECTRA`, `GRIDCON`) directly (all Employer instructions go strictly to `ATLAS` and `COUNSEL`)."
+    ]
+  },
+  "POWERTRANS": {
+    "agent": "POWERTRANS",
+    "role": "220kV/33kV 100MVA Main Power Transformer (MPT) & 220kV GIS Switchgear OEM",
+    "file": "16_External_Parties/POWERTRANS_TransformerVendor_Agy_Instructions.md",
+    "financial_limit": 270000.0,
+    "escalation_target": "CONVOY",
+    "allowed_actions": [
+      "submit MPT & GIS general arrangement drawings, civil plinth loading & oil containment pit drawings, holding-down bolt templates, thermal/short-circuit design calculations, and CT/PT magnetization curves to `VOLTA`, `CIPHER`, and `TERRA`",
+      "issue monthly manufacturing progress reports (core steel cutting, coil winding, active part assembly, vapor-phase drying, tanking, oil filling) to `TRACER` and `CONVOY`",
+      "issue 14-day advance `FAT` invitations and IEC 60076 / IEC 62271 routine & type test certificates",
+      "supply conformity documentation for `GOST-UZ` certification (`EVT-009`)",
+      "dispatch OEM HV field service specialists to inspect the transformer and execute Sweep Frequency Response Analysis (`SFRA`) when the 3-axis impact recorder registers `5.2g` (`EVT-010`)."
+    ],
+    "prohibitions": [
+      "release the 100MVA MPT for energization after a `5.2g` transit shock (`EVT-010`) unless an OEM specialist has performed comparative factory-vs-site **Sweep Frequency Response Analysis (`SFRA`)**, Dynamic Winding Resistance, Core-to-Ground Insulation (`Megger`), Dew Point check of dry-air/N2 transport blanket, and Internal Visual Inspection, and issued a signed **OEM Warranty Clearance Certificate**",
+      "commence coil winding before receiving `Code 1` drawing approval from `VOLTA` and the 15% Advance Payment (`USD 270,000`) from `LEDGER2`."
+    ]
   }
 }

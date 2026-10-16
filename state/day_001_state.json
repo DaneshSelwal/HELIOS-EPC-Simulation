@@ -1,0 +1,642 @@
+{
+  "day": 1,
+  "sim_date": "2026-10-06",
+  "month": 1,
+  "week": 1,
+  "status": "Day 1 complete",
+  "project_totals": {
+    "contract_price_usd": 85000000.0,
+    "bac_usd": 85000000.0,
+    "bcws_usd": 53125.0,
+    "bcwp_usd": 49428.75,
+    "acwp_usd": 52978.0,
+    "sv_usd": -3696.25,
+    "cv_usd": -3549.25,
+    "spi": 0.9304,
+    "cpi": 0.933,
+    "progress_pct": 0.0582
+  },
+  "work_packages": {
+    "WP-ENG-CIV": {
+      "wp_id": "WP-ENG-CIV",
+      "name": "Civil, Geotechnical & Site Drainage Design",
+      "discipline": "engineering",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 100.0,
+      "installed": 0.85,
+      "qc_accepted": 0.8075,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 1,
+      "budget": 1050000.0,
+      "committed": 1050000.0,
+      "actual_cost": 9100.0,
+      "predecessors": []
+    },
+    "WP-ENG-ELE": {
+      "wp_id": "WP-ENG-ELE",
+      "name": "Electrical & Grid Interconnection Design",
+      "discipline": "engineering",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 100.0,
+      "installed": 0.75,
+      "qc_accepted": 0.7125,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 1,
+      "budget": 1600000.0,
+      "committed": 1600000.0,
+      "actual_cost": 12300.0,
+      "predecessors": []
+    },
+    "WP-ENG-MEC": {
+      "wp_id": "WP-ENG-MEC",
+      "name": "Mechanical & Tracker Structural Design",
+      "discipline": "engineering",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 100.0,
+      "installed": 0.7,
+      "qc_accepted": 0.665,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 1,
+      "budget": 800000.0,
+      "committed": 800000.0,
+      "actual_cost": 5750.0,
+      "predecessors": []
+    },
+    "WP-ENG-SUB": {
+      "wp_id": "WP-ENG-SUB",
+      "name": "220kV Substation & Protection Design",
+      "discipline": "engineering",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 100.0,
+      "installed": 0.8,
+      "qc_accepted": 0.76,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 1,
+      "budget": 800000.0,
+      "committed": 800000.0,
+      "actual_cost": 6550.0,
+      "predecessors": []
+    },
+    "WP-PROC-PIL": {
+      "wp_id": "WP-PROC-PIL",
+      "name": "Foundation Ramming Piles Supply",
+      "discipline": "procurement",
+      "unit": "piles",
+      "total_qty": 15400.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1540000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-CIV"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-TRK": {
+      "wp_id": "WP-PROC-TRK",
+      "name": "Single-Axis Trackers & Steel Mounting Structures",
+      "discipline": "procurement",
+      "unit": "tables",
+      "total_qty": 5100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 8500000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-MEC"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-MOD": {
+      "wp_id": "WP-PROC-MOD",
+      "name": "100MW Bifacial Solar PV Modules (580W TOPCon)",
+      "discipline": "procurement",
+      "unit": "modules",
+      "total_qty": 172800.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 22000000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-INV": {
+      "wp_id": "WP-PROC-INV",
+      "name": "Central Inverters & Medium Voltage Stations (PCS/MVS Skids)",
+      "discipline": "procurement",
+      "unit": "skids",
+      "total_qty": 25.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 5500000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-TRA": {
+      "wp_id": "WP-PROC-TRA",
+      "name": "220kV/33kV 100MVA Main Power Transformer (MPT)",
+      "discipline": "procurement",
+      "unit": "units",
+      "total_qty": 1.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1800000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-SUB"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-GIS": {
+      "wp_id": "WP-PROC-GIS",
+      "name": "220kV GIS Switchgear & Substation Primary Equipment",
+      "discipline": "procurement",
+      "unit": "sets",
+      "total_qty": 1.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 2200000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-SUB"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-CAB-DC": {
+      "wp_id": "WP-PROC-CAB-DC",
+      "name": "1.5kV DC Solar Cables & Harnesses",
+      "discipline": "procurement",
+      "unit": "meters",
+      "total_qty": 1300000.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 3260000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-CAB-MV": {
+      "wp_id": "WP-PROC-CAB-MV",
+      "name": "33kV MV Underground Cables & Joint Kits",
+      "discipline": "procurement",
+      "unit": "meters",
+      "total_qty": 30000.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1200000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-PROC-BOP": {
+      "wp_id": "WP-PROC-BOP",
+      "name": "Substation & Plant Balance of Plant Materials",
+      "discipline": "procurement",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 5000000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-CIV",
+        "WP-ENG-ELE"
+      ],
+      "milestones": {
+        "po_issued": false,
+        "drawings_approved": false,
+        "fat_cleared": false,
+        "shipped": false,
+        "delivered": false
+      },
+      "advance_paid_usd": 0.0,
+      "cash_flow_out_usd": 0.0
+    },
+    "WP-CON-MOB": {
+      "wp_id": "WP-CON-MOB",
+      "name": "Site Mobilization, Perimeter Security & Temporary Facilities",
+      "discipline": "construction",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 100.0,
+      "installed": 1.26,
+      "qc_accepted": 1.21,
+      "ifc_released": true,
+      "po_issued": null,
+      "crews_mobilised": 2,
+      "budget": 1500000.0,
+      "committed": 1500000.0,
+      "actual_cost": 19278.0,
+      "predecessors": []
+    },
+    "WP-CON-CIV-GRD": {
+      "wp_id": "WP-CON-CIV-GRD",
+      "name": "Site Clearing, Bulk Earthworks & Internal Access Roads",
+      "discipline": "construction",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 2500000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-CON-MOB",
+        "WP-ENG-CIV"
+      ]
+    },
+    "WP-CON-CIV-PIL": {
+      "wp_id": "WP-CON-CIV-PIL",
+      "name": "PV Field Pile Ramming",
+      "discipline": "construction",
+      "unit": "piles",
+      "total_qty": 15400.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 2200000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-CIV",
+        "WP-PROC-PIL",
+        "WP-CON-CIV-GRD"
+      ]
+    },
+    "WP-CON-MEC-TRK": {
+      "wp_id": "WP-CON-MEC-TRK",
+      "name": "Single-Axis Tracker Assembly & Erection",
+      "discipline": "construction",
+      "unit": "tables",
+      "total_qty": 5100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 4500000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-MEC",
+        "WP-PROC-TRK",
+        "WP-CON-CIV-PIL"
+      ]
+    },
+    "WP-CON-MEC-MOD": {
+      "wp_id": "WP-CON-MEC-MOD",
+      "name": "PV Module Mounting & Fastening",
+      "discipline": "construction",
+      "unit": "modules",
+      "total_qty": 172800.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 4800000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-ELE",
+        "WP-PROC-MOD",
+        "WP-CON-MEC-TRK"
+      ]
+    },
+    "WP-CON-ELE-DC": {
+      "wp_id": "WP-CON-ELE-DC",
+      "name": "DC Cable Trenching & String Cabling",
+      "discipline": "construction",
+      "unit": "meters",
+      "total_qty": 1300000.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 3000000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-PROC-CAB-DC",
+        "WP-CON-MEC-MOD"
+      ]
+    },
+    "WP-CON-ELE-MV": {
+      "wp_id": "WP-CON-ELE-MV",
+      "name": "33kV MV Trenching, Laying & Termination",
+      "discipline": "construction",
+      "unit": "meters",
+      "total_qty": 30000.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 2000000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-PROC-CAB-MV",
+        "WP-CON-CIV-FND"
+      ]
+    },
+    "WP-CON-CIV-FND": {
+      "wp_id": "WP-CON-CIV-FND",
+      "name": "Inverter & Substation Concrete Foundations",
+      "discipline": "construction",
+      "unit": "m3",
+      "total_qty": 3500.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1800000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-CIV",
+        "WP-CON-CIV-GRD"
+      ]
+    },
+    "WP-CON-SUB-ERE": {
+      "wp_id": "WP-CON-SUB-ERE",
+      "name": "220kV GSS Substation Erection & Transmission Line",
+      "discipline": "construction",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 3200000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-ENG-SUB",
+        "WP-CON-CIV-FND",
+        "WP-PROC-TRA",
+        "WP-PROC-GIS"
+      ]
+    },
+    "WP-TNC-COL": {
+      "wp_id": "WP-TNC-COL",
+      "name": "Cold Commissioning & String IV Curve Testing",
+      "discipline": "tnc",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1500000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-CON-MEC-MOD",
+        "WP-CON-ELE-DC",
+        "WP-CON-ELE-MV"
+      ]
+    },
+    "WP-TNC-HOT": {
+      "wp_id": "WP-TNC-HOT",
+      "name": "Hot Commissioning & Inverter Synchronization",
+      "discipline": "tnc",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1250000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-TNC-COL",
+        "WP-CON-SUB-ERE"
+      ]
+    },
+    "WP-TNC-GSS": {
+      "wp_id": "WP-TNC-GSS",
+      "name": "220kV Substation Protection & Grid Sync",
+      "discipline": "tnc",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 1000000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-TNC-COL",
+        "WP-CON-SUB-ERE"
+      ]
+    },
+    "WP-TNC-PR": {
+      "wp_id": "WP-TNC-PR",
+      "name": "Trial Run & Performance Ratio (PR) Test",
+      "discipline": "tnc",
+      "unit": "%",
+      "total_qty": 100.0,
+      "delivered": 0.0,
+      "installed": 0.0,
+      "qc_accepted": 0.0,
+      "ifc_released": false,
+      "po_issued": null,
+      "crews_mobilised": 0,
+      "budget": 500000.0,
+      "committed": 0.0,
+      "actual_cost": 0.0,
+      "predecessors": [
+        "WP-TNC-HOT",
+        "WP-TNC-GSS"
+      ]
+    }
+  },
+  "discipline_performance": {
+    "engineering": {
+      "progress_pct": 0.74,
+      "earned_usd": 31278.75,
+      "actual_usd": 33700.0
+    },
+    "procurement": {
+      "progress_pct": 0.0,
+      "earned_usd": 0.0,
+      "actual_usd": 0.0
+    },
+    "construction": {
+      "progress_pct": 0.07,
+      "earned_usd": 18150.0,
+      "actual_usd": 19278.0
+    },
+    "tnc": {
+      "progress_pct": 0.0,
+      "earned_usd": 0.0,
+      "actual_usd": 0.0
+    }
+  },
+  "weather": {
+    "sim_day": 1,
+    "sim_date": "2026-10-06",
+    "cal_month": 10,
+    "temp_c": 15.0,
+    "wind_speed_ms": 3.8,
+    "precip_mm": 0.0,
+    "dust_storm": false,
+    "is_winter": false,
+    "is_frozen_ground": false,
+    "module_lifting_allowed": true,
+    "productivity_factor": 1.0,
+    "summary": "15.0\u00b0C, Wind 3.8 m/s, Clear"
+  },
+  "active_events": []
+}

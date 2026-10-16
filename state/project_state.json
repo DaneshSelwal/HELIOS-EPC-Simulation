@@ -1,20 +1,20 @@
 {
-  "day": 5,
-  "sim_date": "2026-10-10",
+  "day": 1,
+  "sim_date": "2026-10-06",
   "month": 1,
   "week": 1,
-  "status": "Day 5 complete",
+  "status": "Day 1 complete",
   "project_totals": {
     "contract_price_usd": 85000000.0,
     "bac_usd": 85000000.0,
-    "bcws_usd": 265625.0,
-    "bcwp_usd": 261978.75,
-    "acwp_usd": 270825.0,
-    "sv_usd": -3646.25,
-    "cv_usd": -8846.25,
-    "spi": 0.9863,
-    "cpi": 0.9673,
-    "progress_pct": 0.3082
+    "bcws_usd": 53125.0,
+    "bcwp_usd": 49428.75,
+    "acwp_usd": 52978.0,
+    "sv_usd": -3696.25,
+    "cv_usd": -3549.25,
+    "spi": 0.9304,
+    "cpi": 0.933,
+    "progress_pct": 0.0582
   },
   "work_packages": {
     "WP-ENG-CIV": {
@@ -24,14 +24,14 @@
       "unit": "%",
       "total_qty": 100.0,
       "delivered": 100.0,
-      "installed": 4.05,
-      "qc_accepted": 3.8075,
+      "installed": 0.85,
+      "qc_accepted": 0.8075,
       "ifc_released": false,
       "po_issued": null,
       "crews_mobilised": 1,
       "budget": 1050000.0,
       "committed": 1050000.0,
-      "actual_cost": 41100.0,
+      "actual_cost": 9100.0,
       "predecessors": []
     },
     "WP-ENG-ELE": {
@@ -41,14 +41,14 @@
       "unit": "%",
       "total_qty": 100.0,
       "delivered": 100.0,
-      "installed": 3.75,
-      "qc_accepted": 3.5125,
+      "installed": 0.75,
+      "qc_accepted": 0.7125,
       "ifc_released": false,
       "po_issued": null,
       "crews_mobilised": 1,
       "budget": 1600000.0,
       "committed": 1600000.0,
-      "actual_cost": 58300.0,
+      "actual_cost": 12300.0,
       "predecessors": []
     },
     "WP-ENG-MEC": {
@@ -58,14 +58,14 @@
       "unit": "%",
       "total_qty": 100.0,
       "delivered": 100.0,
-      "installed": 3.7,
-      "qc_accepted": 3.465,
+      "installed": 0.7,
+      "qc_accepted": 0.665,
       "ifc_released": false,
       "po_issued": null,
       "crews_mobilised": 1,
       "budget": 800000.0,
       "committed": 800000.0,
-      "actual_cost": 28750.0,
+      "actual_cost": 5750.0,
       "predecessors": []
     },
     "WP-ENG-SUB": {
@@ -75,14 +75,14 @@
       "unit": "%",
       "total_qty": 100.0,
       "delivered": 100.0,
-      "installed": 4.0,
-      "qc_accepted": 3.76,
+      "installed": 0.8,
+      "qc_accepted": 0.76,
       "ifc_released": false,
       "po_issued": null,
       "crews_mobilised": 1,
       "budget": 800000.0,
       "committed": 800000.0,
-      "actual_cost": 31550.0,
+      "actual_cost": 6550.0,
       "predecessors": []
     },
     "WP-PROC-PIL": {
@@ -345,14 +345,14 @@
       "unit": "%",
       "total_qty": 100.0,
       "delivered": 100.0,
-      "installed": 7.55,
-      "qc_accepted": 7.2,
+      "installed": 1.26,
+      "qc_accepted": 1.21,
       "ifc_released": true,
       "po_issued": null,
       "crews_mobilised": 2,
       "budget": 1500000.0,
       "committed": 1500000.0,
-      "actual_cost": 111125.0,
+      "actual_cost": 19278.0,
       "predecessors": []
     },
     "WP-CON-CIV-GRD": {
@@ -361,7 +361,7 @@
       "discipline": "construction",
       "unit": "%",
       "total_qty": 100.0,
-      "delivered": 100.0,
+      "delivered": 0.0,
       "installed": 0.0,
       "qc_accepted": 0.0,
       "ifc_released": false,
@@ -604,9 +604,9 @@
   },
   "discipline_performance": {
     "engineering": {
-      "progress_pct": 3.62,
-      "earned_usd": 153978.75,
-      "actual_usd": 159700.0
+      "progress_pct": 0.74,
+      "earned_usd": 31278.75,
+      "actual_usd": 33700.0
     },
     "procurement": {
       "progress_pct": 0.0,
@@ -614,9 +614,9 @@
       "actual_usd": 0.0
     },
     "construction": {
-      "progress_pct": 0.42,
-      "earned_usd": 108000.0,
-      "actual_usd": 111125.0
+      "progress_pct": 0.07,
+      "earned_usd": 18150.0,
+      "actual_usd": 19278.0
     },
     "tnc": {
       "progress_pct": 0.0,
@@ -625,20 +625,18 @@
     }
   },
   "weather": {
-    "sim_day": 5,
-    "sim_date": "2026-10-10",
+    "sim_day": 1,
+    "sim_date": "2026-10-06",
     "cal_month": 10,
-    "temp_c": 11.8,
-    "wind_speed_ms": 8.5,
+    "temp_c": 15.0,
+    "wind_speed_ms": 3.8,
     "precip_mm": 0.0,
     "dust_storm": false,
     "is_winter": false,
     "is_frozen_ground": false,
     "module_lifting_allowed": true,
     "productivity_factor": 1.0,
-    "summary": "11.8\u00b0C, Wind 8.5 m/s, Clear"
+    "summary": "15.0\u00b0C, Wind 3.8 m/s, Clear"
   },
-  "active_events": [
-    "EVT-001"
-  ]
+  "active_events": []
 }

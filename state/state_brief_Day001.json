@@ -1,0 +1,52 @@
+{
+  "day": 1,
+  "sim_date": "2026-10-06",
+  "month": 1,
+  "week": 1,
+  "weather": {
+    "temp_c": 15.0,
+    "wind_speed_ms": 3.8,
+    "dust_storm": false,
+    "productivity_factor": 1.0,
+    "conditions": "15.0\u00b0C, Wind 3.8 m/s, Clear"
+  },
+  "active_events": [],
+  "evm": {
+    "bcws_usd": 53125.0,
+    "bcwp_usd": 49428.75,
+    "acwp_usd": 52978.0,
+    "spi": 0.9304,
+    "cpi": 0.933,
+    "progress_pct": 0.0582
+  },
+  "physical_metrics": {
+    "piles_installed": 0.0,
+    "piles_qc_accepted": 0.0,
+    "modules_installed": 0.0,
+    "modules_qc_accepted": 0.0,
+    "trackers_installed": 0.0,
+    "mobilization_pct": 1.26
+  },
+  "disciplines": {
+    "engineering": {
+      "progress_pct": 0.74,
+      "earned_usd": 31278.75,
+      "actual_usd": 33700.0
+    },
+    "procurement": {
+      "progress_pct": 0.0,
+      "earned_usd": 0.0,
+      "actual_usd": 0.0
+    },
+    "construction": {
+      "progress_pct": 0.07,
+      "earned_usd": 18150.0,
+      "actual_usd": 19278.0
+    },
+    "tnc": {
+      "progress_pct": 0.0,
+      "earned_usd": 0.0,
+      "actual_usd": 0.0
+    }
+  }
+}

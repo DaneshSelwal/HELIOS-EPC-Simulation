@@ -159,6 +159,11 @@
       "pattern": "11_Shared_Registers/.*",
       "owner": "HELIOS-ENGINE",
       "description": "Shared project registers"
+    },
+    {
+      "pattern": "16_External_Parties/.*",
+      "owner": "ATLAS",
+      "description": "External Parties & Counterparty Personas"
     }
   ]
 }

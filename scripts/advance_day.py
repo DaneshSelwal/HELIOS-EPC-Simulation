@@ -75,7 +75,7 @@ def check_gate_ii(current_day):
     if not os.path.exists(COMM_LOG_PATH):
         return [f"Gate (ii) Failed: Communication log {COMM_LOG_PATH} does not exist."]
 
-    msg_id_pattern = re.compile(r"^HEL-[A-Z]{3}-[A-Z]{3}-[A-Z]{3}-\d{4}$")
+    msg_id_pattern = re.compile(r"^HEL-(?:D\d{3}-)?[A-Z]{3}-[A-Z]{3}-(?:[A-Z0-9]{3}-)?[A-Z]{3}-\d{4}$")
     logged_day_rows = 0
 
     with open(COMM_LOG_PATH, "r", encoding="utf-8") as f:

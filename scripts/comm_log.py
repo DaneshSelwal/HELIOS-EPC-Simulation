@@ -43,7 +43,9 @@ COLUMNS = [
 AGENT_DEPT = {
     # PMO
     "ATLAS": "PMO",
-    "SIGMA": "PMO",
+    "NEXUS": "PMO",
+    "HERALD": "PMO",
+    "SIGMA": "PLN",
     # PLN
     "KRONOS": "PLN",
     "VECTOR": "PLN",
@@ -116,8 +118,6 @@ AGENT_DEPT = {
     "POWERTRANS": "EXT",
     "INSPECTOR": "EXT",
     "CERTIFIER": "EXT",
-    "NEXUS": "EXT",
-    "HERALD": "EXT",
     "NEGU": "EXT",
     "UZBEKENERGO": "EXT",
     "ALL": "PMO",
