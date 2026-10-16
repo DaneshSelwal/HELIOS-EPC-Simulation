@@ -1,118 +1,47 @@
 # HELIOS EPC 100MW Solar PV + 33/220kV GSS, Uzbekistan
-## Daily Progress Report (DPR) — Day 001
-
----
+## Daily Progress Report (DPR) — Day 001 (LNTP Start Position Baseline)
 
 ### Section 1: Header & Project Summary
-- **Project**: HELIOS 100MW Solar PV + 33/220kV GSS, Uzbekistan
-- **Date**: Day 001 (Month 1, LNTP Issued)
-- **Contract Type**: FIDIC Yellow Book (Plant and Design-Build)
-- **Employer / Client**: PATRON / NEGU (National Electric Grid of Uzbekistan)
-- **EPC Contractor**: HELIOS EPC Consortium
-- **Reporting Officer**: SIGMA (MIS & Reporting Engineer)
-- **Weather Conditions**:
-  - Max Temperature: 18°C
-  - Min Temperature: 4°C
-  - Condition: Clear
-  - Adverse Weather Impact: Nil (Working conditions optimal)
-- **Project Phase**: Engineering, Procurement Preparation & Mobilization Planning (Pre-Construction)
+- **Project**: HELIOS 100MW Solar PV + 33/220kV GSS, Bukhara, Uzbekistan
+- **Simulation Day**: Day 001 (`2026-10-06`, Month 1, Week 1, Day 1 — LNTP Kickoff)
+- **Contract Type**: FIDIC Yellow Book 1999 (USD 85,000,000.00 BAC / 504-Day COD Baseline)
+- **Employer / Client**: `PATRON` / NEGU (National Electric Grid of Uzbekistan)
+- **Lender's Independent Engineer**: `AUDITOR`
+- **Reporting Officer**: `SIGMA` (MIS & Reporting Engineer) — Verified against `state/day_001_state.json`
+- **Weather Conditions**: Bukhara Clear Autumn (`Productivity Factor = 1.00`, Module Lifting Allowed)
+- **Active Events**: `None` (Clean Day 001 Start Position)
 
----
+### Section 2: HSE & Quality Statistics (Day 001)
+| Metric | Daily (Day 001) | Cumulative | Status / Reference |
+| :--- | :--- | :--- | :--- |
+| **Lost Time Injuries (LTI) / Fatalities** | 0 | 0 | Target: Zero Harm (`AEGIS`) |
+| **Permits to Work (PTW) Active** | 1 | 1 (`PTW-GEN-001`) | Site mobilization, survey & perimeter fencing |
+| **Quality / Technical Holds Active** | 0 | 0 | `11_Shared_Registers/ITP_Hold_Point_Register.md` |
+| **Open Non-Conformance Reports (NCR)** | 0 | 0 | `11_Shared_Registers/NCR_Register.md` |
 
-### Section 2: HSE Statistics
-| Metric | Daily (Day 001) | Cumulative to Date | Remarks / Target |
-|---|---|---|---|
-| Lost Time Injuries (LTI) | 0 | 0 | Target: Zero Harm |
-| Medical Treatment Cases (MTC) | 0 | 0 | Target: 0 |
-| First Aid Cases (FAC) | 0 | 0 | Target: 0 |
-| Near Misses | 0 | 0 | Reporting culture active |
-| Toolbox Talks (TBT) | 0 | 0 | Site TBTs start at Month 2 site entry |
-| Permits to Work (PTW) Issued | 0 | 0 | PTW system to activate upon site mobilization |
-| Environmental Incidents | 0 | 0 | Target: 0 |
-| Safe Man-Hours Worked | 0 | 0 | Site construction man-hours count begins M2 |
+### Section 3: Earned Value Management (EVM) Performance (Day 001)
+| EVM Metric | Day 001 Value | Baseline Target | Variance / Index | Governance Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **Budget at Completion (BAC)** | $85,000,000.00 | $85,000,000.00 | $0.00 | Fixed Lump Sum |
+| **Planned Value (BCWS)** | $53,125.00 | $53,125.00 | Baseline S-Curve | On Track |
+| **Earned Value (BCWP)** | $49,428.75 | $53,125.00 | **SV = -$3,696.25** | **SPI = 0.9304** (Day 1 Ramp-Up) |
+| **Actual Cost (ACWP)** | $52,978.00 | $49,428.75 | **CV = -$3,549.25** | **CPI = 0.9330** (Day 1 Mobilization) |
+| **Overall Physical Progress** | **0.0582%** | 0.0625% | -0.0043% | Verified by `SIGMA` & `KRONOS` |
 
----
+### Section 4: Discipline & Work Package Progress Table (`state/day_001_state.json`)
+| Work Package ID | Work Package Name | Discipline | Budget ($) | Installed (Day 001) | QC Accepted (Day 001) | Crews | IFC | Earned BCWP ($) | Actual ACWP ($) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `WP-ENG-CIV` | Civil, Geotech & Drainage Design | Engineering | $1,050,000.00 | 0.85% | 0.8075% | 1 | False | $8,478.75 | $9,100.00 |
+| `WP-ENG-ELE` | Electrical & Grid Interconnection Design | Engineering | $1,600,000.00 | 0.75% | 0.7125% | 1 | False | $11,400.00 | $12,300.00 |
+| `WP-ENG-MEC` | Mechanical & Tracker Structural Design | Engineering | $800,000.00 | 0.70% | 0.6650% | 1 | False | $5,320.00 | $5,750.00 |
+| `WP-ENG-SUB` | 220kV Substation & Protection Design | Engineering | $800,000.00 | 0.80% | 0.7600% | 1 | False | $6,080.00 | $6,550.00 |
+| `WP-CON-MOB` | Site Mobilization, Security & Temp Facilities | Construction | $1,500,000.00 | 1.26% | 1.2100% | 2 | True | $18,150.00 | $19,278.00 |
+| `WP-CON-CIV-PIL` | PV Field Pile Ramming (15,400 piles) | Construction | $2,200,000.00 | 0 piles | 0 piles | 0 | False | $0.00 | $0.00 |
+| `WP-CON-MEC-TRK` | Single-Axis Tracker Erection (5,100 tables) | Construction | $4,500,000.00 | 0 tables | 0 tables | 0 | False | $0.00 | $0.00 |
+| `WP-CON-MEC-MOD` | PV Module Mounting (172,800 modules) | Construction | $4,800,000.00 | 0 modules | 0 modules | 0 | False | $0.00 | $0.00 |
+| `WP-PROC-TRA` | 220kV/33kV 100MVA MPT (1 unit) | Procurement | $1,800,000.00 | 0 units | 0 units | 0 | False | $0.00 | $0.00 |
 
-### Section 3: Manpower & Equipment
-#### 3.1 Manpower On-Site & Project Office
-| Category | Discipline / Function | Headcount | Status / Location |
-|---|---|---|---|
-| Contractor Staff | Project Management (ATLAS) | 1 | HQ / Project Office |
-| Contractor Staff | Planning & Controls (KRONOS, SIGMA, LEDGER) | 3 | HQ / Project Office |
-| Contractor Staff | Engineering & Design (ARCHON) | 1 | Engineering Office |
-| Contractor Staff | Supply Chain Management (CONVOY) | 1 | Procurement Office |
-| Contractor Staff | QA/QC & EHS Management (SENTINEL, AEGIS) | 2 | HQ / Mobilization |
-| Contractor Staff | Contracts & Administration (COUNSEL, SUMMIT, PERMIT) | 3 | HQ / Tashkent Liaison |
-| Contractor Staff | Testing & Commissioning (IGNITE) | 1 | HQ / Pre-planning |
-| **Total Contractor Staff** | **Key Technical & Management Staff** | **12** | **Active on Day 1 Kickoff** |
-| Subcontractors | Civil Subcontractor (GROUNDWORK) | 0 | Mobilization scheduled Month 2 |
-| Subcontractors | MMS & Mechanical Subcontractor (EREKTOR) | 0 | Mobilization scheduled Month 4 |
-| Subcontractors | Electrical Subcontractor (ELECTRA) | 0 | Mobilization scheduled Month 5 |
-| Subcontractors | Substation Subcontractor (GRIDCON) | 0 | Mobilization scheduled Month 2 |
-| **Total Subcontractors** | **Site Labor & Trade Staff** | **0** | **Pre-mobilization stage** |
-
-#### 3.2 Heavy Equipment & Plant
-| Equipment Type | Capacity / Model | Daily Deployed | Total on Site | Operational Status |
-|---|---|---|---|---|
-| Heavy Equipment | Piling Rigs, Excavators, Cranes, Rollers | 0 | 0 | Pre-mobilization (Deployment starts M2) |
-
----
-
-### Section 4: Civil Progress
-| WBS Activity | Unit | Scope Target | Daily Progress | Cumulative Progress | % Complete | QC Inspection Status | Booked Progress |
-|---|---|---|---|---|---|---|---|
-| Site Clearing & Grading | m² | 1,000,000 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| Boundary Fencing & Gates | m | 14,500 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| Access & Internal Roads | km | 28.5 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| Piles Driven (Solar Field) | nos | 15,400 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| Inverter Foundation Concrete | m³ | 450 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| Control Building Civil Works | m³ | 380 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-
-*Note: In accordance with SIGMA data governance, no civil physical progress is credited without formal inspection approval (RFI / PLUMBLINE acceptance).*
-
----
-
-### Section 5: Mechanical & Electrical Progress
-| WBS Activity | Unit | Scope Target | Daily Progress | Cumulative Progress | % Complete | QC Inspection Status | Booked Progress |
-|---|---|---|---|---|---|---|---|
-| MMS Tables Erected | tables | 850 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| PV Modules Installed | nos | 181,818 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| DC String Cable Laid | m | 120,000 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| 33kV MV Underground Cable | m | 42,000 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| Inverter / PCS Skids Installed | units | 25 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-| SCADA & Fiber Optic Cable | m | 18,500 | 0 | 0 | 0.0% | Pre-mobilization | 0.0% |
-
-*Note: Rules of credit strictly enforced. Progress earned on quality acceptance only.*
-
----
-
-### Section 6: Substation Progress (33/220kV GSS)
-- **Critical Path Status**: The 220kV Grid Substation (GSS) and interconnection transmission line are confirmed on the master project critical path with 0 days of total float buffer to the Month 16 back-feed milestone.
-- **Physical Construction Progress**: 0% completed (Site works commence Month 2 following engineering approval and earthworks handoff).
-- **Major Equipment Packages Prioritized**:
-  - **220kV Main Power Transformer (100MVA)**: Manufacturing and FAT cycle is 24–30 weeks. PO Drop Dead Date established at Month 1, Week 3 (Day 30). CONVOY issuing RFQ-HEL-EQ-001 this week.
-  - **220kV Gas Insulated Switchgear (GIS)**: Manufacturing cycle is 20–24 weeks. PO Drop Dead Date established at Month 2, Week 2 (Day 60). CONVOY issuing RFQ-HEL-EQ-002 this week.
-  - **33kV Switchgear / RMU**: Manufacturing cycle is 12–14 weeks. RFQ preparation underway.
-- **Engineering Status**: ARCHON prioritizing 220kV single-line diagrams, substation layout, and foundation loading data for early NEGU submission.
-
----
-
-### Section 7: Top Issues / Blockers & Critical Path Notes
-1. **Contractual Kickoff & LNTP Acknowledgement**:
-   - Employer Limited Notice to Proceed (LNTP) formally received via Issue #3 from Project Director Danesh.
-   - 18-month execution horizon locked under FIDIC Yellow Book leading to Commercial Operation Date (COD / PAC) at Month 18, followed by 24-month DLP to Final Acceptance Certificate (FAC) at Month 42.
-2. **Schedule Baseline Development**:
-   - KRONOS is formulating the Primavera P6 Level 3 (L3) CPM Baseline Schedule under WBS `HEL.10` through `HEL.80`.
-   - Float integrity confirmed: 220kV GSS is the controlling critical path (0d float). PV field activities retain positive float buffer (>45d).
-3. **Supply Chain Management (SCM) Activation**:
-   - CONVOY has activated all six SCM units: FORGE, DEPOT, VENDOR, TRACER, ROUTE, and VAULT.
-   - Week 1 RFQ release schedule locked for 220kV MPT (`RFQ-HEL-EQ-001`), 220kV GIS (`RFQ-HEL-EQ-002`), and 100MW Bifacial Modules (`RFQ-HEL-EQ-003`).
-   - Two-Envelope protocol (Unpriced Technical vs Sealed Commercial) and Approved Vendor List (AVL) compliance strictly enforced.
-4. **MIS Reporting Deadlines & Protocol**:
-   - **Daily Department Inputs Cutoff**: 17:00 Sim Time sharp. All discipline leads (VECTOR, WATT, RAMPART, CONVOY, AEGIS, SENTINEL) must transmit verified daily logs.
-   - **Daily Master DPR Publication**: 18:00 Sim Time sharp by SIGMA following KRONOS review and validation.
-   - Weekly WPR (due Sundays) and Monthly MPR will roll up exclusively from reconciled DPR daily records.
-5. **Data Governance & QC Reconciliation Rule**:
-   - **Rule of Credit**: 0 progress credited without formal QA/QC inspection sign-off and certified RFI (SENTINEL / PLUMBLINE / OHMMETER / TORQUE).
-   - Unverified subcontractor claims (from GROUNDWORK, EREKTOR, ELECTRA, GRIDCON) will be recorded in the Reconciliation Log for audit tracking but will be capped at the lowest verified/QC-accepted quantity for all earned value reporting.
-   - No front-loading or speculative progress booking permitted under any circumstances.
+### Section 5: Day 001 LNTP Kickoff & Coded Communication Summary
+1. **LNTP Kickoff Directive (`HEL-D001-PMO-PLN-MOB-INS-0001` on Channel `CH-02`)**: `ATLAS` issued the Day 001 LNTP mobilization and engineering submittal directive across all 10 departments.
+2. **DPR & EVM Reconciliation (`HEL-D001-PLN-PLN-MOB-RPT-0002` on Channel `CH-02`)**: `SIGMA` and `KRONOS` verified the Rev 0 Baseline S-Curve and Day 001 physical progress (`0` piles/trackers/modules; `1.26%` site mobilization).
+3. **Executive PD Brief (`HEL-D001-PMO-PMO-MOB-RPT-0003` on Channel `CH-01`)**: `ATLAS` transmitted the Day 001 `[PD BRIEF]` to `DANESH` confirming all 64 agents, 10 coded GitHub Issue channels (`CH-01` to `CH-10`),departmental `.md` mailboxes, and Excel/PowerPoint control packs are online at Start Position.
